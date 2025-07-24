@@ -1,11 +1,18 @@
 .draft-interface {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 20px;
   min-height: 100vh;
   padding: 20px;
   background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
   color: white;
+}
+
+.draft-main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .draft-header {
@@ -69,61 +76,88 @@
   transform: none;
 }
 
-.recent-picks {
-  margin-top: 30px;
+.deck-sidebar {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  max-height: calc(100vh - 40px);
+  overflow-y: auto;
+}
+
+.deck-header {
+  margin-bottom: 20px;
   text-align: center;
-  width: 100%;
-  max-width: 600px;
 }
 
-.recent-picks h3 {
-  margin-bottom: 15px;
-  font-size: 1.3rem;
+.deck-header h3 {
+  margin: 0;
+  font-size: 1.4rem;
   color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.recent-picks-list {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 15px;
-  flex-wrap: wrap;
+.deck-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
 }
 
-.recent-pick-item {
+.deck-card-thumbnail {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
-  padding: 8px;
-  min-width: 80px;
-  max-width: 100px;
+  transition: transform 0.2s ease;
+  cursor: pointer;
 }
 
-.recent-pick-image {
+.deck-card-thumbnail:hover {
+  transform: scale(1.05);
+}
+
+.deck-card-image {
   width: 60px;
   height: auto;
-  border-radius: 4px;
-  margin-bottom: 5px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  transition: box-shadow 0.2s ease;
 }
 
-.recent-pick-name {
+.deck-card-thumbnail:hover .deck-card-image {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+.deck-card-name {
   font-size: 0.7rem;
   text-align: center;
-  color: #e9ecef;
-  line-height: 1.2;
+  margin-top: 4px;
+  max-width: 60px;
   overflow: hidden;
   text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
+  white-space: nowrap;
+  color: #e0e0e0;
 }
 
-.picked-count {
-  font-size: 1.1rem;
-  color: #e9ecef;
+.deck-card-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 84px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px dashed rgba(255, 255, 255, 0.3);
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+
+.deck-card-empty:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.empty-slot-text {
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
 }
 
 .draft-complete {
@@ -167,6 +201,36 @@
   color: #666;
 }
 
+@media (max-width: 1024px) {
+  .draft-interface {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+  }
+  
+  .deck-sidebar {
+    order: -1;
+    max-height: 200px;
+    padding: 15px;
+  }
+  
+  .deck-cards-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  
+  .deck-card-image {
+    width: 45px;
+  }
+  
+  .deck-card-name {
+    font-size: 0.6rem;
+    max-width: 45px;
+  }
+  
+  .deck-card-empty {
+    height: 63px;
+  }
+}
+
 @media (max-width: 768px) {
   .draft-interface {
     padding: 10px;
@@ -187,5 +251,22 @@
     padding: 12px 25px;
     font-size: 1rem;
     min-width: 100px;
+  }
+  
+  .deck-cards-grid {
+    grid-template-columns: repeat(8, 1fr);
+  }
+  
+  .deck-card-image {
+    width: 35px;
+  }
+  
+  .deck-card-name {
+    font-size: 0.55rem;
+    max-width: 35px;
+  }
+  
+  .deck-card-empty {
+    height: 49px;
   }
 }

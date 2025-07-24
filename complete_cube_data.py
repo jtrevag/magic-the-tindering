@@ -49,7 +49,7 @@ def main():
         print("No existing data found, starting fresh")
     
     # Read all mainboard cards
-    cube_file = "/Users/jamesgale/codebase/magic-the-tindering/THePeasantCube2025.txt"
+    cube_file = "/Users/jamesgale/codebase/magic-the-tindering/ThePeasantCube2025.txt"
     with open(cube_file, 'r') as f:
         lines = f.readlines()
     
@@ -60,19 +60,25 @@ def main():
     # Find cards we need to process
     cards_to_process = [card for card in mainboard_cards if card not in existing_names]
     print(f"Cards to process: {len(cards_to_process)}")
+    print(f"Starting with {len(existing_cards)} cards already in database")
+    print(f"Target: {len(mainboard_cards)} total cards in cube")
+    print("=" * 60)
     
     # Process remaining cards
     all_cards = existing_cards.copy()
     failed_cards = []
     
     for i, card_name in enumerate(cards_to_process):
-        print(f"Processing {i+1}/{len(cards_to_process)}: {card_name}")
+        progress_percent = ((i + 1) / len(cards_to_process)) * 100
+        print(f"[{progress_percent:.1f}%] Processing {i+1}/{len(cards_to_process)}: {card_name}")
         
         card_data = get_card_data(card_name)
         if card_data:
             all_cards.append(card_data)
+            print(f"  ✓ Successfully added {card_name}")
         else:
             failed_cards.append(card_name)
+            print(f"  ✗ Failed to fetch {card_name}")
         
         # Rate limiting - be respectful to Scryfall
         time.sleep(0.1)
@@ -81,7 +87,13 @@ def main():
         if (i + 1) % 25 == 0:
             with open(existing_file, 'w') as f:
                 json.dump(all_cards, f, indent=2)
-            print(f"Progress saved at {len(all_cards)} total cards")
+            print(f"📝 Progress saved: {len(all_cards)} total cards in database")
+            print(f"   Remaining: {len(cards_to_process) - (i + 1)} cards")
+        
+        # More frequent status updates every 10 cards
+        if (i + 1) % 10 == 0:
+            success_rate = ((len(all_cards) - len(existing_cards)) / (i + 1)) * 100
+            print(f"📊 Status: {len(all_cards)} total cards, {len(failed_cards)} failures, {success_rate:.1f}% success rate")
     
     # Final save
     with open(existing_file, 'w') as f:

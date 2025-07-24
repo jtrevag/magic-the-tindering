@@ -47,11 +47,53 @@ Core types defined in `src/types/Card.ts`:
 - Cards are shuffled from the peasant cube data on component mount
 - Default settings: 15-second timer, 45 total picks, 40-card deck target
 - Timer auto-skips cards when time expires
-- Recent picks (last 5) are displayed with small card images
+- **NEW: Fanning Cards Feature** - Last 5 picked cards fan out on the right side with:
+  - Opacity gradient: 100% → 84% → 68% → 52% → 36% → 20%
+  - Progressive positioning and rotation for visual depth
+  - Smooth exit animation when 6th card pushes oldest off screen
 - Draft completes when pick limit is reached
+
+## Recent Updates (Session End)
+
+### ✅ Completed Features
+- **Fanning Cards Display**: Implemented visual card history with 5-card limit
+- **Opacity Gradients**: Cards fade from 100% to 20% opacity as they age  
+- **Positioning System**: Cards fan out with increasing X offset and rotation
+- **Exit Animations**: Smooth 300ms animation when cards rotate off screen
+- **State Management**: Added RecentCard interface with unique IDs for animations
+- **Fixed React Hooks**: Resolved ESLint warning with useCallback for handleSkip
+
+### 🔧 Technical Implementation
+- Modified `DraftInterface.tsx` to track recent cards with unique IDs
+- Added exit animation state management with setTimeout cleanup
+- Updated CSS with fixed positioning for fanning effect
+- Cards positioned on right side with transform-origin bottom right
+- Mobile responsive adjustments for smaller screens
+
+### 🚀 Next Steps / Future Enhancements
+1. **Performance Testing**: Test with rapid card picking to ensure smooth animations
+2. **Visual Polish**: Consider adding subtle glow/shadow effects to fanning cards
+3. **Audio Feedback**: Add sound effects for pick/skip/card rotation
+4. **Accessibility**: Add ARIA labels and keyboard navigation for fanning cards
+5. **Configuration**: Make fanning card count (currently 5) configurable
+6. **Card Preview**: Add hover effects to show larger version of fanned cards
+7. **Statistics**: Track and display pick timing statistics
+8. **Undo Feature**: Allow undoing last pick (would need to restore fanning state)
 
 ### External Dependencies
 
 - **Scryfall API**: Card images fetched dynamically using Scryfall ID patterns
 - **React 19**: Latest React with TypeScript support
 - **Create React App**: Standard CRA setup with ESLint configuration
+
+## Coding Guidelines
+
+- **TypeScript Best Practices**:
+  - Act as an expert in TypeScript, writing code that prioritizes good typing and clearing all errors
+  - Use strict typing wherever possible
+  - Leverage TypeScript's advanced type features like union types, intersection types, and generics
+  - Minimize the use of `any` type
+  - Prefer type inference where clear, but explicitly define types for complex structures
+  - Use type guards and type narrowing to improve type safety
+  - Implement exhaustive type checking with discriminated unions
+  - Write type-safe functions with clear input and output type definitions

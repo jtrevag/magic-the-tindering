@@ -1,9 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { Card, DraftState, DraftSettings } from '../types/Card';
 import peasantCube from '../data/peasantCube.json';
 import CardDisplay from './CardDisplay';
 import Timer from './Timer';
 import './DraftInterface.css';
+
+// Removed RecentCard interface - now using direct picked cards display
 
 const defaultSettings: DraftSettings = {
   timerSeconds: 15,
@@ -22,6 +24,7 @@ const DraftInterface: React.FC = () => {
   const [shuffledCards, setShuffledCards] = useState<Card[]>([]);
   const [timeRemaining, setTimeRemaining] = useState(defaultSettings.timerSeconds);
   const [isTimerRunning, setIsTimerRunning] = useState(false);
+  // Removed recentCards state - using direct picked cards display
 
   // Shuffle cards on component mount
   useEffect(() => {
@@ -29,6 +32,21 @@ const DraftInterface: React.FC = () => {
     setShuffledCards(shuffled);
     setIsTimerRunning(true);
   }, []);
+
+  const handleSkip = useCallback(() => {
+    if (draftState.isComplete || draftState.currentCardIndex >= shuffledCards.length) return;
+
+    const nextIndex = draftState.currentCardIndex + 1;
+    const isComplete = nextIndex >= shuffledCards.length || draftState.picksRemaining <= 1;
+    
+    setDraftState(prev => ({
+      ...prev,
+      currentCardIndex: nextIndex,
+      isComplete
+    }));
+
+    setTimeRemaining(defaultSettings.timerSeconds);
+  }, [draftState.isComplete, draftState.currentCardIndex, draftState.picksRemaining, shuffledCards.length]);
 
   // Timer logic
   useEffect(() => {
@@ -47,7 +65,7 @@ const DraftInterface: React.FC = () => {
     }
 
     return () => clearInterval(interval);
-  }, [isTimerRunning, timeRemaining, draftState.isComplete]);
+  }, [isTimerRunning, timeRemaining, draftState.isComplete, handleSkip]);
 
   const handlePick = () => {
     if (draftState.isComplete || draftState.currentCardIndex >= shuffledCards.length) return;
@@ -56,11 +74,14 @@ const DraftInterface: React.FC = () => {
     const newPickedCards = [...draftState.pickedCards, currentCard];
     const newPicksRemaining = draftState.picksRemaining - 1;
 
+    const nextIndex = draftState.currentCardIndex + 1;
+    const isComplete = newPicksRemaining === 0 || nextIndex >= shuffledCards.length;
+    
     setDraftState({
-      currentCardIndex: draftState.currentCardIndex + 1,
+      currentCardIndex: nextIndex,
       pickedCards: newPickedCards,
       picksRemaining: newPicksRemaining,
-      isComplete: newPicksRemaining === 0
+      isComplete
     });
 
     if (newPicksRemaining === 0) {
@@ -70,19 +91,15 @@ const DraftInterface: React.FC = () => {
     }
   };
 
-  const handleSkip = () => {
-    if (draftState.isComplete || draftState.currentCardIndex >= shuffledCards.length) return;
-
-    setDraftState(prev => ({
-      ...prev,
-      currentCardIndex: prev.currentCardIndex + 1
-    }));
-
-    setTimeRemaining(defaultSettings.timerSeconds);
-  };
-
   const getCurrentCard = (): Card | null => {
-    if (draftState.currentCardIndex >= shuffledCards.length) return null;
+    // If we've run out of cards, complete the draft
+    if (draftState.currentCardIndex >= shuffledCards.length) {
+      if (!draftState.isComplete) {
+        setDraftState(prev => ({ ...prev, isComplete: true }));
+      }
+      return null;
+    }
+    if (draftState.isComplete) return null;
     return shuffledCards[draftState.currentCardIndex];
   };
 
@@ -110,48 +127,56 @@ const DraftInterface: React.FC = () => {
 
   return (
     <div className="draft-interface">
-      <div className="draft-header">
-        <div className="picks-counter">
-          Picks remaining: {draftState.picksRemaining}
+      <div className="draft-main-content">
+        <div className="draft-header">
+          <div className="picks-counter">
+            Picks remaining: {draftState.picksRemaining}
+          </div>
+          <Timer seconds={timeRemaining} />
         </div>
-        <Timer seconds={timeRemaining} />
-      </div>
-      
-      <CardDisplay card={currentCard} />
-      
-      <div className="draft-actions">
-        <button 
-          className="skip-button" 
-          onClick={handleSkip}
-          disabled={draftState.isComplete}
-        >
-          Skip
-        </button>
-        <button 
-          className="pick-button" 
-          onClick={handlePick}
-          disabled={draftState.isComplete}
-        >
-          Pick
-        </button>
+        
+        <CardDisplay card={currentCard} />
+        
+        <div className="draft-actions">
+          <button 
+            className="skip-button" 
+            onClick={handleSkip}
+            disabled={draftState.isComplete}
+          >
+            Skip
+          </button>
+          <button 
+            className="pick-button" 
+            onClick={handlePick}
+            disabled={draftState.isComplete}
+          >
+            Pick
+          </button>
+        </div>
       </div>
 
-      <div className="recent-picks">
-        <h3>Recent Picks</h3>
-        <div className="recent-picks-list">
-          {draftState.pickedCards.slice(-5).reverse().map((card, index) => (
-            <div key={index} className="recent-pick-item">
+      <div className="deck-sidebar">
+        <div className="deck-header">
+          <h3>Your Deck ({draftState.pickedCards.length}/{defaultSettings.deckSize})</h3>
+        </div>
+        <div className="deck-cards-grid">
+          {draftState.pickedCards.map((card, index) => (
+            <div key={`${card.scryfallId}-${index}`} className="deck-card-thumbnail">
               <img 
-                src={`https://cards.scryfall.io/small/front/${card.scryfallId.charAt(0)}/${card.scryfallId.charAt(1)}/${card.scryfallId}.jpg`}
+                src={`https://cards.scryfall.io/normal/front/${card.scryfallId.charAt(0)}/${card.scryfallId.charAt(1)}/${card.scryfallId}.jpg`}
                 alt={card.name}
-                className="recent-pick-image"
+                className="deck-card-image"
+                title={`${card.name} - ${card.manaCost || 'No cost'}`}
               />
-              <div className="recent-pick-name">{card.name}</div>
+              <div className="deck-card-name">{card.name}</div>
             </div>
           ))}
-        </div>
-        <div className="picked-count">
-          Total picked: {draftState.pickedCards.length}
+          {/* Show empty slots for remaining cards */}
+          {Array.from({ length: Math.max(0, defaultSettings.deckSize - draftState.pickedCards.length) }).map((_, index) => (
+            <div key={`empty-${index}`} className="deck-card-empty">
+              <div className="empty-slot-text">Empty</div>
+            </div>
+          ))}
         </div>
       </div>
     </div>

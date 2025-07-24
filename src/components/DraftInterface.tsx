@@ -160,7 +160,7 @@ const DraftInterface: React.FC = () => {
           <Timer seconds={timeRemaining} />
         </div>
         
-        <CardDisplay card={currentCard} />
+        <CardDisplay card={currentCard} handleSkip={handleSkip} handlePick={handlePick} />
         
         <div className="draft-actions">
           <button 

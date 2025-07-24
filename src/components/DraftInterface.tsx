@@ -26,18 +26,27 @@ const DraftInterface: React.FC = () => {
   const [isTimerRunning, setIsTimerRunning] = useState(false);
   // Removed recentCards state - using direct picked cards display
 
+  // Debug: Log state changes
+  useEffect(() => {
+    console.log('DraftState changed:', draftState);
+  }, [draftState]);
+
   // Shuffle cards on component mount
   useEffect(() => {
+    console.log('DraftInterface: Component mounting');
+    console.log('DraftInterface: peasantCube length:', (peasantCube as Card[]).length);
     const shuffled = [...(peasantCube as Card[])].sort(() => Math.random() - 0.5);
+    console.log('DraftInterface: shuffled cards length:', shuffled.length);
     setShuffledCards(shuffled);
     setIsTimerRunning(true);
+    console.log('DraftInterface: Initial setup complete');
   }, []);
 
   const handleSkip = useCallback(() => {
     if (draftState.isComplete || draftState.currentCardIndex >= shuffledCards.length) return;
 
     const nextIndex = draftState.currentCardIndex + 1;
-    const isComplete = nextIndex >= shuffledCards.length || draftState.picksRemaining <= 1;
+    const isComplete = nextIndex >= shuffledCards.length || draftState.picksRemaining === 0;
     
     setDraftState(prev => ({
       ...prev,
@@ -92,16 +101,32 @@ const DraftInterface: React.FC = () => {
   };
 
   const getCurrentCard = (): Card | null => {
+    console.log('getCurrentCard: currentCardIndex:', draftState.currentCardIndex);
+    console.log('getCurrentCard: shuffledCards.length:', shuffledCards.length);
+    console.log('getCurrentCard: isComplete:', draftState.isComplete);
+    console.log('getCurrentCard: picksRemaining:', draftState.picksRemaining);
+    
     // If we've run out of cards, complete the draft
     if (draftState.currentCardIndex >= shuffledCards.length) {
+      console.log('getCurrentCard: Ran out of cards, completing draft');
       if (!draftState.isComplete) {
         setDraftState(prev => ({ ...prev, isComplete: true }));
       }
       return null;
     }
-    if (draftState.isComplete) return null;
-    return shuffledCards[draftState.currentCardIndex];
+    if (draftState.isComplete) {
+      console.log('getCurrentCard: Draft already complete');
+      return null;
+    }
+    const card = shuffledCards[draftState.currentCardIndex];
+    console.log('getCurrentCard: Returning card:', card?.name);
+    return card;
   };
+
+  // Don't call getCurrentCard until cards are loaded
+  if (shuffledCards.length === 0) {
+    return <div className="loading">Loading cards...</div>;
+  }
 
   const currentCard = getCurrentCard();
 

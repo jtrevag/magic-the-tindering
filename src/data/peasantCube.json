@@ -1,0 +1,135 @@
+[
+  {
+    "name": "Cheeky House-Mouse",
+    "scryfallId": "1f3013bf-9647-4bdb-a638-d299ae00f88e",
+    "manaCost": "{W}",
+    "type": "Creature — Mouse // Sorcery — Adventure",
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Dauntless Bodyguard",
+    "scryfallId": "a3f82012-5c33-47bc-a3c8-56ae2eea1fb9",
+    "manaCost": "{W}",
+    "type": "Creature — Human Knight",
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Descendant of Storms",
+    "scryfallId": "f632be90-9e7f-41f8-a52e-a2952354d730",
+    "manaCost": "{W}",
+    "type": "Creature — Human Soldier",
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Indebted Spirit",
+    "scryfallId": "bfdbef00-bc1b-4dd6-aef5-aeb5ce454344",
+    "manaCost": "{W}",
+    "type": "Enchantment Creature — Spirit",
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Law-Rune Enforcer",
+    "scryfallId": "2f160c0f-d9c9-4fc1-b61c-a2154bc21879",
+    "manaCost": "{W}",
+    "type": "Creature — Human Soldier",
+    "rarity": "common"
+  },
+  {
+    "name": "Thraben Inspector",
+    "scryfallId": "08a5007f-06a0-40fa-a252-c38baa6b5c6f",
+    "manaCost": "{W}",
+    "type": "Creature — Human Soldier",
+    "rarity": "common"
+  },
+  {
+    "name": "Counterspell",
+    "scryfallId": "4f616706-ec97-4923-bb1e-11a69fbaa1f8",
+    "manaCost": "{U}{U}",
+    "type": "Instant",
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Carrion Feeder",
+    "scryfallId": "0a19da90-880e-4eca-8cf7-6d7baf090d53",
+    "manaCost": "{B}",
+    "type": "Creature — Zombie",
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Lightning Bolt",
+    "scryfallId": "77c6fa74-5543-42ac-9ead-0e890b188e99",
+    "manaCost": "{R}",
+    "type": "Instant",
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Monastery Swiftspear",
+    "scryfallId": "d6bfa227-4309-40ed-952c-279595eab17e",
+    "manaCost": "{R}",
+    "type": "Creature — Human Monk",
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Llanowar Elves",
+    "scryfallId": "6a0b230b-d391-4998-a3f7-7b158a0ec2cd",
+    "manaCost": "{G}",
+    "type": "Creature — Elf Druid",
+    "rarity": "common"
+  },
+  {
+    "name": "Path to Exile",
+    "scryfallId": "a7aed564-2d2d-42c4-bf11-812bc1a0284c",
+    "manaCost": "{W}",
+    "type": "Instant",
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Swords to Plowshares",
+    "scryfallId": "0e7ff4dc-af63-4342-9a44-d059e62bd14c",
+    "manaCost": "{W}",
+    "type": "Instant",
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Mulldrifter",
+    "scryfallId": "eb6d8d1c-8d23-4273-9c9b-f3b71eb0e105",
+    "manaCost": "{4}{U}",
+    "type": "Creature — Elemental",
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Young Pyromancer",
+    "scryfallId": "c0d74ecd-a595-4012-81b4-083264b40c94",
+    "manaCost": "{1}{R}",
+    "type": "Creature — Human Shaman",
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Brainstorm",
+    "scryfallId": "8beb987c-1b67-4a4e-ae71-58547afad2a0",
+    "manaCost": "{U}",
+    "type": "Instant",
+    "rarity": "common"
+  },
+  {
+    "name": "Fatal Push",
+    "scryfallId": "6e9d8fe4-fd9b-4923-92bf-7dd6b8fa02e7",
+    "manaCost": "{B}",
+    "type": "Instant",
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Rampant Growth",
+    "scryfallId": "b7c47024-5e08-4b17-b41a-7647f8b814b9",
+    "manaCost": "{1}{G}",
+    "type": "Sorcery",
+    "rarity": "common"
+  },
+  {
+    "name": "Beast Within",
+    "scryfallId": "ccac70d4-6e04-4802-8bb8-021368a40e14",
+    "manaCost": "{2}{G}",
+    "type": "Instant",
+    "rarity": "uncommon"
+  }
+]

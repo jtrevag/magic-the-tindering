@@ -182,7 +182,7 @@ const DraftInterface: React.FC = () => {
 
       <div className="deck-sidebar">
         <div className="deck-header">
-          <h3>Your Deck ({draftState.pickedCards.length}/{defaultSettings.deckSize})</h3>
+          <h3>Your Deck ({draftState.pickedCards.length}/{defaultSettings.totalPicks})</h3>
         </div>
         <div className="deck-cards-grid">
           {draftState.pickedCards.map((card, index) => (
@@ -197,7 +197,7 @@ const DraftInterface: React.FC = () => {
             </div>
           ))}
           {/* Show empty slots for remaining cards */}
-          {Array.from({ length: Math.max(0, defaultSettings.deckSize - draftState.pickedCards.length) }).map((_, index) => (
+          {Array.from({ length: Math.max(0, defaultSettings.totalPicks - draftState.pickedCards.length) }).map((_, index) => (
             <div key={`empty-${index}`} className="deck-card-empty">
               <div className="empty-slot-text">Empty</div>
             </div>

@@ -1,23 +1,33 @@
 import React from 'react';
+import { useSwipeable } from 'react-swipeable';
 import { Card } from '../types/Card';
 import './CardDisplay.css';
 
 interface CardDisplayProps {
   card: Card;
+  handlePick?: () => void
+  handleSkip?: () => void
 }
 
-const CardDisplay: React.FC<CardDisplayProps> = ({ card }) => {
+const CardDisplay: React.FC<CardDisplayProps> = ({ card, handlePick, handleSkip }) => {
   const getImageUrl = (scryfallId: string) => {
     return `https://cards.scryfall.io/normal/front/${scryfallId.charAt(0)}/${scryfallId.charAt(1)}/${scryfallId}.jpg`;
   };
+  
+  const swipeHandlers = useSwipeable({
+    onSwipedLeft: handleSkip,
+    onSwipedRight: handlePick,
+    trackMouse: true,
+  });
 
   return (
-    <div className="card-display">
+    <div className="card-display" {...swipeHandlers}>
       <div className="card-image-container">
         <img 
           src={getImageUrl(card.scryfallId)} 
           alt={card.name}
           className="card-image"
+          draggable={false}
           onError={(e) => {
             // Fallback to a different Scryfall image format if the first fails
             const target = e.target as HTMLImageElement;

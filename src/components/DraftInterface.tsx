@@ -61,6 +61,7 @@ const DraftInterface: React.FC = () => {
       const currentCard = shuffledCards[draftState.currentCardIndex];
       const newPickedCards = [...draftState.pickedCards, currentCard];
       const newPicksRemaining = draftState.picksRemaining - 1;
+      const skipReward = getSkipReward(currentCard?.elo || 0);
 
       const nextIndex = draftState.currentCardIndex + 1;
       const isComplete = newPicksRemaining === 0 || nextIndex >= shuffledCards.length;
@@ -69,7 +70,8 @@ const DraftInterface: React.FC = () => {
         currentCardIndex: nextIndex,
         pickedCards: newPickedCards,
         picksRemaining: newPicksRemaining,
-        skipsRemaining: draftState.skipsRemaining + 1,
+        // Only grant +1 skip if card gives no skip reward (low-ELO cards)
+        skipsRemaining: skipReward === 0 ? draftState.skipsRemaining + 1 : draftState.skipsRemaining,
         isComplete
       });
 
@@ -96,7 +98,11 @@ const DraftInterface: React.FC = () => {
       setDraftState(prev => ({
         ...prev,
         currentCardIndex: nextIndex,
-        skipsRemaining: prev.skipsRemaining - 1 + skipReward,
+        // If card gives skip reward, don't decrement skip count, just add reward
+        // If card gives no reward, decrement skip count by 1
+        skipsRemaining: skipReward > 0 
+          ? prev.skipsRemaining + skipReward 
+          : prev.skipsRemaining - 1,
         isComplete
       }));
 

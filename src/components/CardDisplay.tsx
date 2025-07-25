@@ -19,11 +19,19 @@ const CardDisplay: React.FC<CardDisplayProps> = ({ card, handlePick, handleSkip,
 
   const [showPick, setShowPick] = useState(false);
   const [showSkip, setShowSkip] = useState(false);
+  const [imageLoaded, setImageLoaded] = useState(false);
 
-  // Reset animation when card changes
+  // Reset animation and imageLoaded when card changes
   useEffect(() => {
-    controls.set({ x: 0, opacity: 1 });
-  }, [card, controls]);
+    setImageLoaded(false);
+  }, [card]);
+
+  // Only reset card position after next image is loaded
+  useEffect(() => {
+    if (imageLoaded) {
+      controls.set({ x: 0, opacity: 1 });
+    }
+  }, [imageLoaded, controls]);
 
   // Show pick/skip indicators based on motion value
   useEffect(() => {
@@ -94,6 +102,7 @@ const handleDragEnd = () => {
             alt={card.name}
             className="card-image"
             draggable={false}
+            onLoad={() => setImageLoaded(true)}
             onError={(e) => {
               // Fallback to a different Scryfall image format if the first fails
               const target = e.target as HTMLImageElement;

@@ -1,9 +1,10 @@
-name: Deploy to GitHub Pages
+name: Deploy to GitHub Pages (DISABLED)
 
 on:
-  push:
-    branches: [ main ]
-  workflow_dispatch:
+  # Disabled - replaced by deploy-branches.yml
+  # push:
+  #   branches: [ main ]
+  # workflow_dispatch:
 
 permissions:
   contents: read

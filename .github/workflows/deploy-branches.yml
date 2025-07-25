@@ -15,7 +15,7 @@ permissions:
 
 concurrency:
   group: pages-${{ github.ref }}
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   build-and-deploy:
@@ -48,7 +48,7 @@ jobs:
       - name: Build application
         run: npm run build
         env:
-          PUBLIC_URL: /magic-the-tindering/${{ steps.branch.outputs.branch_name }}
+          PUBLIC_URL: /magic-the-tindering
           REACT_APP_BRANCH: ${{ steps.branch.outputs.branch_name }}
 
       - name: Setup Pages
@@ -68,7 +68,7 @@ jobs:
         uses: actions/github-script@v7
         with:
           script: |
-            const deployUrl = `https://jtrevag.github.io/magic-the-tindering/pr-${{ github.event.number }}/`;
+            const deployUrl = `https://jtrevag.github.io/magic-the-tindering/`;
             github.rest.issues.createComment({
               issue_number: context.issue.number,
               owner: context.repo.owner,

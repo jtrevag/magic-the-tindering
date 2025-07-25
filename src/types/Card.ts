@@ -4,6 +4,7 @@ export interface Card {
   manaCost: string;
   type: string;
   rarity: 'common' | 'uncommon';
+  elo?: number;
   imageUrl?: string;
 }
 

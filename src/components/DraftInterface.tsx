@@ -14,9 +14,9 @@ const defaultSettings: DraftSettings = {
 };
 
 const getSkipReward = (elo: number): number => {
-  if (elo >= 1650) return 6; // Premium bombs (3.7% of cards)
-  if (elo >= 1500) return 4; // Very strong cards (6.1% of cards)
-  if (elo >= 1350) return 2; // Strong cards (12% of cards)
+  if (elo >= 1650) return 3; // Premium bombs (3.7% of cards)
+  if (elo >= 1500) return 2; // Very strong cards (6.1% of cards)
+  if (elo >= 1350) return 1; // Strong cards (12% of cards)
   return 0; // Standard cards (75% of cards)
 };
 

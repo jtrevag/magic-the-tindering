@@ -9,7 +9,8 @@ const mockCard: Card = {
   manaCost: '{R}',
   colors: ["R"],
   type: 'Instant',
-  rarity: 'common'
+  rarity: 'common',
+  elo: 1200
 };
 
 describe('CardDisplay', () => {
@@ -28,9 +29,9 @@ describe('CardDisplay', () => {
     expect(screen.getByText('Instant')).toBeInTheDocument();
   });
 
-  test('renders card rarity', () => {
+  test('renders card strength', () => {
     render(<CardDisplay card={mockCard} />);
-    expect(screen.getByText('common')).toBeInTheDocument();
+    expect(screen.getByText('Strength: C')).toBeInTheDocument();
   });
 
   test('renders card image with correct src', () => {
@@ -40,16 +41,28 @@ describe('CardDisplay', () => {
     expect(image.src).toBe('https://cards.scryfall.io/normal/front/6/c/6ce3aa6a-0b2c-49aa-a320-de7a0f085d52.jpg');
   });
 
-  test('applies correct rarity class', () => {
+  test('applies correct strength class', () => {
     render(<CardDisplay card={mockCard} />);
-    const rarityElement = screen.getByText('common');
-    expect(rarityElement).toHaveClass('card-rarity', 'rarity-common');
+    const strengthElement = screen.getByText('Strength: C');
+    expect(strengthElement).toHaveClass('card-strength', 'strength-c');
   });
 
-  test('renders uncommon rarity correctly', () => {
-    const uncommonCard: Card = { ...mockCard, rarity: 'uncommon' };
-    render(<CardDisplay card={uncommonCard} />);
-    const rarityElement = screen.getByText('uncommon');
-    expect(rarityElement).toHaveClass('card-rarity', 'rarity-uncommon');
+  test('renders high-elo card with S strength', () => {
+    const highEloCard: Card = { ...mockCard, elo: 1700 };
+    render(<CardDisplay card={highEloCard} />);
+    const strengthElement = screen.getByText('Strength: S');
+    expect(strengthElement).toHaveClass('card-strength', 'strength-s');
+  });
+
+  test('renders skip reward for high-elo cards', () => {
+    const highEloCard: Card = { ...mockCard, elo: 1700 };
+    render(<CardDisplay card={highEloCard} />);
+    expect(screen.getByText('Skip: +3')).toBeInTheDocument();
+  });
+
+  test('renders pick reward for low-elo cards', () => {
+    const lowEloCard: Card = { ...mockCard, elo: 1000 };
+    render(<CardDisplay card={lowEloCard} />);
+    expect(screen.getByText('Pick: +1 skip')).toBeInTheDocument();
   });
 });

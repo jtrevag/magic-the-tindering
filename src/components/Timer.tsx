@@ -17,7 +17,7 @@ const Timer: React.FC<TimerProps> = ({ seconds }) => {
   };
 
   return (
-    <div className={`timer ${getTimerClass(seconds)}`}>
+    <div className={`timer ${getTimerClass(seconds)}`} data-testid="timer">
       <div className="timer-display">
         {formatTime(seconds)}
       </div>

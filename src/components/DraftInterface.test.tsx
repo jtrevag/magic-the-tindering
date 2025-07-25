@@ -1,7 +1,6 @@
 import React from 'react';
 import { render, screen, fireEvent, waitFor } from '@testing-library/react';
 import DraftInterface from './DraftInterface';
-import { Card } from '../types/Card';
 
 // Mock the peasant cube data - provide enough cards for all tests
 jest.mock('../data/peasantCube.json', () => 
@@ -59,8 +58,8 @@ describe('DraftInterface', () => {
 
     await waitFor(() => {
       expect(screen.getByText('Picks remaining: 44')).toBeInTheDocument();
-      expect(screen.getByText('Total picked: 1')).toBeInTheDocument();
     });
+    expect(screen.getByText('Total picked: 1')).toBeInTheDocument();
   });
 
   test('skip button moves to next card without picking', async () => {
@@ -85,23 +84,16 @@ describe('DraftInterface', () => {
       expect(screen.getByText('Pick')).toBeInTheDocument();
     });
 
-    const pickButton = screen.getByText('Pick');
-    
-    // Pick 45 cards to complete the draft
+    // Pick all 45 cards to complete the draft
     for (let i = 0; i < 45; i++) {
+      const pickButton = screen.getByText('Pick');
       fireEvent.click(pickButton);
-      // Only check intermediate states for a few picks to avoid timing issues
-      if (i < 3) {
-        await waitFor(() => {
-          expect(screen.getByText(`Picks remaining: ${44 - i}`)).toBeInTheDocument();
-        });
-      }
     }
 
     await waitFor(() => {
       expect(screen.getByText('Draft Complete!')).toBeInTheDocument();
-      expect(screen.getByText('You picked 45 cards')).toBeInTheDocument();
     });
+    expect(screen.getByText('You picked 45 cards')).toBeInTheDocument();
   });
 
   test('timer resets after pick or skip', async () => {

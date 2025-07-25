@@ -39,6 +39,11 @@
       "react-app/jest"
     ]
   },
+  "jest": {
+    "transformIgnorePatterns": [
+      "node_modules/(?!(array-shuffle|usehooks-ts)/)"
+    ]
+  },
   "browserslist": {
     "production": [
       ">0.2%",

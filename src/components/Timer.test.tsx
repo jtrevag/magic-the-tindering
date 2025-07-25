@@ -21,38 +21,38 @@ describe('Timer', () => {
 
   test('applies normal timer class for higher values', () => {
     render(<Timer seconds={15} />);
-    const timerElement = screen.getByText('15').parentElement;
+    const timerElement = screen.getByTestId('timer');
     expect(timerElement).toHaveClass('timer', 'timer-normal');
   });
 
   test('applies warning timer class for mid-range values', () => {
     render(<Timer seconds={7} />);
-    const timerElement = screen.getByText('07').parentElement;
+    const timerElement = screen.getByTestId('timer');
     expect(timerElement).toHaveClass('timer', 'timer-warning');
   });
 
   test('applies warning timer class for values between 4-7', () => {
     render(<Timer seconds={5} />);
-    const timerElement = screen.getByText('05').parentElement;
+    const timerElement = screen.getByTestId('timer');
     expect(timerElement).toHaveClass('timer', 'timer-warning');
   });
 
   test('applies critical timer class for low values', () => {
     render(<Timer seconds={3} />);
-    const timerElement = screen.getByText('03').parentElement;
+    const timerElement = screen.getByTestId('timer');
     expect(timerElement).toHaveClass('timer', 'timer-critical');
   });
 
   test('applies critical timer class for values 1-3', () => {
     render(<Timer seconds={1} />);
-    const timerElement = screen.getByText('01').parentElement;
+    const timerElement = screen.getByTestId('timer');
     expect(timerElement).toHaveClass('timer', 'timer-critical');
   });
 
   test('handles zero seconds', () => {
     render(<Timer seconds={0} />);
     expect(screen.getByText('00')).toBeInTheDocument();
-    const timerElement = screen.getByText('00').parentElement;
+    const timerElement = screen.getByTestId('timer');
     expect(timerElement).toHaveClass('timer', 'timer-critical');
   });
 });

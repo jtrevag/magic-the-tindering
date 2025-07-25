@@ -17,7 +17,7 @@
 
 .draft-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
   max-width: 600px;
@@ -29,6 +29,12 @@
   font-size: 1.2rem;
   font-weight: bold;
   color: #ffffff;
+}
+
+.skips-counter {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffd700;
 }
 
 .draft-actions {

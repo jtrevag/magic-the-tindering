@@ -58,14 +58,22 @@ def main():
     mainboard_cards = [line.strip() for line in lines[1:541] if line.strip()]
     print(f"Total mainboard cards: {len(mainboard_cards)}")
     
-    # Find cards we need to process
-    cards_to_process = [card for card in mainboard_cards if card not in existing_names]
-    print(f"Cards to process: {len(cards_to_process)}")
+    # Find cards that need processing (new cards OR existing cards missing colors)
+    cards_to_add = [card for card in mainboard_cards if card not in existing_names]
+    cards_to_update = []
+    for card in existing_cards:
+        if card["name"] in mainboard_cards and "colors" not in card:
+            cards_to_update.append(card["name"])
+    
+    cards_to_process = cards_to_add + cards_to_update
+    print(f"New cards to add: {len(cards_to_add)}")
+    print(f"Existing cards to update with colors: {len(cards_to_update)}")
+    print(f"Total cards to process: {len(cards_to_process)}")
     print(f"Starting with {len(existing_cards)} cards already in database")
     print(f"Target: {len(mainboard_cards)} total cards in cube")
     print("=" * 60)
     
-    # Process remaining cards
+    # Process cards
     all_cards = existing_cards.copy()
     failed_cards = []
     
@@ -75,8 +83,22 @@ def main():
         
         card_data = get_card_data(card_name)
         if card_data:
-            all_cards.append(card_data)
-            print(f"  ✓ Successfully added {card_name}")
+            if card_name in cards_to_update:
+                # Update existing card with color data
+                for j, existing_card in enumerate(all_cards):
+                    if existing_card["name"] == card_name:
+                        all_cards[j]["colors"] = card_data["colors"]
+                        # Also update other fields that might be missing/outdated
+                        all_cards[j]["scryfallId"] = card_data["scryfallId"]
+                        all_cards[j]["manaCost"] = card_data["manaCost"]
+                        all_cards[j]["type"] = card_data["type"]
+                        all_cards[j]["rarity"] = card_data["rarity"]
+                        break
+                print(f"  ✓ Successfully updated {card_name}")
+            else:
+                # Add new card
+                all_cards.append(card_data)
+                print(f"  ✓ Successfully added {card_name}")
         else:
             failed_cards.append(card_name)
             print(f"  ✗ Failed to fetch {card_name}")

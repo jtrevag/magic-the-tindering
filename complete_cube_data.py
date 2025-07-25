@@ -26,6 +26,7 @@ def get_card_data(card_name):
                     "scryfallId": data.get("id", ""),
                     "manaCost": data.get("mana_cost", ""),
                     "type": data.get("type_line", ""),
+                    "colors": data.get("colors", []),
                     "rarity": data.get("rarity", "")
                 }
             else:
@@ -37,7 +38,7 @@ def get_card_data(card_name):
 
 def main():
     # Read existing JSON to see what we have
-    existing_file = "/Users/jamesgale/codebase/magic-the-tindering/mtg-tinder-draft/src/data/peasantCube.json"
+    existing_file = "./src/data/peasantCube.json"
     try:
         with open(existing_file, 'r') as f:
             existing_cards = json.load(f)
@@ -49,8 +50,8 @@ def main():
         print("No existing data found, starting fresh")
     
     # Read all mainboard cards
-    cube_file = "/Users/jamesgale/codebase/magic-the-tindering/ThePeasantCube2025.txt"
-    with open(cube_file, 'r') as f:
+    cube_file = "./PeasantCube2025.txt"
+    with open(cube_file, 'r', encoding='utf-8') as f:
         lines = f.readlines()
     
     # Extract mainboard cards (lines 2-541, but Python is 0-indexed)
@@ -109,7 +110,7 @@ def main():
             print(f"  - {card}")
         
         # Save failed cards for manual review
-        with open("/Users/jamesgale/codebase/magic-the-tindering/mtg-tinder-draft/failed_cards.txt", 'w') as f:
+        with open("./failed_cards.txt", 'w') as f:
             for card in failed_cards:
                 f.write(f"{card}\n")
         print(f"\nFailed cards saved to failed_cards.txt for manual review")

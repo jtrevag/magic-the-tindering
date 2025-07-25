@@ -2,4321 +2,4378 @@
   {
     "name": "Cheeky House-Mouse",
     "scryfallId": "1f3013bf-9647-4bdb-a638-d299ae00f88e",
-    "manaCost": "{W}",
-    "type": "Creature — Mouse // Sorcery — Adventure",
-    "rarity": "uncommon",
-    "elo": 1040
+    "manaCost": "{W} // {W}",
+    "type": "Creature \u2014 Mouse // Sorcery \u2014 Adventure",
+    "colors": [
+      "W"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Dauntless Bodyguard",
     "scryfallId": "a3f82012-5c33-47bc-a3c8-56ae2eea1fb9",
     "manaCost": "{W}",
-    "type": "Creature — Human Knight",
-    "rarity": "uncommon",
-    "elo": 930
+    "type": "Creature \u2014 Human Knight",
+    "colors": [
+      "W"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Descendant of Storms",
-    "scryfallId": "f632be90-9e7f-41f8-a52e-a2952354d730",
+    "name": "Gideon's Lawkeeper",
+    "scryfallId": "757d58fc-cf26-4095-9616-a47e9501cc0d",
     "manaCost": "{W}",
-    "type": "Creature — Human Soldier",
-    "rarity": "uncommon",
-    "elo": 1336
+    "type": "Creature \u2014 Human Soldier",
+    "colors": [
+      "W"
+    ],
+    "rarity": "common"
   },
   {
-    "name": "Indebted Spirit",
-    "scryfallId": "bfdbef00-bc1b-4dd6-aef5-aeb5ce454344",
+    "name": "Mother of Runes",
+    "scryfallId": "a5e19147-e459-43a6-8ef0-e37968a462e3",
     "manaCost": "{W}",
-    "type": "Enchantment Creature — Spirit",
-    "rarity": "uncommon",
-    "elo": 1046
-  },
-  {
-    "name": "Law-Rune Enforcer",
-    "scryfallId": "2f160c0f-d9c9-4fc1-b61c-a2154bc21879",
-    "manaCost": "{W}",
-    "type": "Creature — Human Soldier",
-    "rarity": "common",
-    "elo": 974
-  },
-  {
-    "name": "Thraben Inspector",
-    "scryfallId": "08a5007f-06a0-40fa-a252-c38baa6b5c6f",
-    "manaCost": "{W}",
-    "type": "Creature — Human Soldier",
-    "rarity": "common",
-    "elo": 1436
-  },
-  {
-    "name": "Counterspell",
-    "scryfallId": "4f616706-ec97-4923-bb1e-11a69fbaa1f8",
-    "manaCost": "{U}{U}",
-    "type": "Instant",
-    "rarity": "uncommon",
-    "elo": 1520
-  },
-  {
-    "name": "Carrion Feeder",
-    "scryfallId": "0a19da90-880e-4eca-8cf7-6d7baf090d53",
-    "manaCost": "{B}",
-    "type": "Creature — Zombie",
-    "rarity": "uncommon",
-    "elo": 1102
-  },
-  {
-    "name": "Lightning Bolt",
-    "scryfallId": "77c6fa74-5543-42ac-9ead-0e890b188e99",
-    "manaCost": "{R}",
-    "type": "Instant",
-    "rarity": "uncommon",
-    "elo": 1668
-  },
-  {
-    "name": "Monastery Swiftspear",
-    "scryfallId": "d6bfa227-4309-40ed-952c-279595eab17e",
-    "manaCost": "{R}",
-    "type": "Creature — Human Monk",
-    "rarity": "uncommon",
-    "elo": 1196
-  },
-  {
-    "name": "Llanowar Elves",
-    "scryfallId": "6a0b230b-d391-4998-a3f7-7b158a0ec2cd",
-    "manaCost": "{G}",
-    "type": "Creature — Elf Druid",
-    "rarity": "common",
-    "elo": 1498
-  },
-  {
-    "name": "Path to Exile",
-    "scryfallId": "a7aed564-2d2d-42c4-bf11-812bc1a0284c",
-    "manaCost": "{W}",
-    "type": "Instant",
-    "rarity": "uncommon",
-    "elo": 1616
-  },
-  {
-    "name": "Swords to Plowshares",
-    "scryfallId": "0e7ff4dc-af63-4342-9a44-d059e62bd14c",
-    "manaCost": "{W}",
-    "type": "Instant",
-    "rarity": "uncommon",
-    "elo": 1578
-  },
-  {
-    "name": "Mulldrifter",
-    "scryfallId": "eb6d8d1c-8d23-4273-9c9b-f3b71eb0e105",
-    "manaCost": "{4}{U}",
-    "type": "Creature — Elemental",
-    "rarity": "uncommon",
-    "elo": 1668
-  },
-  {
-    "name": "Young Pyromancer",
-    "scryfallId": "c0d74ecd-a595-4012-81b4-083264b40c94",
-    "manaCost": "{1}{R}",
-    "type": "Creature — Human Shaman",
-    "rarity": "uncommon",
-    "elo": 1494
-  },
-  {
-    "name": "Brainstorm",
-    "scryfallId": "8beb987c-1b67-4a4e-ae71-58547afad2a0",
-    "manaCost": "{U}",
-    "type": "Instant",
-    "rarity": "common",
-    "elo": 1408
-  },
-  {
-    "name": "Fatal Push",
-    "scryfallId": "6e9d8fe4-fd9b-4923-92bf-7dd6b8fa02e7",
-    "manaCost": "{B}",
-    "type": "Instant",
-    "rarity": "uncommon",
-    "elo": 1538
-  },
-  {
-    "name": "Rampant Growth",
-    "scryfallId": "b7c47024-5e08-4b17-b41a-7647f8b814b9",
-    "manaCost": "{1}{G}",
-    "type": "Sorcery",
-    "rarity": "common",
-    "elo": 1120
-  },
-  {
-    "name": "Beast Within",
-    "scryfallId": "ccac70d4-6e04-4802-8bb8-021368a40e14",
-    "manaCost": "{2}{G}",
-    "type": "Instant",
-    "rarity": "uncommon",
-    "elo": 1204
-  },
-  {
-    "name": "Mardu Devotee",
-    "scryfallId": "da45e9b0-a4f6-413b-9e62-666c511eb5b0",
-    "manaCost": "{W}",
-    "type": "Creature — Human Scout",
-    "rarity": "common",
-    "elo": 1006
-  },
-  {
-    "name": "Miner's Guidewing",
-    "scryfallId": "9048cd9d-df3f-4705-a5f4-e5b09760c631",
-    "manaCost": "{W}",
-    "type": "Creature — Bird",
-    "rarity": "common",
-    "elo": 1084
-  },
-  {
-    "name": "Nurturing Pixie",
-    "scryfallId": "0fe155f6-888b-41a0-a9a0-be7bea998718",
-    "manaCost": "{W}",
-    "type": "Creature — Faerie Rogue",
-    "rarity": "uncommon",
-    "elo": 1000
+    "type": "Creature \u2014 Human Cleric",
+    "colors": [
+      "W"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Recruitment Officer",
     "scryfallId": "c226656b-68d5-4df2-b313-a323a728c520",
     "manaCost": "{W}",
-    "type": "Creature — Human Soldier",
-    "rarity": "uncommon",
-    "elo": 966
+    "type": "Creature \u2014 Human Soldier",
+    "colors": [
+      "W"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Accorder Paladin",
-    "scryfallId": "df0a4370-729d-40e7-b68b-21902648492d",
-    "manaCost": "{1}{W}",
-    "type": "Creature — Human Knight",
-    "rarity": "uncommon",
-    "elo": 1002
+    "name": "Thraben Inspector",
+    "scryfallId": "08a5007f-06a0-40fa-a252-c38baa6b5c6f",
+    "manaCost": "{W}",
+    "type": "Creature \u2014 Human Soldier",
+    "colors": [
+      "W"
+    ],
+    "rarity": "common"
+  },
+  {
+    "name": "Usher of the Fallen",
+    "scryfallId": "24e58478-c6a8-4f86-854a-a489c99bd777",
+    "manaCost": "{W}",
+    "type": "Creature \u2014 Spirit Warrior",
+    "colors": [
+      "W"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Veteran Survivor",
+    "scryfallId": "39368ea2-f665-40b1-b042-c0182f7c6df0",
+    "manaCost": "{W}",
+    "type": "Creature \u2014 Human Survivor",
+    "colors": [
+      "W"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Adanto Vanguard",
     "scryfallId": "21c950d7-b4f6-4902-8c9a-98f2933f9fa5",
     "manaCost": "{1}{W}",
-    "type": "Creature — Vampire Soldier",
-    "rarity": "uncommon",
-    "elo": 1068
+    "type": "Creature \u2014 Vampire Soldier",
+    "colors": [
+      "W"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Anafenza, Kin-Tree Spirit",
     "scryfallId": "1717da7b-9e87-4694-873b-abd4e3bcd5e2",
     "manaCost": "{W}{W}",
-    "type": "Legendary Creature — Spirit Soldier",
-    "rarity": "uncommon",
-    "elo": 954
+    "type": "Legendary Creature \u2014 Spirit Soldier",
+    "colors": [
+      "W"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Cathar Commando",
-    "scryfallId": "7cd21530-ca72-4986-a0f2-142b9f23c413",
+    "name": "Clarion Spirit",
+    "scryfallId": "86a4c348-1012-4339-960a-c7bc7fd84fbb",
     "manaCost": "{1}{W}",
-    "type": "Creature — Human Soldier",
-    "rarity": "common",
-    "elo": 1150
-  },
-  {
-    "name": "Fortress Kin-Guard",
-    "scryfallId": "b647a018-1d70-43a1-a265-928bcd863689",
-    "manaCost": "{1}{W}",
-    "type": "Creature — Dog Soldier",
-    "rarity": "common",
-    "elo": 1192
-  },
-  {
-    "name": "Gary Clone",
-    "scryfallId": "a45346ac-54a9-4fda-bde7-92ff75ac34f7",
-    "manaCost": "{1}{W}",
-    "type": "Creature — Human Citizen",
-    "rarity": "uncommon",
-    "elo": 1048
-  },
-  {
-    "name": "Glyph Elemental",
-    "scryfallId": "89f48c8f-b6f9-43b2-91c3-8d6e95d62db9",
-    "manaCost": "{1}{W}",
-    "type": "Enchantment Creature — Elemental",
-    "rarity": "uncommon",
-    "elo": 1040
-  },
-  {
-    "name": "Helpful Hunter",
-    "scryfallId": "1b9a0e91-80b5-428f-8f08-931d0631be14",
-    "manaCost": "{1}{W}",
-    "type": "Creature — Cat",
-    "rarity": "common",
-    "elo": 1290
+    "type": "Creature \u2014 Spirit",
+    "colors": [
+      "W"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Kor Skyfisher",
     "scryfallId": "d7501662-1216-4e08-bd2b-e0a459057942",
     "manaCost": "{1}{W}",
-    "type": "Creature — Kor Soldier",
-    "rarity": "common",
-    "elo": 938
+    "type": "Creature \u2014 Kor Soldier",
+    "colors": [
+      "W"
+    ],
+    "rarity": "common"
   },
   {
-    "name": "Outlaw Medic",
-    "scryfallId": "2feaa51e-47fb-4849-b420-ee7278f3489a",
+    "name": "Resolute Reinforcements",
+    "scryfallId": "940f3989-77cc-49a9-92e0-095a75d80f0f",
     "manaCost": "{1}{W}",
-    "type": "Creature — Human Rogue",
-    "rarity": "common",
-    "elo": 1080
+    "type": "Creature \u2014 Human Soldier",
+    "colors": [
+      "W"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Seasoned Hallowblade",
+    "scryfallId": "feb59931-8941-46fb-8e1c-f80ff3730dd9",
+    "manaCost": "{1}{W}",
+    "type": "Creature \u2014 Human Warrior",
+    "colors": [
+      "W"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Seeker of the Way",
     "scryfallId": "e9e3cb28-d318-4d5d-b5bf-1ea7c6249a89",
     "manaCost": "{1}{W}",
-    "type": "Creature — Human Warrior",
-    "rarity": "common",
-    "elo": 1034
+    "type": "Creature \u2014 Human Warrior",
+    "colors": [
+      "W"
+    ],
+    "rarity": "common"
   },
   {
     "name": "Shepherd of the Flock",
     "scryfallId": "c0b4f0ce-0d18-4546-803d-94a2f4f30951",
     "manaCost": "{1}{W} // {W}",
-    "type": "Creature — Human Peasant // Instant — Adventure",
-    "rarity": "uncommon",
-    "elo": 894
+    "type": "Creature \u2014 Human Peasant // Instant \u2014 Adventure",
+    "colors": [
+      "W"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Soltari Monk",
+    "scryfallId": "7b65aaa5-0b1b-4298-a3c7-1808b240491f",
+    "manaCost": "{W}{W}",
+    "type": "Creature \u2014 Soltari Monk Cleric",
+    "colors": [
+      "W"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Soltari Priest",
+    "scryfallId": "45a3854c-147e-4644-8438-d973648c974d",
+    "manaCost": "{W}{W}",
+    "type": "Creature \u2014 Soltari Cleric",
+    "colors": [
+      "W"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Spirited Companion",
+    "scryfallId": "7e038684-c476-41db-a1b1-57c46e5b4c9a",
+    "manaCost": "{1}{W}",
+    "type": "Enchantment Creature \u2014 Dog",
+    "colors": [
+      "W"
+    ],
+    "rarity": "common"
   },
   {
     "name": "Sun-Blessed Healer",
     "scryfallId": "323d029e-9a88-4188-b3a4-38ef32cffc9f",
     "manaCost": "{1}{W}",
-    "type": "Creature — Human Cleric",
-    "rarity": "uncommon",
-    "elo": 1048
-  },
-  {
-    "name": "Sunhome Stalwart",
-    "scryfallId": "3eb6a3ab-29eb-4c9a-995b-04de1c0dd4c9",
-    "manaCost": "{1}{W}",
-    "type": "Creature — Human Soldier",
-    "rarity": "uncommon",
-    "elo": 1112
-  },
-  {
-    "name": "Tax Collector",
-    "scryfallId": "a300b5af-9223-4e97-9d33-a9226bd900f3",
-    "manaCost": "{1}{W}",
-    "type": "Creature — Human Advisor",
-    "rarity": "uncommon",
-    "elo": 1198
+    "type": "Creature \u2014 Human Cleric",
+    "colors": [
+      "W"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Wall of Omens",
     "scryfallId": "3d134bb2-17ec-4e65-976e-f06fa983f3fb",
     "manaCost": "{1}{W}",
-    "type": "Creature — Wall",
-    "rarity": "uncommon",
-    "elo": 1184
-  },
-  {
-    "name": "Archetype of Courage",
-    "scryfallId": "8e6c4afb-6a94-4519-91c6-9824fed2892c",
-    "manaCost": "{1}{W}{W}",
-    "type": "Enchantment Creature — Human Soldier",
-    "rarity": "uncommon",
-    "elo": 912
-  },
-  {
-    "name": "Ardenvale Tactician",
-    "scryfallId": "c7d5e394-8e41-442e-ae97-a478a61e1b9d",
-    "manaCost": "{1}{W}{W} // {1}{W}",
-    "type": "Creature — Human Knight // Instant — Adventure",
-    "rarity": "common",
-    "elo": 1000
-  },
-  {
-    "name": "Combat Thresher",
-    "scryfallId": "74dfabfd-e13b-4512-a733-abe514be6404",
-    "manaCost": "{7}",
-    "type": "Artifact Creature — Construct",
-    "rarity": "uncommon",
-    "elo": 1144
-  },
-  {
-    "name": "Dalkovan Packbeasts",
-    "scryfallId": "4df7b253-6107-47d6-b650-cb4d3e0aec6b",
-    "manaCost": "{2}{W}",
-    "type": "Creature — Ox",
-    "rarity": "uncommon",
-    "elo": 1130
-  },
-  {
-    "name": "Fiend Hunter",
-    "scryfallId": "f606cf4d-e29b-415a-956c-b148045c44e9",
-    "manaCost": "{1}{W}{W}",
-    "type": "Creature — Human Cleric",
-    "rarity": "uncommon",
-    "elo": 974
+    "type": "Creature \u2014 Wall",
+    "colors": [
+      "W"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Flickerwisp",
     "scryfallId": "f6cccf30-2025-49bb-9b1e-240bbef03f27",
     "manaCost": "{1}{W}{W}",
-    "type": "Creature — Elemental",
-    "rarity": "uncommon",
-    "elo": 1178
-  },
-  {
-    "name": "Inspiring Overseer",
-    "scryfallId": "c3e9aa54-e5d5-4cbb-9d2a-263b9eba398f",
-    "manaCost": "{2}{W}",
-    "type": "Creature — Angel Cleric",
-    "rarity": "common",
-    "elo": 1276
+    "type": "Creature \u2014 Elemental",
+    "colors": [
+      "W"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Mage's Attendant",
     "scryfallId": "e7039d47-276b-4c7c-acc3-94a9baae97e5",
     "manaCost": "{2}{W}",
-    "type": "Creature — Cat Rogue",
-    "rarity": "uncommon",
-    "elo": 1164
+    "type": "Creature \u2014 Cat Rogue",
+    "colors": [
+      "W"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Mentor of the Meek",
+    "scryfallId": "280ca0f4-be07-452a-bbc0-c25570f14008",
+    "manaCost": "{2}{W}",
+    "type": "Creature \u2014 Human Soldier",
+    "colors": [
+      "W"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Militia Bugler",
     "scryfallId": "5fe9413b-5702-4998-aed7-d3a1102a8d7e",
     "manaCost": "{2}{W}",
-    "type": "Creature — Human Soldier",
-    "rarity": "common",
-    "elo": 1204
+    "type": "Creature \u2014 Human Soldier",
+    "colors": [
+      "W"
+    ],
+    "rarity": "common"
   },
   {
     "name": "Porcelain Legionnaire",
     "scryfallId": "2616aa0e-8413-4e63-877c-bffd5263f552",
     "manaCost": "{2}{W/P}",
-    "type": "Artifact Creature — Phyrexian Soldier",
-    "rarity": "common",
-    "elo": 1196
+    "type": "Artifact Creature \u2014 Phyrexian Soldier",
+    "colors": [
+      "W"
+    ],
+    "rarity": "common"
   },
   {
-    "name": "Prava of the Steel Legion",
-    "scryfallId": "e9e40e2a-e447-4754-a98b-5521e546781f",
-    "manaCost": "{2}{W}",
-    "type": "Legendary Creature — Cat Soldier",
-    "rarity": "uncommon",
-    "elo": 1002
-  },
-  {
-    "name": "Rosie Cotton of South Lane",
-    "scryfallId": "75338f49-1f02-4333-87e4-5779ef14e688",
-    "manaCost": "{2}{W}",
-    "type": "Legendary Creature — Halfling Peasant",
-    "rarity": "uncommon",
-    "elo": 1316
-  },
-  {
-    "name": "Shrike Force",
-    "scryfallId": "306fec2c-d8b7-4f4b-8f58-10e3b9f3158f",
-    "manaCost": "{2}{W}",
-    "type": "Creature — Bird Knight",
-    "rarity": "uncommon",
-    "elo": 1166
-  },
-  {
-    "name": "Summon: Choco/Mog",
-    "scryfallId": "00546117-018a-4286-bc20-b5446c5be56f",
-    "manaCost": "{2}{W}",
-    "type": "Enchantment Creature — Saga Bird Moogle",
-    "rarity": "common",
-    "elo": 1044
-  },
-  {
-    "name": "Aerie Auxiliary",
-    "scryfallId": "5e4c134b-a416-467e-a158-def84c92c6af",
-    "manaCost": "{3}{W}",
-    "type": "Creature — Bird Soldier",
-    "rarity": "common",
-    "elo": 1204
+    "name": "Celestial Crusader",
+    "scryfallId": "56f371f5-9c2a-4a00-a4d2-e4f97ac0f3e0",
+    "manaCost": "{2}{W}{W}",
+    "type": "Creature \u2014 Spirit",
+    "colors": [
+      "W"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Glimmerpoint Stag",
     "scryfallId": "63205c2a-e9d4-4354-b519-9e84be8f9eb7",
     "manaCost": "{2}{W}{W}",
-    "type": "Creature — Elk",
-    "rarity": "uncommon",
-    "elo": 984
+    "type": "Creature \u2014 Elk",
+    "colors": [
+      "W"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Guardian of the Guildpact",
+    "scryfallId": "c8dd004b-01e4-4fe1-a164-9f2ea8d7d88e",
+    "manaCost": "{3}{W}",
+    "type": "Creature \u2014 Spirit",
+    "colors": [
+      "W"
+    ],
+    "rarity": "common"
+  },
+  {
+    "name": "Kongming, \"Sleeping Dragon\"",
+    "scryfallId": "70c9e4fd-e987-4653-abb1-e32971745db2",
+    "manaCost": "{2}{W}{W}",
+    "type": "Legendary Creature \u2014 Human Advisor",
+    "colors": [
+      "W"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Master Splicer",
     "scryfallId": "8cf185b3-2285-41cf-97a5-4226c68d044e",
     "manaCost": "{3}{W}",
-    "type": "Creature — Phyrexian Human Artificer",
-    "rarity": "uncommon",
-    "elo": 1010
-  },
-  {
-    "name": "Rhox Veteran",
-    "scryfallId": "6384e266-d0dc-4af1-b3ab-ecaf9be2553c",
-    "manaCost": "{3}{W}",
-    "type": "Creature — Rhino Soldier",
-    "rarity": "common",
-    "elo": 958
+    "type": "Creature \u2014 Phyrexian Human Artificer",
+    "colors": [
+      "W"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Visionary Augmenter",
     "scryfallId": "918691b1-f927-4027-a444-adc418f3ab16",
     "manaCost": "{2}{W}{W}",
-    "type": "Creature — Dwarf Artificer",
-    "rarity": "uncommon",
-    "elo": 1178
+    "type": "Creature \u2014 Dwarf Artificer",
+    "colors": [
+      "W"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Wingmantle Chaplain",
+    "scryfallId": "9ab1ed2c-f248-4d2a-a0c3-6c7763f71a93",
+    "manaCost": "{3}{W}",
+    "type": "Creature \u2014 Human Cleric",
+    "colors": [
+      "W"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Witch Enchanter",
     "scryfallId": "62061e7c-cf19-4f03-b8fa-2bdba62d6b0b",
     "manaCost": "",
-    "type": "Creature — Human Warlock // Land",
-    "rarity": "uncommon",
-    "elo": 1198
+    "type": "Creature \u2014 Human Warlock // Land",
+    "colors": [],
+    "rarity": "uncommon"
   },
   {
     "name": "Cloudgoat Ranger",
     "scryfallId": "6dfaa74a-0ef0-44bb-b8b5-6d121278b5a2",
     "manaCost": "{3}{W}{W}",
-    "type": "Creature — Giant Warrior Ranger",
-    "rarity": "uncommon",
-    "elo": 1314
+    "type": "Creature \u2014 Giant Warrior Ranger",
+    "colors": [
+      "W"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Elite Scaleguard",
-    "scryfallId": "d0ca5bcc-f49f-4370-9f95-031836bb771b",
-    "manaCost": "{4}{W}",
-    "type": "Creature — Human Soldier",
-    "rarity": "uncommon",
-    "elo": 818
+    "name": "Pegasus Guardian",
+    "scryfallId": "1d958ec3-1ddc-4622-9089-cbe5b3b47c90",
+    "manaCost": "{5}{W} // {1}{W}",
+    "type": "Creature \u2014 Pegasus // Instant \u2014 Adventure",
+    "colors": [
+      "W"
+    ],
+    "rarity": "common"
   },
   {
-    "name": "Githzerai Monk",
-    "scryfallId": "43a088ea-c397-4bdd-8779-59561ff73ec2",
-    "manaCost": "{4}{W}",
-    "type": "Creature — Gith Monk",
-    "rarity": "uncommon",
-    "elo": 1346
-  },
-  {
-    "name": "Grey Knight Paragon",
-    "scryfallId": "27b29b3f-1f99-4880-8f66-442fa5326150",
-    "manaCost": "{4}{W}",
-    "type": "Creature — Astartes Knight",
-    "rarity": "uncommon",
-    "elo": 1132
-  },
-  {
-    "name": "Shepherd of the Clouds",
-    "scryfallId": "c2245f36-2138-4f01-9b70-151137a5ac59",
-    "manaCost": "{4}{W}",
-    "type": "Creature — Pegasus",
-    "rarity": "uncommon",
-    "elo": 1056
-  },
-  {
-    "name": "Atraxi Warden",
-    "scryfallId": "03868f8d-1f1b-4892-abb0-be2b00fc2ba7",
-    "manaCost": "{4}{W}{W}",
-    "type": "Creature — Alien Eye",
-    "rarity": "uncommon",
-    "elo": 1116
-  },
-  {
-    "name": "Guarded Heir",
-    "scryfallId": "525ba5c7-3ce5-4e52-b8b5-96c9040a6738",
-    "manaCost": "{5}{W}",
-    "type": "Creature — Human Noble",
-    "rarity": "uncommon",
-    "elo": 1268
-  },
-  {
-    "name": "Twinmaw Stormbrood",
-    "scryfallId": "2999e3b1-6510-42b2-9429-28c07a64a44f",
-    "manaCost": "{5}{W} // {1}{R}",
-    "type": "Creature — Dragon // Sorcery — Omen",
-    "rarity": "uncommon",
-    "elo": 1354
+    "name": "Combat Thresher",
+    "scryfallId": "74dfabfd-e13b-4512-a733-abe514be6404",
+    "manaCost": "{7}",
+    "type": "Artifact Creature \u2014 Construct",
+    "colors": [],
+    "rarity": "uncommon"
   },
   {
     "name": "Ephemerate",
     "scryfallId": "2da5f3f8-5eef-498f-ba2c-2f3fbc3745aa",
     "manaCost": "{W}",
     "type": "Instant",
-    "rarity": "common",
-    "elo": 1484
+    "colors": [
+      "W"
+    ],
+    "rarity": "common"
   },
   {
-    "name": "Getaway Glamer",
-    "scryfallId": "69689049-a704-4f16-84ee-4d5d915028ec",
+    "name": "Fight as One",
+    "scryfallId": "5c62ea13-9bd5-46ce-a861-68cf9a2c6f8c",
     "manaCost": "{W}",
     "type": "Instant",
-    "rarity": "uncommon",
-    "elo": 1094
+    "colors": [
+      "W"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Mana Tithe",
     "scryfallId": "9ae707d5-d81d-4320-b947-6016dc188898",
     "manaCost": "{W}",
     "type": "Instant",
-    "rarity": "common",
-    "elo": 1074
+    "colors": [
+      "W"
+    ],
+    "rarity": "common"
   },
   {
-    "name": "Reprieve",
-    "scryfallId": "1bd3fa8a-6c50-4f7f-9ae3-0810eec5e3db",
+    "name": "Path to Exile",
+    "scryfallId": "a7aed564-2d2d-42c4-bf11-812bc1a0284c",
+    "manaCost": "{W}",
+    "type": "Instant",
+    "colors": [
+      "W"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Swords to Plowshares",
+    "scryfallId": "0e7ff4dc-af63-4342-9a44-d059e62bd14c",
+    "manaCost": "{W}",
+    "type": "Instant",
+    "colors": [
+      "W"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Kabira Takedown",
+    "scryfallId": "366e9845-019d-47cc-adb8-8fbbaad35b6d",
+    "manaCost": "",
+    "type": "Instant // Land",
+    "colors": [],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Pride of Conquerors",
+    "scryfallId": "ff0a769c-6602-4f6f-a388-f5aa15fb3c90",
     "manaCost": "{1}{W}",
     "type": "Instant",
-    "rarity": "uncommon",
-    "elo": 1398
+    "colors": [
+      "W"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Rally the Peasants",
-    "scryfallId": "9387f821-10ec-4698-9697-ad37084b4861",
+    "name": "Razorgrass Ambush",
+    "scryfallId": "57065dca-f90e-4184-bbc4-95d726a4160b",
+    "manaCost": "",
+    "type": "Instant // Land",
+    "colors": [],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Midnight Haunting",
+    "scryfallId": "4399dcc7-7684-4345-9f74-318c3ec9af82",
     "manaCost": "{2}{W}",
     "type": "Instant",
-    "rarity": "uncommon",
-    "elo": 896
+    "colors": [
+      "W"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "You're Confronted by Robbers",
-    "scryfallId": "f76e5d23-a45f-4100-8638-fce33f290fc6",
-    "manaCost": "{3}{W}",
-    "type": "Instant",
-    "rarity": "common",
-    "elo": 1032
+    "name": "Charge Across the Araba",
+    "scryfallId": "fe3e0bd8-d80f-4cda-b381-ed185072d83c",
+    "manaCost": "{4}{W}",
+    "type": "Instant \u2014 Arcane",
+    "colors": [
+      "W"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Requisition Raid",
     "scryfallId": "154e9ba9-0d0e-4b0e-acf2-f66a993cf3a2",
     "manaCost": "{W}",
     "type": "Sorcery",
-    "rarity": "uncommon",
-    "elo": 912
-  },
-  {
-    "name": "Dewdrop Cure",
-    "scryfallId": "666aefc2-44e0-4c27-88d5-7906f245a71f",
-    "manaCost": "{2}{W}",
-    "type": "Sorcery",
-    "rarity": "uncommon",
-    "elo": 1016
-  },
-  {
-    "name": "Lingering Souls",
-    "scryfallId": "2a00c585-5bbc-4622-bf5b-4ec63b669f4c",
-    "manaCost": "{2}{W}",
-    "type": "Sorcery",
-    "rarity": "uncommon",
-    "elo": 1320
-  },
-  {
-    "name": "Battle Screech",
-    "scryfallId": "90301f8c-f7af-4179-8faf-9901931bba8d",
-    "manaCost": "{2}{W}{W}",
-    "type": "Sorcery",
-    "rarity": "common",
-    "elo": 1118
-  },
-  {
-    "name": "Imperial Oath",
-    "scryfallId": "3d6750dd-2303-493b-885d-1bfb5787b16c",
-    "manaCost": "{5}{W}",
-    "type": "Sorcery",
-    "rarity": "common",
-    "elo": 944
+    "colors": [
+      "W"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Spectral Procession",
     "scryfallId": "9964629e-d79e-46e4-b3fd-e7d1759cbc60",
     "manaCost": "{2/W}{2/W}{2/W}",
     "type": "Sorcery",
-    "rarity": "uncommon",
-    "elo": 1044
+    "colors": [
+      "W"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Mandibular Kite",
-    "scryfallId": "6b922f71-18e6-4a74-b792-d477d4a1deca",
-    "manaCost": "{W}",
-    "type": "Artifact — Equipment",
-    "rarity": "common",
-    "elo": 1034
-  },
-  {
-    "name": "Barbed Spike",
-    "scryfallId": "c75c8631-e630-402b-a559-f1b1aa49763c",
-    "manaCost": "{1}{W}",
-    "type": "Artifact — Equipment",
-    "rarity": "uncommon",
-    "elo": 918
-  },
-  {
-    "name": "Essence Reliquary",
-    "scryfallId": "e65f4ae3-6b21-4827-9851-8a53628e254f",
-    "manaCost": "{2}{W}",
-    "type": "Artifact",
-    "rarity": "uncommon",
-    "elo": 1390
-  },
-  {
-    "name": "Oketra's Monument",
-    "scryfallId": "a7f1d5a6-bdf2-4b12-b11e-70f58b59dd80",
-    "manaCost": "{3}",
-    "type": "Legendary Artifact",
-    "rarity": "uncommon",
-    "elo": 986
+    "name": "Triplicate Spirits",
+    "scryfallId": "3d6498d3-bf1f-4bf1-a602-7c21fb44c106",
+    "manaCost": "{4}{W}{W}",
+    "type": "Sorcery",
+    "colors": [
+      "W"
+    ],
+    "rarity": "common"
   },
   {
     "name": "Journey to Nowhere",
     "scryfallId": "4686b51c-e02b-48c1-bafe-e8d08a5407b9",
     "manaCost": "{1}{W}",
     "type": "Enchantment",
-    "rarity": "common",
-    "elo": 1598
+    "colors": [
+      "W"
+    ],
+    "rarity": "common"
   },
   {
     "name": "Sheltered by Ghosts",
     "scryfallId": "389f3f7b-be40-4a2d-b5cc-28471a577981",
     "manaCost": "{1}{W}",
-    "type": "Enchantment — Aura",
-    "rarity": "uncommon",
-    "elo": 1382
+    "type": "Enchantment \u2014 Aura",
+    "colors": [
+      "W"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Seal from Existence",
-    "scryfallId": "2ccc29cc-025d-402e-9fe3-75998eb290c9",
-    "manaCost": "{1}{W}{W}",
+    "name": "The Birth of Meletis",
+    "scryfallId": "d824f8bd-58f8-4796-80b5-5cd3033d35e8",
+    "manaCost": "{1}{W}",
+    "type": "Enchantment \u2014 Saga",
+    "colors": [
+      "W"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Oblivion Ring",
+    "scryfallId": "bff31eba-8ab3-403e-8d82-37a18b279bec",
+    "manaCost": "{2}{W}",
     "type": "Enchantment",
-    "rarity": "uncommon",
-    "elo": 1074
+    "colors": [
+      "W"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Touch the Spirit Realm",
     "scryfallId": "e16ab44e-4257-4c0c-b705-8ac1e9c1d835",
     "manaCost": "{2}{W}",
     "type": "Enchantment",
-    "rarity": "uncommon",
-    "elo": 1136
+    "colors": [
+      "W"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Cast Out",
     "scryfallId": "4b491874-4be1-496a-bf04-abe1f5af4482",
     "manaCost": "{3}{W}",
     "type": "Enchantment",
-    "rarity": "uncommon",
-    "elo": 1264
+    "colors": [
+      "W"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Surgical Suite // Hospital Room",
-    "scryfallId": "96b2dc14-4477-4444-a9eb-4fa4c02dfbde",
-    "manaCost": "{1}{W} // {3}{W}",
-    "type": "Enchantment — Room // Enchantment — Room",
-    "rarity": "uncommon",
-    "elo": 1100
+    "name": "Conclave Tribunal",
+    "scryfallId": "f53b1b90-5bc6-4111-9083-4501ed92d39a",
+    "manaCost": "{3}{W}",
+    "type": "Enchantment",
+    "colors": [
+      "W"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Faerie Seer",
-    "scryfallId": "d1fcfeb4-1818-4e08-be4c-27b8a9dc12e6",
-    "manaCost": "{U}",
-    "type": "Creature — Faerie Wizard",
-    "rarity": "common",
-    "elo": 1056
-  },
-  {
-    "name": "Harrier Strix",
-    "scryfallId": "70ca61a9-8938-41bf-bd14-5759f4de6521",
-    "manaCost": "{U}",
-    "type": "Creature — Bird",
-    "rarity": "common",
-    "elo": 1054
+    "name": "Faith's Fetters",
+    "scryfallId": "08b62f4c-cc20-40b6-a504-407d53bdf2aa",
+    "manaCost": "{3}{W}",
+    "type": "Enchantment \u2014 Aura",
+    "colors": [
+      "W"
+    ],
+    "rarity": "common"
   },
   {
     "name": "Spyglass Siren",
     "scryfallId": "41e54343-95e5-4dc4-9f18-e4a415fe5e0a",
     "manaCost": "{U}",
-    "type": "Creature — Siren Pirate",
-    "rarity": "uncommon",
-    "elo": 1302
-  },
-  {
-    "name": "Canyon Crab",
-    "scryfallId": "b740a8a8-e1d3-4642-a214-03731c9b5553",
-    "manaCost": "{1}{U}",
-    "type": "Creature — Crab",
-    "rarity": "uncommon",
-    "elo": 1128
-  },
-  {
-    "name": "Faerie Vandal",
-    "scryfallId": "7645247b-e65a-4912-ac22-e6a0fa806dd7",
-    "manaCost": "{1}{U}",
-    "type": "Creature — Faerie Rogue",
-    "rarity": "uncommon",
-    "elo": 928
-  },
-  {
-    "name": "Fallaji Archaeologist",
-    "scryfallId": "b0eab397-25a6-4377-8e12-e8acef9675cf",
-    "manaCost": "{1}{U}",
-    "type": "Creature — Human Scout",
-    "rarity": "common",
-    "elo": 1366
+    "type": "Creature \u2014 Siren Pirate",
+    "colors": [
+      "U"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Floodpits Drowner",
     "scryfallId": "a6a62aa3-8edb-4000-8ebd-15ec4b00eed7",
     "manaCost": "{1}{U}",
-    "type": "Creature — Merfolk",
-    "rarity": "uncommon",
-    "elo": 1448
+    "type": "Creature \u2014 Merfolk",
+    "colors": [
+      "U"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Hypnotic Sprite",
-    "scryfallId": "7acbd812-b994-4e68-8f95-04222796e994",
-    "manaCost": "{U}{U} // {2}{U}",
-    "type": "Creature — Faerie // Instant — Adventure",
-    "rarity": "uncommon",
-    "elo": 1166
-  },
-  {
-    "name": "Mischievous Mystic",
-    "scryfallId": "20d89cec-528b-4b2a-87db-e11ce0000622",
+    "name": "Merfolk Looter",
+    "scryfallId": "6d740928-bf61-4420-a403-63097538b97d",
     "manaCost": "{1}{U}",
-    "type": "Creature — Human Wizard",
-    "rarity": "uncommon",
-    "elo": 1270
+    "type": "Creature \u2014 Merfolk Rogue",
+    "colors": [
+      "U"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Oracle of Tragedy",
-    "scryfallId": "e1d2aa39-b876-4136-8e16-5272a8083235",
+    "name": "Moon-Circuit Hacker",
+    "scryfallId": "c6e466d1-943d-41e6-a47d-c9d951ca4262",
     "manaCost": "{1}{U}",
-    "type": "Creature — Human Wizard",
-    "rarity": "uncommon",
-    "elo": 1386
+    "type": "Enchantment Creature \u2014 Human Ninja",
+    "colors": [
+      "U"
+    ],
+    "rarity": "common"
   },
   {
-    "name": "Picklock Prankster",
-    "scryfallId": "5ebac73a-1ecf-4e6d-87b1-ea560bfeb064",
-    "manaCost": "{1}{U} // {1}{U}",
-    "type": "Creature — Faerie Rogue // Instant — Adventure",
-    "rarity": "uncommon",
-    "elo": 1390
-  },
-  {
-    "name": "Plumecreed Escort",
-    "scryfallId": "f71320ed-2f30-49ce-bcb0-19aebba3f0e8",
+    "name": "Shoreline Looter",
+    "scryfallId": "d5bf8cf0-419a-4dc9-9342-aad55c1af05a",
     "manaCost": "{1}{U}",
-    "type": "Creature — Bird Scout",
-    "rarity": "uncommon",
-    "elo": 1134
+    "type": "Creature \u2014 Rat Rogue",
+    "colors": [
+      "U"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Eldrazi Skyspawner",
-    "scryfallId": "9c9c1a10-446e-492a-95cc-a459dc6c08a0",
+    "name": "Watcher for Tomorrow",
+    "scryfallId": "15f01a3c-0a66-48da-a7d2-46260e3b721f",
+    "manaCost": "{1}{U}",
+    "type": "Creature \u2014 Human Wizard",
+    "colors": [
+      "U"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Alirios, Enraptured",
+    "scryfallId": "26f9ebbe-3791-4d19-88d2-d5de95faff48",
     "manaCost": "{2}{U}",
-    "type": "Creature — Eldrazi Drone",
-    "rarity": "common",
-    "elo": 1314
+    "type": "Legendary Creature \u2014 Human",
+    "colors": [
+      "U"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Frost Trickster",
-    "scryfallId": "fd79c9cc-0a8c-4d88-96e2-cb177134a18d",
+    "name": "Exclusion Mage",
+    "scryfallId": "62c8024e-490a-484a-bcee-da7728a64a1f",
     "manaCost": "{2}{U}",
-    "type": "Creature — Bird Wizard",
-    "rarity": "common",
-    "elo": 1290
+    "type": "Creature \u2014 Human Wizard",
+    "colors": [
+      "U"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Pestermite",
-    "scryfallId": "b58a6a63-c7d8-4f2f-acaf-b0a871eb5a7c",
+    "name": "Man-o'-War",
+    "scryfallId": "a1ef40d5-c287-4229-8059-3505d9f251ca",
     "manaCost": "{2}{U}",
-    "type": "Creature — Faerie Rogue",
-    "rarity": "common",
-    "elo": 1232
+    "type": "Creature \u2014 Jellyfish",
+    "colors": [
+      "U"
+    ],
+    "rarity": "common"
   },
   {
-    "name": "Serum Visionary",
-    "scryfallId": "08a587f5-5910-405e-8982-c889dbbc7f98",
+    "name": "Mirror Image",
+    "scryfallId": "5b3ffc69-f21b-410e-8993-8c1b4669fc19",
     "manaCost": "{2}{U}",
-    "type": "Creature — Vedalken Wizard",
-    "rarity": "common",
-    "elo": 1520
+    "type": "Creature \u2014 Shapeshifter",
+    "colors": [
+      "U"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Sicarian Infiltrator",
-    "scryfallId": "cc0aa0eb-dc26-49d8-bbff-74fb3d597a72",
+    "name": "Sea Gate Oracle",
+    "scryfallId": "498743ce-0ca5-488a-ae5e-d348b274bf3b",
     "manaCost": "{2}{U}",
-    "type": "Artifact Creature — Human Soldier",
-    "rarity": "uncommon",
-    "elo": 1238
+    "type": "Creature \u2014 Human Wizard",
+    "colors": [
+      "U"
+    ],
+    "rarity": "common"
   },
   {
-    "name": "Slickshot Lockpicker",
-    "scryfallId": "109a9464-ce30-4747-874e-3bbf75913081",
-    "manaCost": "{2}{U}",
-    "type": "Creature — Human Rogue",
-    "rarity": "uncommon",
-    "elo": 1404
-  },
-  {
-    "name": "Tandem Lookout",
-    "scryfallId": "3e44b411-ccb8-44c8-a021-2372c945f0d3",
-    "manaCost": "{2}{U}",
-    "type": "Creature — Human Scout",
-    "rarity": "common",
-    "elo": 984
-  },
-  {
-    "name": "Winter Eladrin",
-    "scryfallId": "e9afba96-2ec7-45f2-9ddd-31ec27a423ca",
-    "manaCost": "{2}{U}",
-    "type": "Creature — Faerie Elf Wizard",
-    "rarity": "common",
-    "elo": 1520
-  },
-  {
-    "name": "Cynette, Jelly Drover",
-    "scryfallId": "8810b817-7349-468b-bcca-ba0843bbc852",
-    "manaCost": "{3}{U}",
-    "type": "Legendary Creature — Human Wizard",
-    "rarity": "uncommon",
-    "elo": 1404
-  },
-  {
-    "name": "Mist Raven",
-    "scryfallId": "557b7e56-36f7-489c-a0fe-039c463f8bc5",
+    "name": "Archaeomancer",
+    "scryfallId": "cc258713-6ce3-44e0-9b4b-8fa7d1d093a1",
     "manaCost": "{2}{U}{U}",
-    "type": "Creature — Bird",
-    "rarity": "uncommon",
-    "elo": 1166
+    "type": "Creature \u2014 Human Wizard",
+    "colors": [
+      "U"
+    ],
+    "rarity": "common"
+  },
+  {
+    "name": "Clone",
+    "scryfallId": "5e648262-3b9b-4c58-8e29-48356e3cb064",
+    "manaCost": "{3}{U}",
+    "type": "Creature \u2014 Shapeshifter",
+    "colors": [
+      "U"
+    ],
+    "rarity": "rare"
   },
   {
     "name": "Murmuring Mystic",
     "scryfallId": "9e68dcc2-bba4-4efa-97bb-3ed892037595",
     "manaCost": "{3}{U}",
-    "type": "Creature — Human Wizard",
-    "rarity": "common",
-    "elo": 1210
+    "type": "Creature \u2014 Human Wizard",
+    "colors": [
+      "U"
+    ],
+    "rarity": "common"
   },
   {
     "name": "Ninja of the Deep Hours",
     "scryfallId": "5fea7980-55e1-47c1-ab18-a89c976b55fc",
     "manaCost": "{3}{U}",
-    "type": "Creature — Human Ninja",
-    "rarity": "common",
-    "elo": 848
-  },
-  {
-    "name": "Organ Hoarder",
-    "scryfallId": "9716d384-88d1-415e-882f-7fed9be1adc6",
-    "manaCost": "{3}{U}",
-    "type": "Creature — Zombie",
-    "rarity": "common",
-    "elo": 1344
-  },
-  {
-    "name": "Splash Lasher",
-    "scryfallId": "362ee125-35a0-46cd-a201-e6797d12d33a",
-    "manaCost": "{3}{U}",
-    "type": "Creature — Frog Wizard",
-    "rarity": "uncommon",
-    "elo": 1434
+    "type": "Creature \u2014 Human Ninja",
+    "colors": [
+      "U"
+    ],
+    "rarity": "common"
   },
   {
     "name": "Whirler Rogue",
     "scryfallId": "d1054d2b-a424-466d-8ec6-36f014849e43",
     "manaCost": "{2}{U}{U}",
-    "type": "Creature — Human Rogue Artificer",
-    "rarity": "uncommon",
-    "elo": 1196
+    "type": "Creature \u2014 Human Rogue Artificer",
+    "colors": [
+      "U"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Constrictor Sage",
-    "scryfallId": "b2f160d7-c832-4b83-8f2e-aaeb190add3f",
+    "name": "Wing Splicer",
+    "scryfallId": "6694873a-0b0c-4e9e-b9fc-249e80a09cca",
+    "manaCost": "{3}{U}",
+    "type": "Creature \u2014 Phyrexian Human Artificer",
+    "colors": [
+      "U"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Mnemonic Wall",
+    "scryfallId": "a3e6784b-78e8-4f0b-8d27-d49c7cea9252",
     "manaCost": "{4}{U}",
-    "type": "Creature — Snake Wizard",
-    "rarity": "uncommon",
-    "elo": 1100
+    "type": "Creature \u2014 Wall",
+    "colors": [
+      "U"
+    ],
+    "rarity": "common"
+  },
+  {
+    "name": "Mulldrifter",
+    "scryfallId": "eb6d8d1c-8d23-4273-9c9b-f3b71eb0e105",
+    "manaCost": "{4}{U}",
+    "type": "Creature \u2014 Elemental",
+    "colors": [
+      "U"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Riftwing Cloudskate",
     "scryfallId": "1a2b228d-db4d-44a3-b208-6cf7a9f57da6",
     "manaCost": "{3}{U}{U}",
-    "type": "Creature — Illusion",
-    "rarity": "uncommon",
-    "elo": 1272
+    "type": "Creature \u2014 Illusion",
+    "colors": [
+      "U"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Shipwreck Dowser",
-    "scryfallId": "1f20fe3d-792a-4030-a25c-e81b48b2bcb4",
+    "name": "Thryx, the Sudden Storm",
+    "scryfallId": "cbbdae80-1481-4a8c-b3c3-f4224204d29d",
     "manaCost": "{3}{U}{U}",
-    "type": "Creature — Merfolk Wizard",
-    "rarity": "uncommon",
-    "elo": 1288
+    "type": "Legendary Creature \u2014 Elemental Giant",
+    "colors": [
+      "U"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Archive Dragon",
-    "scryfallId": "2979104f-7570-487c-8024-131d7ee3ab91",
+    "name": "Angler Drake",
+    "scryfallId": "d14c753e-c5bf-4c34-b408-ac367b6ca6ab",
     "manaCost": "{4}{U}{U}",
-    "type": "Creature — Dragon Wizard",
-    "rarity": "uncommon",
-    "elo": 1212
+    "type": "Creature \u2014 Drake",
+    "colors": [
+      "U"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Eddymurk Crab",
-    "scryfallId": "e6d45abe-4962-47d9-a54e-7e623ea8647c",
-    "manaCost": "{5}{U}{U}",
-    "type": "Creature — Elemental Crab",
-    "rarity": "uncommon",
-    "elo": 1254
+    "name": "Jetting Glasskite",
+    "scryfallId": "24f01503-03d3-4d74-b9d0-b973f7d66094",
+    "manaCost": "{4}{U}{U}",
+    "type": "Creature \u2014 Spirit",
+    "colors": [
+      "U"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Mirrorshell Crab",
-    "scryfallId": "0394c8df-2e8a-4477-93b7-569934d7b936",
-    "manaCost": "{5}{U}{U}",
-    "type": "Artifact Creature — Crab",
-    "rarity": "common",
-    "elo": 1188
-  },
-  {
-    "name": "Sapphire Dragon",
-    "scryfallId": "c0deb9ea-a0d4-4c3f-888e-abd1995cf2b3",
-    "manaCost": "{5}{U}{U} // {2}{U}",
-    "type": "Creature — Dragon // Instant — Adventure",
-    "rarity": "uncommon",
-    "elo": 1146
-  },
-  {
-    "name": "Striped Riverwinder",
-    "scryfallId": "bbeef9ef-487c-400b-bcee-1c0e8ec94b6a",
+    "name": "Phyrexian Ingester",
+    "scryfallId": "6fcefb3c-2581-4dfa-96c5-36a17d762526",
     "manaCost": "{6}{U}",
-    "type": "Creature — Serpent",
-    "rarity": "common",
-    "elo": 1222
-  },
-  {
-    "name": "Waker of Waves",
-    "scryfallId": "abb47990-a5a9-4a22-a8bb-d229b17132c6",
-    "manaCost": "{5}{U}{U}",
-    "type": "Creature — Whale",
-    "rarity": "uncommon",
-    "elo": 1482
+    "type": "Creature \u2014 Phyrexian Beast",
+    "colors": [
+      "U"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Kasmina, Enigmatic Mentor",
     "scryfallId": "c77d9454-a78c-4063-ad66-46b2f5a030aa",
     "manaCost": "{3}{U}",
-    "type": "Legendary Planeswalker — Kasmina",
-    "rarity": "uncommon",
-    "elo": 1554
-  },
-  {
-    "name": "Consider",
-    "scryfallId": "ff6f3824-3670-46e1-af43-0db405726084",
-    "manaCost": "{U}",
-    "type": "Instant",
-    "rarity": "common",
-    "elo": 1442
-  },
-  {
-    "name": "Phantom Interference",
-    "scryfallId": "00bf4dd1-5468-4594-9c7b-0737610f19d4",
-    "manaCost": "{U}",
-    "type": "Instant",
-    "rarity": "common",
-    "elo": 1306
-  },
-  {
-    "name": "Daze",
-    "scryfallId": "f05e9a3e-8a35-4687-85cb-e31b3927a5e2",
-    "manaCost": "{1}{U}",
-    "type": "Instant",
-    "rarity": "uncommon",
-    "elo": 1450
-  },
-  {
-    "name": "Echoing Truth",
-    "scryfallId": "5d987d26-c8e8-4edf-8ac0-6a2980265710",
-    "manaCost": "{1}{U}",
-    "type": "Instant",
-    "rarity": "common",
-    "elo": 1030
-  },
-  {
-    "name": "Into the Roil",
-    "scryfallId": "25edefa9-9fff-4b71-83ae-696c196a795c",
-    "manaCost": "{1}{U}",
-    "type": "Instant",
-    "rarity": "common",
-    "elo": 1310
-  },
-  {
-    "name": "Lose Focus",
-    "scryfallId": "985bdb0c-ce6c-4506-8163-76f3b2fdf5fb",
-    "manaCost": "{1}{U}",
-    "type": "Instant",
-    "rarity": "common",
-    "elo": 1480
-  },
-  {
-    "name": "Mana Leak",
-    "scryfallId": "179236d9-6fe2-4db6-bdfb-f851e8d531a2",
-    "manaCost": "{1}{U}",
-    "type": "Instant",
-    "rarity": "common",
-    "elo": 1510
-  },
-  {
-    "name": "Memory Lapse",
-    "scryfallId": "30202613-d05f-4f47-af97-d0b75ccac293",
-    "manaCost": "{1}{U}",
-    "type": "Instant",
-    "rarity": "common",
-    "elo": 1636
-  },
-  {
-    "name": "Miscalculation",
-    "scryfallId": "4b4956a2-9a39-4152-9c98-70e4b2acfa26",
-    "manaCost": "{1}{U}",
-    "type": "Instant",
-    "rarity": "common",
-    "elo": 1548
-  },
-  {
-    "name": "Moment of Truth",
-    "scryfallId": "0e758594-a48c-4508-b400-9028aec07f63",
-    "manaCost": "{1}{U}",
-    "type": "Instant",
-    "rarity": "common",
-    "elo": 1252
-  },
-  {
-    "name": "Remand",
-    "scryfallId": "a5048047-abff-4a1f-8d72-6b758a03542c",
-    "manaCost": "{1}{U}",
-    "type": "Instant",
-    "rarity": "uncommon",
-    "elo": 1660
-  },
-  {
-    "name": "Brainsurge",
-    "scryfallId": "ed48f805-b57c-4d7f-a3c2-d16ae71bce2d",
-    "manaCost": "{2}{U}",
-    "type": "Instant",
-    "rarity": "uncommon",
-    "elo": 1372
-  },
-  {
-    "name": "Confounding Riddle",
-    "scryfallId": "f2ae23db-c391-402c-9568-65447cada66e",
-    "manaCost": "{2}{U}",
-    "type": "Instant",
-    "rarity": "uncommon",
-    "elo": 1452
-  },
-  {
-    "name": "Faebloom Trick",
-    "scryfallId": "0c3bee8f-f5be-4404-a696-c902637799c3",
-    "manaCost": "{2}{U}",
-    "type": "Instant",
-    "rarity": "uncommon",
-    "elo": 1350
-  },
-  {
-    "name": "Ghostly Flicker",
-    "scryfallId": "dc143ba3-2a58-4980-9fa0-a05a9e9ed082",
-    "manaCost": "{2}{U}",
-    "type": "Instant",
-    "rarity": "common",
-    "elo": 1378
-  },
-  {
-    "name": "Sink into Stupor",
-    "scryfallId": "5358b87a-1a29-426d-b165-40c97da2c14d",
-    "manaCost": "",
-    "type": "Instant // Land",
-    "rarity": "uncommon",
-    "elo": 1306
-  },
-  {
-    "name": "Fact or Fiction",
-    "scryfallId": "04588d2f-9e90-4f83-b85e-67e4bc222a62",
-    "manaCost": "{3}{U}",
-    "type": "Instant",
-    "rarity": "uncommon",
-    "elo": 1322
-  },
-  {
-    "name": "Hieroglyphic Illumination",
-    "scryfallId": "0bd05638-d621-4967-b7e3-63121c88f18b",
-    "manaCost": "{3}{U}",
-    "type": "Instant",
-    "rarity": "common",
-    "elo": 1280
+    "type": "Legendary Planeswalker \u2014 Kasmina",
+    "colors": [
+      "U"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Condescend",
     "scryfallId": "5ba16c0f-dd42-4a2a-8f08-bc8c8478952b",
     "manaCost": "{X}{U}",
     "type": "Instant",
-    "rarity": "uncommon",
-    "elo": 1258
+    "colors": [
+      "U"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Psychic Spiral",
-    "scryfallId": "59b09c16-f611-4c90-a990-e22bf46bd0e2",
-    "manaCost": "{4}{U}",
+    "name": "Force Spike",
+    "scryfallId": "97a6c6c9-dd26-4ce7-850f-0b3fc49245bd",
+    "manaCost": "{U}",
     "type": "Instant",
-    "rarity": "uncommon",
-    "elo": 1224
+    "colors": [
+      "U"
+    ],
+    "rarity": "common"
   },
   {
-    "name": "Hard Evidence",
-    "scryfallId": "501599d6-1072-4124-b05d-01f96de153f3",
-    "manaCost": "{U}",
-    "type": "Sorcery",
-    "rarity": "common",
-    "elo": 1406
+    "name": "Counterspell",
+    "scryfallId": "4f616706-ec97-4923-bb1e-11a69fbaa1f8",
+    "manaCost": "{U}{U}",
+    "type": "Instant",
+    "colors": [
+      "U"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Ponder",
-    "scryfallId": "dc69f960-68ba-4315-8146-6a7a82047503",
+    "name": "Into the Roil",
+    "scryfallId": "25edefa9-9fff-4b71-83ae-696c196a795c",
+    "manaCost": "{1}{U}",
+    "type": "Instant",
+    "colors": [
+      "U"
+    ],
+    "rarity": "common"
+  },
+  {
+    "name": "Jwari Disruption",
+    "scryfallId": "301750a7-d1fd-435e-bfa8-9d2fb22ad627",
+    "manaCost": "",
+    "type": "Instant // Land",
+    "colors": [],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Mana Leak",
+    "scryfallId": "179236d9-6fe2-4db6-bdfb-f851e8d531a2",
+    "manaCost": "{1}{U}",
+    "type": "Instant",
+    "colors": [
+      "U"
+    ],
+    "rarity": "common"
+  },
+  {
+    "name": "Miscalculation",
+    "scryfallId": "4b4956a2-9a39-4152-9c98-70e4b2acfa26",
+    "manaCost": "{1}{U}",
+    "type": "Instant",
+    "colors": [
+      "U"
+    ],
+    "rarity": "common"
+  },
+  {
+    "name": "Teferi's Time Twist",
+    "scryfallId": "c878bdc0-d697-4a2f-bba5-758b27f4247a",
+    "manaCost": "{1}{U}",
+    "type": "Instant",
+    "colors": [
+      "U"
+    ],
+    "rarity": "common"
+  },
+  {
+    "name": "Withdraw",
+    "scryfallId": "f1a3a52f-0ccd-4935-b3ca-9c69cba283cc",
+    "manaCost": "{U}{U}",
+    "type": "Instant",
+    "colors": [
+      "U"
+    ],
+    "rarity": "common"
+  },
+  {
+    "name": "Exclude",
+    "scryfallId": "014bc5a5-4483-42e9-9c14-1ad229b28eb7",
+    "manaCost": "{2}{U}",
+    "type": "Instant",
+    "colors": [
+      "U"
+    ],
+    "rarity": "common"
+  },
+  {
+    "name": "Faebloom Trick",
+    "scryfallId": "0c3bee8f-f5be-4404-a696-c902637799c3",
+    "manaCost": "{2}{U}",
+    "type": "Instant",
+    "colors": [
+      "U"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Forbid",
+    "scryfallId": "0fc2a6c5-9904-47e0-adec-e9e6e79cd11d",
+    "manaCost": "{1}{U}{U}",
+    "type": "Instant",
+    "colors": [
+      "U"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "name": "Ghostly Flicker",
+    "scryfallId": "dc143ba3-2a58-4980-9fa0-a05a9e9ed082",
+    "manaCost": "{2}{U}",
+    "type": "Instant",
+    "colors": [
+      "U"
+    ],
+    "rarity": "common"
+  },
+  {
+    "name": "Psionic Blast",
+    "scryfallId": "befb1728-4af3-420a-a51e-7fa95d2e7a00",
+    "manaCost": "{2}{U}",
+    "type": "Instant",
+    "colors": [
+      "U"
+    ],
+    "rarity": "special"
+  },
+  {
+    "name": "Repulse",
+    "scryfallId": "4dc7777b-6e9e-4889-91da-fb5283340fa1",
+    "manaCost": "{2}{U}",
+    "type": "Instant",
+    "colors": [
+      "U"
+    ],
+    "rarity": "common"
+  },
+  {
+    "name": "Saruman's Trickery",
+    "scryfallId": "8eb6c23b-e52e-4533-9625-884eb0a4d866",
+    "manaCost": "{1}{U}{U}",
+    "type": "Instant",
+    "colors": [
+      "U"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Silundi Vision",
+    "scryfallId": "11568cdf-6148-494c-8b98-f5ca5797d775",
+    "manaCost": "",
+    "type": "Instant // Land",
+    "colors": [],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Sink into Stupor",
+    "scryfallId": "5358b87a-1a29-426d-b165-40c97da2c14d",
+    "manaCost": "",
+    "type": "Instant // Land",
+    "colors": [],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Careful Consideration",
+    "scryfallId": "08b7224b-adb9-4c31-b0bb-1c498f2922fb",
+    "manaCost": "{2}{U}{U}",
+    "type": "Instant",
+    "colors": [
+      "U"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Dismiss",
+    "scryfallId": "95b57eec-ecb3-408c-b938-7d3a34602cc5",
+    "manaCost": "{2}{U}{U}",
+    "type": "Instant",
+    "colors": [
+      "U"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Fact or Fiction",
+    "scryfallId": "04588d2f-9e90-4f83-b85e-67e4bc222a62",
+    "manaCost": "{3}{U}",
+    "type": "Instant",
+    "colors": [
+      "U"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Force of Will",
+    "scryfallId": "89f612d6-7c59-4a7b-a87d-45f789e88ba5",
+    "manaCost": "{3}{U}{U}",
+    "type": "Instant",
+    "colors": [
+      "U"
+    ],
+    "rarity": "mythic"
+  },
+  {
+    "name": "Opportunity",
+    "scryfallId": "49233196-82e4-44c4-86f0-6eb2db7293a3",
+    "manaCost": "{4}{U}{U}",
+    "type": "Instant",
+    "colors": [
+      "U"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Careful Study",
+    "scryfallId": "dea15b53-2940-40e7-8d48-8ec11341da83",
     "manaCost": "{U}",
     "type": "Sorcery",
-    "rarity": "common",
-    "elo": 1560
+    "colors": [
+      "U"
+    ],
+    "rarity": "common"
   },
   {
     "name": "Preordain",
     "scryfallId": "dd29a0e5-c1de-4e8a-8866-715e9f9cde1f",
     "manaCost": "{U}",
     "type": "Sorcery",
-    "rarity": "common",
-    "elo": 1508
+    "colors": [
+      "U"
+    ],
+    "rarity": "common"
   },
   {
     "name": "Chart a Course",
     "scryfallId": "7599d459-fe71-48f4-8c65-0f519bb63a68",
     "manaCost": "{1}{U}",
     "type": "Sorcery",
-    "rarity": "uncommon",
-    "elo": 1440
+    "colors": [
+      "U"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Start the TARDIS",
-    "scryfallId": "f3574926-dd5a-4997-b9e2-7b051bc59c57",
-    "manaCost": "{1}{U}",
-    "type": "Sorcery",
-    "rarity": "uncommon",
-    "elo": 1316
-  },
-  {
-    "name": "Stock Up",
-    "scryfallId": "0a786855-6eb4-42c0-a528-4842db46809d",
-    "manaCost": "{2}{U}",
-    "type": "Sorcery",
-    "rarity": "uncommon",
-    "elo": 1652
-  },
-  {
-    "name": "Unnerving Grasp",
-    "scryfallId": "5602756d-76d2-4502-965f-36fc44596123",
-    "manaCost": "{2}{U}",
-    "type": "Sorcery",
-    "rarity": "uncommon",
-    "elo": 1572
-  },
-  {
-    "name": "Talrand's Invocation",
-    "scryfallId": "88f43c2c-fee4-4df2-b326-a1d9840f64b0",
-    "manaCost": "{2}{U}{U}",
-    "type": "Sorcery",
-    "rarity": "uncommon",
-    "elo": 1256
-  },
-  {
-    "name": "Lórien Revealed",
+    "name": "L\u00f3rien Revealed",
     "scryfallId": "0ce44270-a684-4489-9077-521456e6dfaa",
     "manaCost": "{3}{U}{U}",
     "type": "Sorcery",
-    "rarity": "common",
-    "elo": 1532
+    "colors": [
+      "U"
+    ],
+    "rarity": "common"
   },
   {
     "name": "Rise from the Tides",
     "scryfallId": "a16fccff-ca97-4416-b42f-86d314b1d0af",
     "manaCost": "{5}{U}",
     "type": "Sorcery",
-    "rarity": "uncommon",
-    "elo": 1190
+    "colors": [
+      "U"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Crystal Shard",
     "scryfallId": "b1c1d05b-92be-40d7-859f-75293a531a84",
     "manaCost": "{3}",
     "type": "Artifact",
-    "rarity": "uncommon",
-    "elo": 1318
+    "colors": [],
+    "rarity": "uncommon"
   },
   {
-    "name": "Curiosity",
-    "scryfallId": "c5a0be10-c20f-4ac0-89a5-1770ecf48aad",
-    "manaCost": "{U}",
-    "type": "Enchantment — Aura",
-    "rarity": "uncommon",
-    "elo": 866
-  },
-  {
-    "name": "Unable to Scream",
-    "scryfallId": "7c59e0cd-10a8-4a32-9c0a-a2c6ef1ed9a6",
-    "manaCost": "{U}",
-    "type": "Enchantment — Aura",
-    "rarity": "common",
-    "elo": 1442
-  },
-  {
-    "name": "Omen of the Sea",
-    "scryfallId": "a5f30ecd-d009-4d44-aef4-c926ed55a521",
-    "manaCost": "{1}{U}",
+    "name": "Propaganda",
+    "scryfallId": "e175bba4-c131-48f4-8e31-16ec07a12e59",
+    "manaCost": "{2}{U}",
     "type": "Enchantment",
-    "rarity": "common",
-    "elo": 1300
+    "colors": [
+      "U"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Sphinx's Tutelage",
+    "scryfallId": "4d90c3b0-f958-4a15-94a1-9bf1b0a9ac2a",
+    "manaCost": "{2}{U}",
+    "type": "Enchantment",
+    "colors": [
+      "U"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Binding Grasp",
+    "scryfallId": "27cf6b51-6e77-490d-9b1a-02c1ba3109d1",
+    "manaCost": "{3}{U}",
+    "type": "Enchantment \u2014 Aura",
+    "colors": [
+      "U"
+    ],
+    "rarity": "rare"
   },
   {
     "name": "Control Magic",
     "scryfallId": "84992800-9bad-4598-afd4-f1e59d2e0956",
     "manaCost": "{2}{U}{U}",
-    "type": "Enchantment — Aura",
-    "rarity": "uncommon",
-    "elo": 1676
+    "type": "Enchantment \u2014 Aura",
+    "colors": [
+      "U"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Behold the Unspeakable",
-    "scryfallId": "e4d52701-e0dc-474e-b08f-88147200d210",
-    "manaCost": "",
-    "type": "Enchantment — Saga // Enchantment Creature — Spirit",
-    "rarity": "uncommon",
-    "elo": 1172
+    "name": "Mind Control",
+    "scryfallId": "ec7f77af-17d7-4746-bc83-f455b9b6f9ea",
+    "manaCost": "{3}{U}{U}",
+    "type": "Enchantment \u2014 Aura",
+    "colors": [
+      "U"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Meat Locker // Drowned Diner",
-    "scryfallId": "b3c773f0-9e65-48de-a362-a9a943198693",
-    "manaCost": "{2}{U} // {3}{U}{U}",
-    "type": "Enchantment — Room // Enchantment — Room",
-    "rarity": "common",
-    "elo": 1246
+    "name": "Confiscate",
+    "scryfallId": "a98a1553-e5f3-4c9c-833d-579e82e1708f",
+    "manaCost": "{4}{U}{U}",
+    "type": "Enchantment \u2014 Aura",
+    "colors": [
+      "U"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Faerie Conclave",
-    "scryfallId": "8f4ab639-b439-462e-acc3-69b5d6bb29da",
-    "manaCost": "",
-    "type": "Land",
-    "rarity": "uncommon",
-    "elo": 922
+    "name": "Carrion Feeder",
+    "scryfallId": "0a19da90-880e-4eca-8cf7-6d7baf090d53",
+    "manaCost": "{B}",
+    "type": "Creature \u2014 Zombie",
+    "colors": [
+      "B"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Cult Conscript",
     "scryfallId": "fed77513-94ab-44e2-b9a1-30ba927cd6ee",
     "manaCost": "{B}",
-    "type": "Creature — Skeleton Warrior",
-    "rarity": "uncommon",
-    "elo": 1204
-  },
-  {
-    "name": "Faerie Dreamthief",
-    "scryfallId": "57ca2ec5-442d-4909-be28-93c50fbc5f7a",
-    "manaCost": "{B}",
-    "type": "Creature — Faerie Warlock",
-    "rarity": "uncommon",
-    "elo": 1418
+    "type": "Creature \u2014 Skeleton Warrior",
+    "colors": [
+      "B"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Forsaken Miner",
     "scryfallId": "1679f74d-00f8-436c-9f8c-aa3f843a546c",
     "manaCost": "{B}",
-    "type": "Creature — Skeleton Rogue",
-    "rarity": "uncommon",
-    "elo": 1504
+    "type": "Creature \u2014 Skeleton Rogue",
+    "colors": [
+      "B"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Putrid Imp",
-    "scryfallId": "47a929a4-b861-432c-a2f3-3125f8a2665b",
+    "name": "Mortician Beetle",
+    "scryfallId": "978f2a31-1c89-43cb-92f2-195026c9311a",
     "manaCost": "{B}",
-    "type": "Creature — Zombie Imp",
-    "rarity": "common",
-    "elo": 1178
+    "type": "Creature \u2014 Insect",
+    "colors": [
+      "B"
+    ],
+    "rarity": "common"
   },
   {
-    "name": "Accursed Marauder",
-    "scryfallId": "5da14d86-0780-4821-a799-96f64b377df4",
-    "manaCost": "{1}{B}",
-    "type": "Creature — Zombie Warrior",
-    "rarity": "common",
-    "elo": 1394
+    "name": "Viscera Seer",
+    "scryfallId": "d0f3a502-064e-4700-a730-2e86f985bbc3",
+    "manaCost": "{B}",
+    "type": "Creature \u2014 Vampire Wizard",
+    "colors": [
+      "B"
+    ],
+    "rarity": "common"
   },
   {
     "name": "Blood Artist",
     "scryfallId": "036f387a-8dee-482e-b3e3-cf79b54c61e1",
     "manaCost": "{1}{B}",
-    "type": "Creature — Vampire",
-    "rarity": "uncommon",
-    "elo": 1248
+    "type": "Creature \u2014 Vampire",
+    "colors": [
+      "B"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Butch DeLoria, Tunnel Snake",
-    "scryfallId": "d6ed508c-ff2c-444c-8149-34b29e2fbebe",
+    "name": "Bloodthrone Vampire",
+    "scryfallId": "ee7354fe-fb76-4196-a69b-0916af73bf45",
     "manaCost": "{1}{B}",
-    "type": "Legendary Creature — Human Rogue",
-    "rarity": "uncommon",
-    "elo": 1114
+    "type": "Creature \u2014 Vampire",
+    "colors": [
+      "B"
+    ],
+    "rarity": "common"
+  },
+  {
+    "name": "Carrier Thrall",
+    "scryfallId": "772e551c-0b47-4ccb-8893-f192de92908e",
+    "manaCost": "{1}{B}",
+    "type": "Creature \u2014 Vampire",
+    "colors": [
+      "B"
+    ],
+    "rarity": "common"
   },
   {
     "name": "Deep-Cavern Bat",
     "scryfallId": "69c68c95-b788-43b1-9f22-1b22c5a00b25",
     "manaCost": "{1}{B}",
-    "type": "Creature — Bat",
-    "rarity": "uncommon",
-    "elo": 1384
+    "type": "Creature \u2014 Bat",
+    "colors": [
+      "B"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Dregscape Zombie",
+    "scryfallId": "db87a2be-4490-45af-89d7-540549d1d6af",
+    "manaCost": "{1}{B}",
+    "type": "Creature \u2014 Zombie",
+    "colors": [
+      "B"
+    ],
+    "rarity": "common"
   },
   {
     "name": "Gifted Aetherborn",
     "scryfallId": "8644d4d1-8499-40a8-a01f-68172c82bf58",
     "manaCost": "{B}{B}",
-    "type": "Creature — Aetherborn Vampire",
-    "rarity": "uncommon",
-    "elo": 892
-  },
-  {
-    "name": "Lampad of Death's Vigil",
-    "scryfallId": "e8c9ada9-ea25-4a96-a4be-e4cf8f7a014f",
-    "manaCost": "{1}{B}",
-    "type": "Enchantment Creature — Nymph",
-    "rarity": "common",
-    "elo": 928
+    "type": "Creature \u2014 Aetherborn Vampire",
+    "colors": [
+      "B"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Marionette Apprentice",
     "scryfallId": "d16f8670-f038-400a-83e7-a53a7f8c47ac",
     "manaCost": "{1}{B}",
-    "type": "Creature — Human Artificer",
-    "rarity": "uncommon",
-    "elo": 1276
+    "type": "Creature \u2014 Human Artificer",
+    "colors": [
+      "B"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Order of Midnight",
-    "scryfallId": "84c63c27-6095-4fbc-9064-0ef602e1ced8",
-    "manaCost": "{1}{B} // {1}{B}",
-    "type": "Creature — Human Knight // Sorcery — Adventure",
-    "rarity": "uncommon",
-    "elo": 1366
-  },
-  {
-    "name": "Reassembling Skeleton",
-    "scryfallId": "4d431445-d7db-4ce1-b422-41494d9be1b4",
+    "name": "Orzhov Enforcer",
+    "scryfallId": "aff4247a-c4b0-4a1a-a9b1-c948db21ec10",
     "manaCost": "{1}{B}",
-    "type": "Creature — Skeleton Warrior",
-    "rarity": "uncommon",
-    "elo": 1240
+    "type": "Creature \u2014 Human Rogue",
+    "colors": [
+      "B"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Sinister Starfish",
-    "scryfallId": "5f75b7f4-249c-4b10-a06d-6b7654cccc46",
+    "name": "Putrid Goblin",
+    "scryfallId": "333406d5-abcc-4629-a33b-395d0662ba1b",
     "manaCost": "{1}{B}",
-    "type": "Creature — Starfish",
-    "rarity": "common",
-    "elo": 1044
+    "type": "Creature \u2014 Zombie Goblin",
+    "colors": [
+      "B"
+    ],
+    "rarity": "common"
   },
   {
-    "name": "Triarch Praetorian",
-    "scryfallId": "5ad67a79-cb13-44b8-adac-36cfd211f2d3",
+    "name": "Zulaport Cutthroat",
+    "scryfallId": "52ef00c1-613a-4cbd-8972-77c41f649431",
     "manaCost": "{1}{B}",
-    "type": "Artifact Creature — Necron",
-    "rarity": "uncommon",
-    "elo": 1552
+    "type": "Creature \u2014 Human Rogue Ally",
+    "colors": [
+      "B"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Vampire Gourmand",
-    "scryfallId": "917514c0-9cd5-4b97-85b9-c4f753560ad4",
-    "manaCost": "{1}{B}",
-    "type": "Creature — Vampire",
-    "rarity": "uncommon",
-    "elo": 1482
-  },
-  {
-    "name": "Wreckage Wickerfolk",
-    "scryfallId": "aeff3db7-81ac-4c51-9954-bc1dbcb8c4e3",
-    "manaCost": "{1}{B}",
-    "type": "Artifact Creature — Scarecrow",
-    "rarity": "common",
-    "elo": 1398
+    "name": "Bone Shredder",
+    "scryfallId": "7165a9ac-3f44-4d14-93bb-d4d4970ab41b",
+    "manaCost": "{2}{B}",
+    "type": "Creature \u2014 Phyrexian Minion",
+    "colors": [
+      "B"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Fell Stinger",
     "scryfallId": "27347849-6c07-42c0-bee4-74f93d7ad511",
     "manaCost": "{2}{B}",
-    "type": "Creature — Zombie Scorpion",
-    "rarity": "uncommon",
-    "elo": 1132
-  },
-  {
-    "name": "Grimdancer",
-    "scryfallId": "819257c8-9806-48bd-ba49-e117ca31de54",
-    "manaCost": "{1}{B}{B}",
-    "type": "Creature — Nightmare",
-    "rarity": "uncommon",
-    "elo": 1184
-  },
-  {
-    "name": "Liliana's Devotee",
-    "scryfallId": "6cffbebb-db4c-4bbd-aa4d-9ddae4c88a44",
-    "manaCost": "{2}{B}",
-    "type": "Creature — Human Warlock",
-    "rarity": "uncommon",
-    "elo": 1180
-  },
-  {
-    "name": "Lord Skitter's Butcher",
-    "scryfallId": "21b31d2b-ef66-4e16-a75e-4e27eb5ebfe9",
-    "manaCost": "{2}{B}",
-    "type": "Creature — Rat Peasant",
-    "rarity": "uncommon",
-    "elo": 1330
+    "type": "Creature \u2014 Zombie Scorpion",
+    "colors": [
+      "B"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Morbid Opportunist",
     "scryfallId": "5f0440bc-807a-4425-8707-e74f468b2ca7",
     "manaCost": "{2}{B}",
-    "type": "Creature — Human Rogue",
-    "rarity": "uncommon",
-    "elo": 1262
+    "type": "Creature \u2014 Human Rogue",
+    "colors": [
+      "B"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Popular Egotist",
-    "scryfallId": "35e64605-8edb-4def-9522-765e90d1f0f3",
+    "name": "Nantuko Husk",
+    "scryfallId": "3915c0be-7e9c-45bc-9c83-80beba469a81",
     "manaCost": "{2}{B}",
-    "type": "Creature — Human Rogue",
-    "rarity": "uncommon",
-    "elo": 1070
+    "type": "Creature \u2014 Zombie Insect",
+    "colors": [
+      "B"
+    ],
+    "rarity": "common"
   },
   {
     "name": "Thought-Stalker Warlock",
     "scryfallId": "42e80284-d489-493b-ae92-95b742d07cb3",
     "manaCost": "{2}{B}",
-    "type": "Creature — Lizard Warlock",
-    "rarity": "uncommon",
-    "elo": 1294
+    "type": "Creature \u2014 Lizard Warlock",
+    "colors": [
+      "B"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Undead Gladiator",
-    "scryfallId": "7f7a3d34-4e4e-4545-8e2e-6977eb754270",
-    "manaCost": "{1}{B}{B}",
-    "type": "Creature — Zombie Barbarian",
-    "rarity": "uncommon",
-    "elo": 980
-  },
-  {
-    "name": "Vampire Nighthawk",
-    "scryfallId": "0a1934ab-3171-4fc6-8033-ad998899ba73",
-    "manaCost": "{1}{B}{B}",
-    "type": "Creature — Vampire Shaman",
-    "rarity": "uncommon",
-    "elo": 1430
+    "name": "Weaponcraft Enthusiast",
+    "scryfallId": "fe99535a-cc81-4e79-9d30-d514c86b849c",
+    "manaCost": "{2}{B}",
+    "type": "Creature \u2014 Aetherborn Artificer",
+    "colors": [
+      "B"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Yahenni, Undying Partisan",
     "scryfallId": "396c5d77-f530-42f8-80b5-7cbfd562d1e2",
     "manaCost": "{2}{B}",
-    "type": "Legendary Creature — Aetherborn Vampire",
-    "rarity": "rare",
-    "elo": 1120
+    "type": "Legendary Creature \u2014 Aetherborn Vampire",
+    "colors": [
+      "B"
+    ],
+    "rarity": "rare"
   },
   {
     "name": "Gonti, Lord of Luxury",
     "scryfallId": "fbbb3aef-af1f-4b77-b7d6-64cfd706a9d9",
     "manaCost": "{2}{B}{B}",
-    "type": "Legendary Creature — Aetherborn Rogue",
-    "rarity": "rare",
-    "elo": 1508
+    "type": "Legendary Creature \u2014 Aetherborn Rogue",
+    "colors": [
+      "B"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "name": "Marsh Flitter",
+    "scryfallId": "64da2ec1-fca9-4488-8ac7-78d645a8bf62",
+    "manaCost": "{3}{B}",
+    "type": "Creature \u2014 Faerie Rogue",
+    "colors": [
+      "B"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Nekrataal",
+    "scryfallId": "5b3a4f2a-57ea-4fa0-a76f-3e215a36d1f4",
+    "manaCost": "{2}{B}{B}",
+    "type": "Creature \u2014 Human Assassin",
+    "colors": [
+      "B"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Ravenous Chupacabra",
     "scryfallId": "a4dfbac0-1849-41c5-853a-1fee108d0b01",
     "manaCost": "{2}{B}{B}",
-    "type": "Creature — Beast Horror",
-    "rarity": "uncommon",
-    "elo": 1664
+    "type": "Creature \u2014 Beast Horror",
+    "colors": [
+      "B"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Testament Bearer",
-    "scryfallId": "a5424859-628a-4c19-acd0-0c63c21c8338",
+    "name": "Skinrender",
+    "scryfallId": "ca107d96-0351-49a9-9f65-b055c1514d7b",
+    "manaCost": "{2}{B}{B}",
+    "type": "Creature \u2014 Phyrexian Zombie",
+    "colors": [
+      "B"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Sling-Gang Lieutenant",
+    "scryfallId": "b419c3d8-0ea5-4a78-a647-b7e16c7f7ec5",
     "manaCost": "{3}{B}",
-    "type": "Creature — Phyrexian Warrior",
-    "rarity": "common",
-    "elo": 1176
+    "type": "Creature \u2014 Goblin",
+    "colors": [
+      "B"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Priest of the Blood Rite",
-    "scryfallId": "14db0f35-905b-45c9-a0cc-1c47720380eb",
+    "name": "Gray Merchant of Asphodel",
+    "scryfallId": "00d001d0-fd29-4b7c-9d0e-9131b995f910",
     "manaCost": "{3}{B}{B}",
-    "type": "Creature — Human Cleric",
-    "rarity": "uncommon",
-    "elo": 1130
+    "type": "Creature \u2014 Zombie",
+    "colors": [
+      "B"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Shriekmaw",
     "scryfallId": "9c062442-a84b-4b47-8f84-a7c0abfff41b",
     "manaCost": "{4}{B}",
-    "type": "Creature — Elemental",
-    "rarity": "uncommon",
-    "elo": 1798
+    "type": "Creature \u2014 Elemental",
+    "colors": [
+      "B"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Syr Konrad, the Grim",
-    "scryfallId": "443a4eac-f972-4027-aed4-552d4edc2ce1",
-    "manaCost": "{3}{B}{B}",
-    "type": "Legendary Creature — Human Knight",
-    "rarity": "uncommon",
-    "elo": 1190
-  },
-  {
-    "name": "Vampire Sovereign",
-    "scryfallId": "6f7f0f05-fe4e-4827-bedf-a54352f95967",
-    "manaCost": "{3}{B}{B}",
-    "type": "Creature — Vampire Noble",
-    "rarity": "common",
-    "elo": 1068
-  },
-  {
-    "name": "Wurmcoil Larva",
-    "scryfallId": "cc9b30e0-3934-4e4c-bdd9-5b7696b45948",
-    "manaCost": "{3}{B}{B}",
-    "type": "Artifact Creature — Phyrexian Wurm",
-    "rarity": "uncommon",
-    "elo": 1210
-  },
-  {
-    "name": "Goremand",
-    "scryfallId": "b0ad6c2f-9c26-496d-9079-adf1fec08a59",
-    "manaCost": "{4}{B}{B}",
-    "type": "Creature — Demon",
-    "rarity": "uncommon",
-    "elo": 1366
-  },
-  {
-    "name": "Troll of Khazad-dûm",
+    "name": "Troll of Khazad-d\u00fbm",
     "scryfallId": "a6539e26-b63b-4725-9407-caaf451de084",
     "manaCost": "{5}{B}",
-    "type": "Creature — Troll",
-    "rarity": "common",
-    "elo": 1652
+    "type": "Creature \u2014 Troll",
+    "colors": [
+      "B"
+    ],
+    "rarity": "common"
   },
   {
-    "name": "Shefet Archfiend",
-    "scryfallId": "079dc8d2-0de3-415e-8af8-b8dec669368a",
+    "name": "Archfiend of Sorrows",
+    "scryfallId": "f4d089f1-718e-4853-a634-64114735fba5",
     "manaCost": "{5}{B}{B}",
-    "type": "Creature — Demon",
-    "rarity": "uncommon",
-    "elo": 1298
+    "type": "Creature \u2014 Demon",
+    "colors": [
+      "B"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Huskburster Swarm",
-    "scryfallId": "ed2f61d7-4eb0-41c5-8a34-a0793c2abc51",
-    "manaCost": "{7}{B}",
-    "type": "Creature — Elemental Insect",
-    "rarity": "uncommon",
-    "elo": 1172
+    "name": "Davriel, Rogue Shadowmage",
+    "scryfallId": "5b1a44f0-1db8-406a-b7d9-f883f947f7bd",
+    "manaCost": "{2}{B}",
+    "type": "Legendary Planeswalker \u2014 Davriel",
+    "colors": [
+      "B"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Booster Tutor",
+    "scryfallId": "0a5718db-e67d-468a-95ba-11a08fcf9fea",
+    "manaCost": "{B}",
+    "type": "Instant",
+    "colors": [
+      "B"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Cut Down",
     "scryfallId": "753db072-5d6a-4f37-8f7d-255572ecd3bd",
     "manaCost": "{B}",
     "type": "Instant",
-    "rarity": "uncommon",
-    "elo": 1546
+    "colors": [
+      "B"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Fatal Push",
+    "scryfallId": "6e9d8fe4-fd9b-4923-92bf-7dd6b8fa02e7",
+    "manaCost": "{B}",
+    "type": "Instant",
+    "colors": [
+      "B"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Malakir Rebirth",
+    "scryfallId": "609d3ecf-f88d-4268-a8d3-4bf2bcf5df60",
+    "manaCost": "",
+    "type": "Instant // Land",
+    "colors": [],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Tragic Slip",
+    "scryfallId": "132ccc20-cb42-4474-b747-7e41a661060e",
+    "manaCost": "{B}",
+    "type": "Instant",
+    "colors": [
+      "B"
+    ],
+    "rarity": "common"
+  },
+  {
+    "name": "Village Rites",
+    "scryfallId": "42ed35e9-51cd-468a-86a9-9412553cf50d",
+    "manaCost": "{B}",
+    "type": "Instant",
+    "colors": [
+      "B"
+    ],
+    "rarity": "common"
   },
   {
     "name": "Bitter Triumph",
     "scryfallId": "c5333556-eea2-41ae-833e-007b9d540700",
     "manaCost": "{1}{B}",
     "type": "Instant",
-    "rarity": "uncommon",
-    "elo": 1678
-  },
-  {
-    "name": "Eviscerator's Insight",
-    "scryfallId": "b00573bd-5bbb-4531-a0bb-a40f62b92b88",
-    "manaCost": "{1}{B}",
-    "type": "Instant",
-    "rarity": "common",
-    "elo": 1146
+    "colors": [
+      "B"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Go for the Throat",
     "scryfallId": "5446e1ba-c745-45b2-ad05-b22abf04daec",
     "manaCost": "{1}{B}",
     "type": "Instant",
-    "rarity": "uncommon",
-    "elo": 1822
-  },
-  {
-    "name": "Power Word Kill",
-    "scryfallId": "395b6ce4-143f-4eed-b565-98aa3d6208ef",
-    "manaCost": "{1}{B}",
-    "type": "Instant",
-    "rarity": "uncommon",
-    "elo": 1666
-  },
-  {
-    "name": "Sheoldred's Edict",
-    "scryfallId": "a9225cc3-90f0-448f-a8d9-7c6c2796d077",
-    "manaCost": "{1}{B}",
-    "type": "Instant",
-    "rarity": "uncommon",
-    "elo": 1426
+    "colors": [
+      "B"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Dismember",
     "scryfallId": "3d286cf6-3e16-4941-9326-1818b1e06d69",
     "manaCost": "{1}{B/P}{B/P}",
     "type": "Instant",
-    "rarity": "uncommon",
-    "elo": 1788
+    "colors": [
+      "B"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Fell the Profane",
     "scryfallId": "a3cb782d-c459-468d-9779-9b5669abc337",
     "manaCost": "",
     "type": "Instant // Land",
-    "rarity": "uncommon",
-    "elo": 1576
+    "colors": [],
+    "rarity": "uncommon"
   },
   {
-    "name": "Live or Die",
-    "scryfallId": "cd81e438-e38f-42a1-b677-202dbcb3837c",
-    "manaCost": "{3}{B}{B}",
+    "name": "Murderous Cut",
+    "scryfallId": "b2dadff2-883f-4134-a881-be145cdcbd84",
+    "manaCost": "{4}{B}",
     "type": "Instant",
-    "rarity": "uncommon",
-    "elo": 1544
+    "colors": [
+      "B"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Bone Shards",
-    "scryfallId": "1ee98955-4c47-4d45-9377-608dfa755337",
+    "name": "Bloodchief's Thirst",
+    "scryfallId": "059e8447-6b1c-4651-a734-a8fea2cbf7b2",
     "manaCost": "{B}",
     "type": "Sorcery",
-    "rarity": "common",
-    "elo": 1414
-  },
-  {
-    "name": "Duress",
-    "scryfallId": "34c3a894-ee75-4db9-a69f-711bb3cc150a",
-    "manaCost": "{B}",
-    "type": "Sorcery",
-    "rarity": "common",
-    "elo": 1468
+    "colors": [
+      "B"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Inquisition of Kozilek",
     "scryfallId": "17f38740-20fd-4097-90f8-f0c2c2ff7281",
     "manaCost": "{B}",
     "type": "Sorcery",
-    "rarity": "uncommon",
-    "elo": 1662
-  },
-  {
-    "name": "Raven's Crime",
-    "scryfallId": "7271436b-897a-4b24-a5d2-d29dbea8c1bf",
-    "manaCost": "{B}",
-    "type": "Sorcery",
-    "rarity": "common",
-    "elo": 1290
-  },
-  {
-    "name": "Reanimate",
-    "scryfallId": "368b6903-5fc4-43e7-bd44-46b8107c8bb4",
-    "manaCost": "{B}",
-    "type": "Sorcery",
-    "rarity": "rare",
-    "elo": 1824
+    "colors": [
+      "B"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Unearth",
     "scryfallId": "b1f73271-b70f-40ae-be64-f8de7805923a",
     "manaCost": "{B}",
     "type": "Sorcery",
-    "rarity": "common",
-    "elo": 1342
-  },
-  {
-    "name": "Agonizing Remorse",
-    "scryfallId": "09270c65-546e-4737-a6b7-402cbb87917a",
-    "manaCost": "{1}{B}",
-    "type": "Sorcery",
-    "rarity": "uncommon",
-    "elo": 1304
-  },
-  {
-    "name": "Demonic Tutor",
-    "scryfallId": "a24b4cb6-cebb-428b-8654-74347a6a8d63",
-    "manaCost": "{1}{B}",
-    "type": "Sorcery",
-    "rarity": "mythic",
-    "elo": 1756
+    "colors": [
+      "B"
+    ],
+    "rarity": "common"
   },
   {
     "name": "Exhume",
     "scryfallId": "5f1cdcba-a04a-4a2f-8bc1-0dd7fa03754d",
     "manaCost": "{1}{B}",
     "type": "Sorcery",
-    "rarity": "uncommon",
-    "elo": 1400
-  },
-  {
-    "name": "Fell",
-    "scryfallId": "c96ac326-de44-470b-a592-a4c2a052c091",
-    "manaCost": "{1}{B}",
-    "type": "Sorcery",
-    "rarity": "uncommon",
-    "elo": 1394
+    "colors": [
+      "B"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Hymn to Tourach",
     "scryfallId": "3faa8c5e-9e1b-4cee-b322-a033bf33dcbc",
     "manaCost": "{B}{B}",
     "type": "Sorcery",
-    "rarity": "uncommon",
-    "elo": 1298
-  },
-  {
-    "name": "Life // Death",
-    "scryfallId": "e16d52ca-f8de-4852-9bff-9d208e5f678f",
-    "manaCost": "{G} // {1}{B}",
-    "type": "Sorcery // Sorcery",
-    "rarity": "uncommon",
-    "elo": 1458
+    "colors": [
+      "B"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Lively Dirge",
     "scryfallId": "0c35a0d3-12f7-46f3-a6b3-02a490d45ca0",
     "manaCost": "{1}{B}",
     "type": "Sorcery",
-    "rarity": "uncommon",
-    "elo": 1430
+    "colors": [
+      "B"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Night's Whisper",
     "scryfallId": "67bdba19-c74a-462d-9e51-4fd7f0a6a2c3",
     "manaCost": "{1}{B}",
     "type": "Sorcery",
-    "rarity": "common",
-    "elo": 1632
+    "colors": [
+      "B"
+    ],
+    "rarity": "common"
   },
   {
-    "name": "Resentful Revelation",
-    "scryfallId": "945006ea-c6a1-4ee5-abb2-387c2b6d3123",
-    "manaCost": "{1}{B}",
-    "type": "Sorcery",
-    "rarity": "common",
-    "elo": 1188
-  },
-  {
-    "name": "Call of the Death-Dweller",
-    "scryfallId": "37e34017-0aeb-4a93-9edf-596bf3597a0e",
-    "manaCost": "{2}{B}",
-    "type": "Sorcery",
-    "rarity": "uncommon",
-    "elo": 1168
-  },
-  {
-    "name": "Diresight",
-    "scryfallId": "fada29c0-5293-40a4-b36d-d073ee99e650",
-    "manaCost": "{2}{B}",
-    "type": "Sorcery",
-    "rarity": "common",
-    "elo": 1518
-  },
-  {
-    "name": "Drown in Sorrow",
-    "scryfallId": "4512357b-0d08-4996-9301-5853eae1ea64",
+    "name": "Golden Demise",
+    "scryfallId": "88bb420a-8bf1-4504-b1b5-2d929be978be",
     "manaCost": "{1}{B}{B}",
     "type": "Sorcery",
-    "rarity": "common",
-    "elo": 1480
+    "colors": [
+      "B"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Victimize",
-    "scryfallId": "ee008d81-df28-49a8-917d-44f66527e469",
-    "manaCost": "{2}{B}",
+    "name": "Feast of Succession",
+    "scryfallId": "73f15c50-cfb2-4567-bad5-3d18a2d7d0aa",
+    "manaCost": "{4}{B}{B}",
     "type": "Sorcery",
-    "rarity": "uncommon",
-    "elo": 1550
-  },
-  {
-    "name": "Arms of Hadar",
-    "scryfallId": "db1fd431-8f6d-4ca5-bc0c-53881c500da1",
-    "manaCost": "{3}{B}",
-    "type": "Sorcery",
-    "rarity": "common",
-    "elo": 1304
-  },
-  {
-    "name": "Unburial Rites",
-    "scryfallId": "7023aa24-ef49-4973-8978-7d0d3af719d3",
-    "manaCost": "{4}{B}",
-    "type": "Sorcery",
-    "rarity": "uncommon",
-    "elo": 1232
-  },
-  {
-    "name": "Tortured Existence",
-    "scryfallId": "1754b92b-d6f9-4503-af01-dee03f72a048",
-    "manaCost": "{B}",
-    "type": "Enchantment",
-    "rarity": "common",
-    "elo": 1546
+    "colors": [
+      "B"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Animate Dead",
     "scryfallId": "1489943b-c010-488e-9c9d-87f4af67a4e4",
     "manaCost": "{1}{B}",
-    "type": "Enchantment — Aura",
-    "rarity": "uncommon",
-    "elo": 1768
+    "type": "Enchantment \u2014 Aura",
+    "colors": [
+      "B"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Dance of the Dead",
     "scryfallId": "44de44be-db14-4932-968b-a5bc8b575716",
     "manaCost": "{1}{B}",
-    "type": "Enchantment — Aura",
-    "rarity": "uncommon",
-    "elo": 1612
+    "type": "Enchantment \u2014 Aura",
+    "colors": [
+      "B"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Bastion of Remembrance",
     "scryfallId": "9d0c6077-f84c-4e91-87dc-b0ac81d557f8",
     "manaCost": "{2}{B}",
     "type": "Enchantment",
-    "rarity": "uncommon",
-    "elo": 1264
+    "colors": [
+      "B"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Curse of Disturbance",
-    "scryfallId": "80d42b98-62d2-4ca6-8478-36222d709048",
+    "name": "Curse of Shallow Graves",
+    "scryfallId": "849996e2-fb62-428f-88f1-4ac419617395",
     "manaCost": "{2}{B}",
-    "type": "Enchantment — Aura Curse",
-    "rarity": "uncommon",
-    "elo": 1322
+    "type": "Enchantment \u2014 Aura Curse",
+    "colors": [
+      "B"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Elspeth's Nightmare",
+    "scryfallId": "37ccd974-d2bc-4fcf-94a7-0a868a04cb98",
+    "manaCost": "{2}{B}",
+    "type": "Enchantment \u2014 Saga",
+    "colors": [
+      "B"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Necromancy",
     "scryfallId": "3dd34a1a-e76b-46ee-be8d-5f7f4a092648",
     "manaCost": "{2}{B}",
     "type": "Enchantment",
-    "rarity": "uncommon",
-    "elo": 1672
+    "colors": [
+      "B"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "The Eldest Reborn",
-    "scryfallId": "4d29351e-5608-40e8-8220-6c9635d48ad4",
-    "manaCost": "{4}{B}",
-    "type": "Enchantment — Saga",
-    "rarity": "uncommon",
-    "elo": 1484
-  },
-  {
-    "name": "Cacophony Scamp",
-    "scryfallId": "3553dcef-7b99-49d5-b071-06b894696952",
-    "manaCost": "{R}",
-    "type": "Creature — Phyrexian Goblin Warrior",
-    "rarity": "uncommon",
-    "elo": 980
+    "name": "Enslave",
+    "scryfallId": "a00440fc-e3e1-4a1c-b32b-f7946a76cd62",
+    "manaCost": "{4}{B}{B}",
+    "type": "Enchantment \u2014 Aura",
+    "colors": [
+      "B"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Dragon's Rage Channeler",
     "scryfallId": "4ced112a-e775-4f97-97b3-74877e9dce12",
     "manaCost": "{R}",
-    "type": "Creature — Human Shaman",
-    "rarity": "uncommon",
-    "elo": 1182
+    "type": "Creature \u2014 Human Shaman",
+    "colors": [
+      "R"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Embereth Veteran",
-    "scryfallId": "bc7130b8-3168-421f-912a-46ed5b769807",
+    "name": "Foundry Street Denizen",
+    "scryfallId": "a328c8d8-a404-43b5-8c79-2e79d639fb40",
     "manaCost": "{R}",
-    "type": "Creature — Human Knight",
-    "rarity": "uncommon",
-    "elo": 1250
+    "type": "Creature \u2014 Goblin Warrior",
+    "colors": [
+      "R"
+    ],
+    "rarity": "common"
   },
   {
-    "name": "Goblin Banneret",
-    "scryfallId": "cf20cfd7-81f4-423c-a662-c4b6676edfdd",
+    "name": "Goblin Bushwhacker",
+    "scryfallId": "4085a5bf-a71b-4c73-9b39-0dcc328fe11b",
     "manaCost": "{R}",
-    "type": "Creature — Goblin Soldier",
-    "rarity": "uncommon",
-    "elo": 1076
+    "type": "Creature \u2014 Goblin Warrior",
+    "colors": [
+      "R"
+    ],
+    "rarity": "common"
   },
   {
-    "name": "Greasewrench Goblin",
-    "scryfallId": "c8f0b123-fdb0-4f3e-ba78-fa155c227e20",
+    "name": "Monastery Swiftspear",
+    "scryfallId": "d6bfa227-4309-40ed-952c-279595eab17e",
     "manaCost": "{R}",
-    "type": "Creature — Goblin Artificer",
-    "rarity": "uncommon",
-    "elo": 1352
+    "type": "Creature \u2014 Human Monk",
+    "colors": [
+      "R"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Norin, Swift Survivalist",
+    "scryfallId": "49f0fdf4-3881-4327-924f-2c1b67ccda93",
+    "manaCost": "{R}",
+    "type": "Legendary Creature \u2014 Human Coward",
+    "colors": [
+      "R"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Rabbit Battery",
     "scryfallId": "5d33a5b7-797b-4079-8d62-edd124c0fb5a",
     "manaCost": "{R}",
-    "type": "Artifact Creature — Equipment Rabbit",
-    "rarity": "uncommon",
-    "elo": 1108
+    "type": "Artifact Creature \u2014 Equipment Rabbit",
+    "colors": [
+      "R"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Reinforced Ronin",
-    "scryfallId": "89a18961-8f0b-4e98-9de4-aba97e91ad9a",
+    "name": "Scorched Rusalka",
+    "scryfallId": "15fecad6-5f0f-4d40-98ba-7849cda9ec4d",
     "manaCost": "{R}",
-    "type": "Artifact Creature — Human Samurai",
-    "rarity": "uncommon",
-    "elo": 928
+    "type": "Creature \u2014 Spirit",
+    "colors": [
+      "R"
+    ],
+    "rarity": "common"
   },
   {
     "name": "Voldaren Epicure",
     "scryfallId": "e8fe855c-fe94-4de7-a033-9892a9d6ee0e",
     "manaCost": "{R}",
-    "type": "Creature — Vampire",
-    "rarity": "common",
-    "elo": 1116
+    "type": "Creature \u2014 Vampire",
+    "colors": [
+      "R"
+    ],
+    "rarity": "common"
   },
   {
-    "name": "Brazen Collector",
-    "scryfallId": "78b55a58-c669-4dc6-aa63-5d9dff52e613",
+    "name": "Battle Cry Goblin",
+    "scryfallId": "9766a427-2bb3-4028-a502-d1194cdc93aa",
     "manaCost": "{1}{R}",
-    "type": "Creature — Raccoon Rogue",
-    "rarity": "uncommon",
-    "elo": 1160
+    "type": "Creature \u2014 Goblin",
+    "colors": [
+      "R"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Coruscation Mage",
-    "scryfallId": "dc2c1de0-6233-469a-be72-a050b97d2c8f",
+    "name": "Dark-Dweller Oracle",
+    "scryfallId": "bd35664f-b99d-46b6-988e-8f2814b0a854",
     "manaCost": "{1}{R}",
-    "type": "Creature — Otter Wizard",
-    "rarity": "uncommon",
-    "elo": 1430
+    "type": "Creature \u2014 Goblin Shaman",
+    "colors": [
+      "R"
+    ],
+    "rarity": "common"
   },
   {
     "name": "Electrostatic Infantry",
     "scryfallId": "5ed2d72f-f1cf-45a7-adf7-969f531721ce",
     "manaCost": "{1}{R}",
-    "type": "Creature — Dwarf Wizard",
-    "rarity": "uncommon",
-    "elo": 1222
-  },
-  {
-    "name": "Embereth Shieldbreaker",
-    "scryfallId": "e2f789b3-3274-4a93-b44b-fabc44c1833c",
-    "manaCost": "{1}{R} // {R}",
-    "type": "Creature — Human Knight // Sorcery — Adventure",
-    "rarity": "uncommon",
-    "elo": 1320
+    "type": "Creature \u2014 Dwarf Wizard",
+    "colors": [
+      "R"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Flametongue Yearling",
     "scryfallId": "33ab05b5-d6f5-439c-9aed-1a58ceb282ad",
     "manaCost": "{R}{R}",
-    "type": "Creature — Kavu",
-    "rarity": "uncommon",
-    "elo": 1146
-  },
-  {
-    "name": "Heartfire Immolator",
-    "scryfallId": "3ca38f4d-01f5-4a02-9000-01261a440dbf",
-    "manaCost": "{1}{R}",
-    "type": "Creature — Human Wizard",
-    "rarity": "uncommon",
-    "elo": 1226
-  },
-  {
-    "name": "Irreverent Gremlin",
-    "scryfallId": "8da254f5-53f2-41d2-a4f0-a90b3dd6209c",
-    "manaCost": "{1}{R}",
-    "type": "Creature — Gremlin",
-    "rarity": "uncommon",
-    "elo": 1354
-  },
-  {
-    "name": "Khenra Spellspear",
-    "scryfallId": "dc1454ce-bb49-4b4f-bbca-d77387fa4966",
-    "manaCost": "",
-    "type": "Creature — Jackal Warrior // Creature — Phyrexian Jackal",
-    "rarity": "uncommon",
-    "elo": 1106
+    "type": "Creature \u2014 Kavu",
+    "colors": [
+      "R"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Mogg War Marshal",
     "scryfallId": "a7f7f39c-94a0-4ccb-b658-23095ada4005",
     "manaCost": "{1}{R}",
-    "type": "Creature — Goblin Warrior",
-    "rarity": "common",
-    "elo": 1192
+    "type": "Creature \u2014 Goblin Warrior",
+    "colors": [
+      "R"
+    ],
+    "rarity": "common"
   },
   {
     "name": "Reckless Pyrosurfer",
     "scryfallId": "2d1bb8ac-7125-4537-b2da-e23a8c28df79",
     "manaCost": "{1}{R}",
-    "type": "Creature — Human Scout",
-    "rarity": "uncommon",
-    "elo": 1080
+    "type": "Creature \u2014 Human Scout",
+    "colors": [
+      "R"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Rimrock Knight",
     "scryfallId": "a3d13d84-01e4-4429-93db-e5afff811527",
     "manaCost": "{1}{R} // {R}",
-    "type": "Creature — Dwarf Knight // Instant — Adventure",
-    "rarity": "common",
-    "elo": 978
+    "type": "Creature \u2014 Dwarf Knight // Instant \u2014 Adventure",
+    "colors": [
+      "R"
+    ],
+    "rarity": "common"
   },
   {
     "name": "Scrapwork Mutt",
     "scryfallId": "4742800a-4872-4c2d-b884-01e0ba16950c",
     "manaCost": "{2}",
-    "type": "Artifact Creature — Dog",
-    "rarity": "common",
-    "elo": 1460
+    "type": "Artifact Creature \u2014 Dog",
+    "colors": [],
+    "rarity": "common"
   },
   {
-    "name": "Shock Brigade",
-    "scryfallId": "66940466-8e9d-4a85-bfb0-e92189b7a121",
+    "name": "Stormblood Berserker",
+    "scryfallId": "af41bf13-fe4b-4a77-93fb-1848f83d5968",
     "manaCost": "{1}{R}",
-    "type": "Creature — Goblin Soldier",
-    "rarity": "common",
-    "elo": 1328
+    "type": "Creature \u2014 Human Berserker",
+    "colors": [
+      "R"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Thermo-Alchemist",
-    "scryfallId": "78b194b3-108a-4152-bd37-52c302e25ad6",
+    "name": "Young Pyromancer",
+    "scryfallId": "c0d74ecd-a595-4012-81b4-083264b40c94",
     "manaCost": "{1}{R}",
-    "type": "Creature — Human Shaman",
-    "rarity": "uncommon",
-    "elo": 1162
-  },
-  {
-    "name": "Ahn-Crop Crasher",
-    "scryfallId": "dd5db68c-24d5-44ce-9809-e446f26fac5d",
-    "manaCost": "{2}{R}",
-    "type": "Creature — Minotaur Warrior",
-    "rarity": "uncommon",
-    "elo": 1104
+    "type": "Creature \u2014 Human Shaman",
+    "colors": [
+      "R"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Anax, Hardened in the Forge",
     "scryfallId": "ad107ae0-2540-46f8-9970-72983b87ba04",
     "manaCost": "{1}{R}{R}",
-    "type": "Legendary Enchantment Creature — Demigod",
-    "rarity": "uncommon",
-    "elo": 978
+    "type": "Legendary Enchantment Creature \u2014 Demigod",
+    "colors": [
+      "R"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Coastline Marauders",
-    "scryfallId": "7a47e6bc-422a-4627-b21e-5a042193bed0",
+    "name": "Cunning Sparkmage",
+    "scryfallId": "699842c1-6507-48ee-b98b-3774d1f07c76",
     "manaCost": "{2}{R}",
-    "type": "Creature — Human Pirate",
-    "rarity": "uncommon",
-    "elo": 782
-  },
-  {
-    "name": "Gut, True Soul Zealot",
-    "scryfallId": "3d8ca18d-9099-4f1e-95c1-f04da58a26bd",
-    "manaCost": "{2}{R}",
-    "type": "Legendary Creature — Goblin Shaman",
-    "rarity": "uncommon",
-    "elo": 1318
-  },
-  {
-    "name": "Imodane's Recruiter",
-    "scryfallId": "4dbaa855-3f8e-42e6-8ec8-5ffbc5c8acf0",
-    "manaCost": "{2}{R} // {4}{W}",
-    "type": "Creature — Human Knight // Sorcery — Adventure",
-    "rarity": "uncommon",
-    "elo": 1294
-  },
-  {
-    "name": "Skittering Precursor",
-    "scryfallId": "a3a3b943-7b38-4316-87d9-15e0c08abea5",
-    "manaCost": "{2}{R}",
-    "type": "Creature — Eldrazi Drone",
-    "rarity": "uncommon",
-    "elo": 1140
+    "type": "Creature \u2014 Human Shaman",
+    "colors": [
+      "R"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Spiteful Prankster",
     "scryfallId": "d59ee7a6-3dfa-44c7-8f00-0183137c4d31",
     "manaCost": "{2}{R}",
-    "type": "Creature — Devil",
-    "rarity": "uncommon",
-    "elo": 1126
+    "type": "Creature \u2014 Devil",
+    "colors": [
+      "R"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Beetleback Chief",
     "scryfallId": "2d19a474-b008-4088-8a31-333c0b2d9d65",
     "manaCost": "{2}{R}{R}",
-    "type": "Creature — Goblin Warrior",
-    "rarity": "uncommon",
-    "elo": 1194
+    "type": "Creature \u2014 Goblin Warrior",
+    "colors": [
+      "R"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Fanatic of Mogis",
+    "scryfallId": "581eaadb-442b-40c9-b8f9-9e19d5eba824",
+    "manaCost": "{3}{R}",
+    "type": "Creature \u2014 Minotaur Shaman",
+    "colors": [
+      "R"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Flametongue Kavu",
     "scryfallId": "1b3a5139-3341-409e-be33-184897c7398e",
     "manaCost": "{3}{R}",
-    "type": "Creature — Kavu",
-    "rarity": "uncommon",
-    "elo": 1648
+    "type": "Creature \u2014 Kavu",
+    "colors": [
+      "R"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Frontier Warmonger",
+    "scryfallId": "824aa845-0523-4434-8992-bce42f5b2bcb",
+    "manaCost": "{3}{R}",
+    "type": "Creature \u2014 Human Warrior",
+    "colors": [
+      "R"
+    ],
+    "rarity": "rare"
   },
   {
     "name": "Geological Appraiser",
     "scryfallId": "7f9c1a82-695b-4df2-8e51-2d71a62e7baf",
     "manaCost": "{2}{R}{R}",
-    "type": "Creature — Human Artificer",
-    "rarity": "uncommon",
-    "elo": 1456
-  },
-  {
-    "name": "Iraxxa, Empress of Mars",
-    "scryfallId": "0861a74a-a4d5-4b9f-8c62-74cdfcc67825",
-    "manaCost": "{2}{R}{R}",
-    "type": "Legendary Creature — Alien Warrior",
-    "rarity": "uncommon",
-    "elo": 954
-  },
-  {
-    "name": "Mad Ratter",
-    "scryfallId": "9a4cabcc-fb29-4bf2-b5ba-32b8c96aefd6",
-    "manaCost": "{3}{R}",
-    "type": "Creature — Goblin",
-    "rarity": "uncommon",
-    "elo": 936
-  },
-  {
-    "name": "Twinshot Sniper",
-    "scryfallId": "08a86009-4637-4b6c-9d36-367151583668",
-    "manaCost": "{3}{R}",
-    "type": "Artifact Creature — Goblin Archer",
-    "rarity": "uncommon",
-    "elo": 1400
+    "type": "Creature \u2014 Human Artificer",
+    "colors": [
+      "R"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Charging Monstrosaur",
     "scryfallId": "d5222448-95d1-4b63-ab76-d5060febcf38",
     "manaCost": "{4}{R}",
-    "type": "Creature — Dinosaur",
-    "rarity": "uncommon",
-    "elo": 968
-  },
-  {
-    "name": "Dragon Trainer",
-    "scryfallId": "91bd75a1-cb54-4e38-9ce1-e8f32a73c6eb",
-    "manaCost": "{3}{R}{R}",
-    "type": "Creature — Human",
-    "rarity": "uncommon",
-    "elo": 986
+    "type": "Creature \u2014 Dinosaur",
+    "colors": [
+      "R"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Noise Marine",
     "scryfallId": "08843909-8c24-4067-b747-5f9090caaa1c",
     "manaCost": "{4}{R}",
-    "type": "Creature — Astartes Warrior",
-    "rarity": "uncommon",
-    "elo": 1282
+    "type": "Creature \u2014 Astartes Warrior",
+    "colors": [
+      "R"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Pinnacle Monk",
-    "scryfallId": "24d4f26e-7f96-4b38-867e-4fac819b2679",
-    "manaCost": "",
-    "type": "Creature — Djinn Monk // Land",
-    "rarity": "uncommon",
-    "elo": 1360
-  },
-  {
-    "name": "Razorkin Hordecaller",
-    "scryfallId": "f7fb0f11-d1d0-4941-a1a7-a2db88f30394",
-    "manaCost": "{4}{R}",
-    "type": "Creature — Human Clown Berserker",
-    "rarity": "uncommon",
-    "elo": 938
-  },
-  {
-    "name": "Sontaran General",
-    "scryfallId": "cb70fa62-fea1-4e91-a8a1-64b43b777091",
-    "manaCost": "{4}{R}",
-    "type": "Creature — Alien Soldier",
-    "rarity": "uncommon",
-    "elo": 916
-  },
-  {
-    "name": "Amethyst Dragon",
-    "scryfallId": "57adbd6e-88ec-4472-a9c9-90b679fa881f",
-    "manaCost": "{4}{R}{R} // {4}{R}",
-    "type": "Creature — Dragon // Sorcery — Adventure",
-    "rarity": "uncommon",
-    "elo": 1296
-  },
-  {
-    "name": "Hearth Elemental",
-    "scryfallId": "a8f5f102-cc75-4cee-a117-4bdaaf86c2e9",
-    "manaCost": "{5}{R} // {1}{R}",
-    "type": "Creature — Elemental // Sorcery — Adventure",
-    "rarity": "uncommon",
-    "elo": 840
-  },
-  {
-    "name": "Oliphaunt",
-    "scryfallId": "6989018c-37b1-4282-a4af-9cc97f160b4d",
-    "manaCost": "{5}{R}",
-    "type": "Creature — Elephant",
-    "rarity": "common",
-    "elo": 1278
-  },
-  {
-    "name": "Skoa, Embermage",
-    "scryfallId": "cf34b0f8-a68a-428f-9f2c-9556229367ec",
-    "manaCost": "{4}{R}{R}",
-    "type": "Legendary Creature — Goblin Wizard",
-    "rarity": "common",
-    "elo": 852
+    "name": "Tibalt, Rakish Instigator",
+    "scryfallId": "7f9a24dc-8bc3-4528-8780-57fb108fdfbf",
+    "manaCost": "{2}{R}",
+    "type": "Legendary Planeswalker \u2014 Tibalt",
+    "colors": [
+      "R"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Burst Lightning",
     "scryfallId": "aec5d380-d354-4750-931a-6c91853e2edc",
     "manaCost": "{R}",
     "type": "Instant",
-    "rarity": "common",
-    "elo": 1506
+    "colors": [
+      "R"
+    ],
+    "rarity": "common"
   },
   {
-    "name": "Fire Magic",
-    "scryfallId": "415ff6a5-61ef-4b37-ae08-e44476300d4a",
+    "name": "Lightning Bolt",
+    "scryfallId": "77c6fa74-5543-42ac-9ead-0e890b188e99",
     "manaCost": "{R}",
     "type": "Instant",
-    "rarity": "uncommon",
-    "elo": 1352
+    "colors": [
+      "R"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Monstrous Rage",
     "scryfallId": "eef5a0ae-5907-42c9-a097-3f973737e392",
     "manaCost": "{R}",
     "type": "Instant",
-    "rarity": "uncommon",
-    "elo": 1174
+    "colors": [
+      "R"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Abrade",
-    "scryfallId": "4c2a1b4e-858c-47a3-be89-9275e48d5475",
+    "name": "Incinerate",
+    "scryfallId": "f23dff46-e040-4cba-890a-97c2899701f2",
     "manaCost": "{1}{R}",
     "type": "Instant",
-    "rarity": "uncommon",
-    "elo": 1502
+    "colors": [
+      "R"
+    ],
+    "rarity": "common"
   },
   {
-    "name": "First Day of Class",
-    "scryfallId": "091eb13d-9318-4b12-9f94-6276b11981d1",
-    "manaCost": "{1}{R}",
+    "name": "Searing Blaze",
+    "scryfallId": "f659d464-13dd-49e2-a842-098dcba49659",
+    "manaCost": "{R}{R}",
     "type": "Instant",
-    "rarity": "common",
-    "elo": 1230
+    "colors": [
+      "R"
+    ],
+    "rarity": "common"
   },
   {
     "name": "Brimstone Volley",
     "scryfallId": "94fa0577-f02a-4d24-835b-fef8d849b37a",
     "manaCost": "{2}{R}",
     "type": "Instant",
-    "rarity": "uncommon",
-    "elo": 1556
+    "colors": [
+      "R"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Ghostfire Slice",
     "scryfallId": "2adea3ee-138f-455b-a001-586883c44758",
     "manaCost": "{2}{R}",
     "type": "Instant",
-    "rarity": "uncommon",
-    "elo": 1350
+    "colors": [],
+    "rarity": "uncommon"
   },
   {
-    "name": "Goblin Surprise",
-    "scryfallId": "527dd5d4-5f72-40bb-8a9d-1f5ac3f81e2e",
-    "manaCost": "{2}{R}",
-    "type": "Instant",
-    "rarity": "common",
-    "elo": 1234
+    "name": "Kazuul's Fury",
+    "scryfallId": "75240bbc-adc7-48ff-9523-c79776d710d3",
+    "manaCost": "",
+    "type": "Instant // Land",
+    "colors": [],
+    "rarity": "uncommon"
   },
   {
     "name": "Staggershock",
     "scryfallId": "56976d52-053d-49e9-94c0-f21dc13029ac",
     "manaCost": "{2}{R}",
     "type": "Instant",
-    "rarity": "uncommon",
-    "elo": 1182
+    "colors": [
+      "R"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Stoke the Flames",
+    "scryfallId": "04113b3c-cc8f-4b15-9091-f82ea3df2e7c",
+    "manaCost": "{2}{R}{R}",
+    "type": "Instant",
+    "colors": [
+      "R"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Act of Aggression",
+    "scryfallId": "8d34c3aa-7d74-4a8b-898c-cb62b1f05989",
+    "manaCost": "{3}{R/P}{R/P}",
+    "type": "Instant",
+    "colors": [
+      "R"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Fireblast",
     "scryfallId": "a0ab67cc-b553-4451-9cda-0e5fe3303940",
     "manaCost": "{4}{R}{R}",
     "type": "Instant",
-    "rarity": "uncommon",
-    "elo": 1076
+    "colors": [
+      "R"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Chain Lightning",
     "scryfallId": "2105a0d9-ea2e-4ffc-be08-424b5617205d",
     "manaCost": "{R}",
     "type": "Sorcery",
-    "rarity": "common",
-    "elo": 1490
+    "colors": [
+      "R"
+    ],
+    "rarity": "common"
   },
   {
-    "name": "Faithless Looting",
-    "scryfallId": "c43aeb5a-8bdc-4aa9-89d1-156f97ac38aa",
-    "manaCost": "{R}",
+    "name": "Fireball",
+    "scryfallId": "df45a43e-a5b7-4fd4-873b-7b3c021be198",
+    "manaCost": "{X}{R}",
     "type": "Sorcery",
-    "rarity": "common",
-    "elo": 1098
+    "colors": [
+      "R"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Firebolt",
     "scryfallId": "882b8f98-ee51-4c94-a3eb-c79eb2b50d78",
     "manaCost": "{R}",
     "type": "Sorcery",
-    "rarity": "uncommon",
-    "elo": 1380
+    "colors": [
+      "R"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Reckless Charge",
-    "scryfallId": "1754a8db-060e-470f-94c0-37f12d82978a",
+    "name": "Flame Slash",
+    "scryfallId": "15affc1b-2ebb-4934-87a2-10e89eafe894",
     "manaCost": "{R}",
     "type": "Sorcery",
-    "rarity": "common",
-    "elo": 1142
+    "colors": [
+      "R"
+    ],
+    "rarity": "common"
+  },
+  {
+    "name": "Forked Bolt",
+    "scryfallId": "364ed745-0dff-477a-a2c5-987639936337",
+    "manaCost": "{R}",
+    "type": "Sorcery",
+    "colors": [
+      "R"
+    ],
+    "rarity": "common"
   },
   {
     "name": "Arc Trail",
     "scryfallId": "56306d90-7f58-4559-954c-f8ca43d04be8",
     "manaCost": "{1}{R}",
     "type": "Sorcery",
-    "rarity": "uncommon",
-    "elo": 1288
+    "colors": [
+      "R"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Choco-Comet",
-    "scryfallId": "8d8d3903-a7f4-4cd8-8d29-b4a173e4fbb2",
-    "manaCost": "{X}{R}{R}",
-    "type": "Sorcery",
-    "rarity": "uncommon",
-    "elo": 1288
-  },
-  {
-    "name": "Fanged Flames",
-    "scryfallId": "fcfac301-55db-49a7-9a0d-918c907703da",
+    "name": "Pyroclasm",
+    "scryfallId": "4391b0af-2f26-4a45-9e2a-5bd8e9838107",
     "manaCost": "{1}{R}",
     "type": "Sorcery",
-    "rarity": "common",
-    "elo": 1224
-  },
-  {
-    "name": "Highway Robbery",
-    "scryfallId": "31a88429-9204-4a23-a7a8-babbd6bab79f",
-    "manaCost": "{1}{R}",
-    "type": "Sorcery",
-    "rarity": "common",
-    "elo": 1088
+    "colors": [
+      "R"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Rally at the Hornburg",
     "scryfallId": "ee7292f7-1c7e-449c-9c52-7584d6a14c2c",
     "manaCost": "{1}{R}",
     "type": "Sorcery",
-    "rarity": "common",
-    "elo": 1298
+    "colors": [
+      "R"
+    ],
+    "rarity": "common"
+  },
+  {
+    "name": "Reckless Impulse",
+    "scryfallId": "6943c07f-ab0d-4f5a-bbe9-c0a83dc98546",
+    "manaCost": "{1}{R}",
+    "type": "Sorcery",
+    "colors": [
+      "R"
+    ],
+    "rarity": "common"
   },
   {
     "name": "Hordeling Outburst",
     "scryfallId": "e4138531-ef42-4c56-864e-d3525a4f2082",
     "manaCost": "{1}{R}{R}",
     "type": "Sorcery",
-    "rarity": "common",
-    "elo": 1328
+    "colors": [
+      "R"
+    ],
+    "rarity": "common"
+  },
+  {
+    "name": "Light Up the Stage",
+    "scryfallId": "912b94c9-7200-452d-940f-df0a7cceb377",
+    "manaCost": "{2}{R}",
+    "type": "Sorcery",
+    "colors": [
+      "R"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Magic Missile",
+    "scryfallId": "c814ac58-8826-48cd-8209-4af6803866e3",
+    "manaCost": "{1}{R}{R}",
+    "type": "Sorcery",
+    "colors": [
+      "R"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Rift Bolt",
     "scryfallId": "4ccd0ada-92b2-48f3-b5ae-96346fc138b6",
     "manaCost": "{2}{R}",
     "type": "Sorcery",
-    "rarity": "common",
-    "elo": 1170
+    "colors": [
+      "R"
+    ],
+    "rarity": "common"
   },
   {
-    "name": "Shrine of Burning Rage",
-    "scryfallId": "d1a8afef-fa50-4aeb-94de-a4d90b1e5631",
-    "manaCost": "{2}",
-    "type": "Artifact",
-    "rarity": "uncommon",
-    "elo": 974
-  },
-  {
-    "name": "Samurai's Katana",
-    "scryfallId": "11f1d378-c78c-402a-ac46-2d32598c23e7",
-    "manaCost": "{2}{R}",
-    "type": "Artifact — Equipment",
-    "rarity": "uncommon",
-    "elo": 1370
+    "name": "Song-Mad Treachery",
+    "scryfallId": "782ca27f-9f18-476c-b582-89c06fb2e322",
+    "manaCost": "",
+    "type": "Sorcery // Land",
+    "colors": [],
+    "rarity": "uncommon"
   },
   {
     "name": "Kumano Faces Kakkazan",
     "scryfallId": "28d92cad-45b0-479d-97fc-c175f3a3f259",
     "manaCost": "",
-    "type": "Enchantment — Saga // Enchantment Creature — Human Shaman",
-    "rarity": "uncommon",
-    "elo": 1252
-  },
-  {
-    "name": "Weaponize the Monsters",
-    "scryfallId": "68bba622-a0ab-4c0e-88b1-9120690ea5a0",
-    "manaCost": "{R}",
-    "type": "Enchantment",
-    "rarity": "uncommon",
-    "elo": 1180
-  },
-  {
-    "name": "Bitter Reunion",
-    "scryfallId": "4ef0b4dc-5a15-4de6-9c27-0e21148c0797",
-    "manaCost": "{1}{R}",
-    "type": "Enchantment",
-    "rarity": "common",
-    "elo": 1110
+    "type": "Enchantment \u2014 Saga // Enchantment Creature \u2014 Human Shaman",
+    "colors": [],
+    "rarity": "uncommon"
   },
   {
     "name": "Goblin Bombardment",
     "scryfallId": "e262f55e-9239-4a97-a19e-9b08fb34502e",
     "manaCost": "{1}{R}",
     "type": "Enchantment",
-    "rarity": "rare",
-    "elo": 1632
+    "colors": [
+      "R"
+    ],
+    "rarity": "rare"
   },
   {
-    "name": "Origin of the Hidden Ones",
-    "scryfallId": "14da80cd-d0b8-4094-bfe7-28811d655f8b",
-    "manaCost": "{3}{R}",
-    "type": "Enchantment — Saga",
-    "rarity": "uncommon",
-    "elo": 1302
+    "name": "Fiery Inscription",
+    "scryfallId": "8c321159-43e5-40fc-9f0c-4ecc4f6cfd20",
+    "manaCost": "{2}{R}",
+    "type": "Enchantment",
+    "colors": [
+      "R"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Painter's Studio // Defaced Gallery",
     "scryfallId": "e96901eb-5b57-43f4-a7b1-ae3b809bc36e",
     "manaCost": "{2}{R} // {1}{R}",
-    "type": "Enchantment — Room // Enchantment — Room",
-    "rarity": "uncommon",
-    "elo": 1120
-  },
-  {
-    "name": "Rite of the Raging Storm",
-    "scryfallId": "8f06e3db-ce55-4535-8557-cc52c5fce637",
-    "manaCost": "{3}{R}{R}",
-    "type": "Enchantment",
-    "rarity": "uncommon",
-    "elo": 944
-  },
-  {
-    "name": "Arbor Elf",
-    "scryfallId": "4b81165e-f091-4211-8b47-5ea6868b0d4c",
-    "manaCost": "{G}",
-    "type": "Creature — Elf Druid",
-    "rarity": "common",
-    "elo": 1350
-  },
-  {
-    "name": "Avacyn's Pilgrim",
-    "scryfallId": "a390a7df-b8da-41aa-93e5-2c0db938a27e",
-    "manaCost": "{G}",
-    "type": "Creature — Human Monk",
-    "rarity": "common",
-    "elo": 1174
-  },
-  {
-    "name": "Chainweb Aracnir",
-    "scryfallId": "874afaad-546a-4cb2-ad01-2b4a4862b219",
-    "manaCost": "{G}",
-    "type": "Creature — Spider",
-    "rarity": "uncommon",
-    "elo": 982
-  },
-  {
-    "name": "Dragon Sniper",
-    "scryfallId": "074b1e00-45bb-4436-8f5e-058512b2d08a",
-    "manaCost": "{G}",
-    "type": "Creature — Human Archer",
-    "rarity": "uncommon",
-    "elo": 1180
-  },
-  {
-    "name": "Elves of Deep Shadow",
-    "scryfallId": "6040ba5e-7042-4095-9000-89bcb8ce1ea6",
-    "manaCost": "{G}",
-    "type": "Creature — Elf Druid",
-    "rarity": "common",
-    "elo": 1230
+    "type": "Enchantment \u2014 Room // Enchantment \u2014 Room",
+    "colors": [
+      "R"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Elvish Mystic",
     "scryfallId": "75918859-c93f-41b4-9ad0-a4a96c389f0d",
     "manaCost": "{G}",
-    "type": "Creature — Elf Druid",
-    "rarity": "common",
-    "elo": 1412
+    "type": "Creature \u2014 Elf Druid",
+    "colors": [
+      "G"
+    ],
+    "rarity": "common"
+  },
+  {
+    "name": "Experiment One",
+    "scryfallId": "3b551403-47dd-4c2b-95c8-0e2e674d6fcf",
+    "manaCost": "{G}",
+    "type": "Creature \u2014 Human Ooze",
+    "colors": [
+      "G"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Fyndhorn Elves",
     "scryfallId": "450744cf-7eba-491b-97b0-ca80c6368bbb",
     "manaCost": "{G}",
-    "type": "Creature — Elf Druid",
-    "rarity": "common",
-    "elo": 1368
+    "type": "Creature \u2014 Elf Druid",
+    "colors": [
+      "G"
+    ],
+    "rarity": "common"
   },
   {
     "name": "Joraga Treespeaker",
     "scryfallId": "1132218d-56cd-441e-9006-df3c50344491",
     "manaCost": "{G}",
-    "type": "Creature — Elf Druid",
-    "rarity": "uncommon",
-    "elo": 1256
+    "type": "Creature \u2014 Elf Druid",
+    "colors": [
+      "G"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Rubblebelt Maverick",
-    "scryfallId": "81c7ff67-b9e1-4d2e-b1ae-da9b946da00b",
+    "name": "Llanowar Elves",
+    "scryfallId": "6a0b230b-d391-4998-a3f7-7b158a0ec2cd",
     "manaCost": "{G}",
-    "type": "Creature — Human Detective",
-    "rarity": "common",
-    "elo": 1550
+    "type": "Creature \u2014 Elf Druid",
+    "colors": [
+      "G"
+    ],
+    "rarity": "common"
   },
   {
-    "name": "Stampeding Scurryfoot",
-    "scryfallId": "7fc713d7-4a7e-4f1f-b461-e89bb1457d7d",
-    "manaCost": "{G}",
-    "type": "Creature — Mouse",
-    "rarity": "common",
-    "elo": 950
-  },
-  {
-    "name": "Aftermath Analyst",
-    "scryfallId": "66f135b4-8cb3-4a4e-86ae-81a3cf4b7259",
+    "name": "Ainok Survivalist",
+    "scryfallId": "0f4b5b18-569f-4f61-ad2f-966ba4fbabdc",
     "manaCost": "{1}{G}",
-    "type": "Creature — Elf Detective",
-    "rarity": "uncommon",
-    "elo": 1332
+    "type": "Creature \u2014 Dog Shaman",
+    "colors": [
+      "G"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Devoted Druid",
-    "scryfallId": "1ab94f16-778d-4437-a1b9-2f67cd214cc0",
+    "name": "Dryad Greenseeker",
+    "scryfallId": "30171803-1e7b-430b-a0de-2dfd2f1115ac",
     "manaCost": "{1}{G}",
-    "type": "Creature — Elf Druid",
-    "rarity": "uncommon",
-    "elo": 1196
+    "type": "Creature \u2014 Dryad",
+    "colors": [
+      "G"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Duskwatch Recruiter",
-    "scryfallId": "4ef68479-ab2e-4a60-886c-ad007b64f185",
-    "manaCost": "",
-    "type": "Creature — Human Warrior Werewolf // Creature — Werewolf",
-    "rarity": "uncommon",
-    "elo": 1078
+    "name": "Kappa Tech-Wrecker",
+    "scryfallId": "d3a7bc69-4500-4e7e-94e4-67b85597bd82",
+    "manaCost": "{1}{G}",
+    "type": "Creature \u2014 Turtle Ninja",
+    "colors": [
+      "G"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Overgrown Battlement",
+    "scryfallId": "680f6308-4469-4565-873e-40fb5aaef27d",
+    "manaCost": "{1}{G}",
+    "type": "Creature \u2014 Wall",
+    "colors": [
+      "G"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Paradise Druid",
     "scryfallId": "187d5819-6a63-4e4f-98c4-18191c03f164",
     "manaCost": "{1}{G}",
-    "type": "Creature — Elf Druid",
-    "rarity": "uncommon",
-    "elo": 1124
-  },
-  {
-    "name": "Quirion Dryad",
-    "scryfallId": "a20d20f7-bc4d-42fa-9f5b-5bb330eb7f38",
-    "manaCost": "{1}{G}",
-    "type": "Creature — Dryad",
-    "rarity": "uncommon",
-    "elo": 1102
+    "type": "Creature \u2014 Elf Druid",
+    "colors": [
+      "G"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Sakura-Tribe Elder",
     "scryfallId": "d619aece-7eab-40f3-8f41-970065f0dc73",
     "manaCost": "{1}{G}",
-    "type": "Creature — Snake Shaman",
-    "rarity": "common",
-    "elo": 1204
-  },
-  {
-    "name": "Satyr Wayfinder",
-    "scryfallId": "8bbbe65d-7162-42fb-94ee-d835d6c3f02a",
-    "manaCost": "{1}{G}",
-    "type": "Creature — Satyr",
-    "rarity": "common",
-    "elo": 1312
-  },
-  {
-    "name": "Untamed Kavu",
-    "scryfallId": "3c4cf84a-2024-45bb-9e24-8a9a6d9ad247",
-    "manaCost": "{1}{G}",
-    "type": "Creature — Kavu",
-    "rarity": "uncommon",
-    "elo": 964
+    "type": "Creature \u2014 Snake Shaman",
+    "colors": [
+      "G"
+    ],
+    "rarity": "common"
   },
   {
     "name": "Wall of Blossoms",
     "scryfallId": "df901113-e273-4fe0-a264-8e9e26e70905",
     "manaCost": "{1}{G}",
-    "type": "Creature — Plant Wall",
-    "rarity": "uncommon",
-    "elo": 1412
+    "type": "Creature \u2014 Plant Wall",
+    "colors": [
+      "G"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Wall of Roots",
     "scryfallId": "e4e7d3b7-9b0c-463d-975c-ef81d7fd8dad",
     "manaCost": "{1}{G}",
-    "type": "Creature — Plant Wall",
-    "rarity": "common",
-    "elo": 1328
+    "type": "Creature \u2014 Plant Wall",
+    "colors": [
+      "G"
+    ],
+    "rarity": "common"
   },
   {
-    "name": "Eldrazi Repurposer",
-    "scryfallId": "37f79ba7-7b65-4387-b498-f770816ce8dd",
+    "name": "Wall of Tanglecord",
+    "scryfallId": "792e2aed-ce6e-4fa1-a31c-a4574e5cf1f5",
+    "manaCost": "{2}",
+    "type": "Artifact Creature \u2014 Wall",
+    "colors": [],
+    "rarity": "common"
+  },
+  {
+    "name": "Axebane Guardian",
+    "scryfallId": "f0282af2-9b3f-4335-92ea-9db9267e8cd2",
     "manaCost": "{2}{G}",
-    "type": "Creature — Eldrazi Drone",
-    "rarity": "common",
-    "elo": 1262
+    "type": "Creature \u2014 Human Druid",
+    "colors": [
+      "G"
+    ],
+    "rarity": "common"
+  },
+  {
+    "name": "Carven Caryatid",
+    "scryfallId": "f65260d1-9802-4e46-95d3-9d6c2e211338",
+    "manaCost": "{1}{G}{G}",
+    "type": "Creature \u2014 Spirit",
+    "colors": [
+      "G"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Eternal Witness",
     "scryfallId": "39704000-65d3-4d39-849e-a3b617376bbc",
     "manaCost": "{1}{G}{G}",
-    "type": "Creature — Human Shaman",
-    "rarity": "uncommon",
-    "elo": 1582
+    "type": "Creature \u2014 Human Shaman",
+    "colors": [
+      "G"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Imperious Perfect",
-    "scryfallId": "83b4a09f-ea53-42b4-a41a-4299192a6fd3",
+    "name": "Evolution Sage",
+    "scryfallId": "d089c2c1-e304-4f28-8700-5b9b3029bdbc",
     "manaCost": "{2}{G}",
-    "type": "Creature — Elf Warrior",
-    "rarity": "uncommon",
-    "elo": 1204
+    "type": "Creature \u2014 Elf Druid",
+    "colors": [
+      "G"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Jewel Thief",
-    "scryfallId": "736e498e-1245-40c1-96a4-c9bcfd1cfe1f",
+    "name": "Llanowar Visionary",
+    "scryfallId": "d6e23afa-7e08-4049-baf0-d4d0134ba2c8",
     "manaCost": "{2}{G}",
-    "type": "Creature — Cat Rogue",
-    "rarity": "common",
-    "elo": 1210
+    "type": "Creature \u2014 Elf Druid",
+    "colors": [
+      "G"
+    ],
+    "rarity": "common"
   },
   {
     "name": "Reclamation Sage",
     "scryfallId": "1918ea65-ab7f-4d40-97fd-a656c892a2a1",
     "manaCost": "{2}{G}",
-    "type": "Creature — Elf Shaman",
-    "rarity": "uncommon",
-    "elo": 1260
+    "type": "Creature \u2014 Elf Shaman",
+    "colors": [
+      "G"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Rishkar, Peema Renegade",
     "scryfallId": "88f4aecc-b728-4960-8131-1e5aa6c3c030",
     "manaCost": "{2}{G}",
-    "type": "Legendary Creature — Elf Druid",
-    "rarity": "uncommon",
-    "elo": 1208
+    "type": "Legendary Creature \u2014 Elf Druid",
+    "colors": [
+      "G"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Scurry Oak",
-    "scryfallId": "0fb48c2e-ee0f-4fae-9c22-247870c10d5b",
-    "manaCost": "{2}{G}",
-    "type": "Creature — Treefolk",
-    "rarity": "uncommon",
-    "elo": 1404
-  },
-  {
-    "name": "Splinterfright",
-    "scryfallId": "d4d5aafc-b1a6-4387-b9bf-59fca23fff94",
-    "manaCost": "{2}{G}",
-    "type": "Creature — Elemental",
-    "rarity": "uncommon",
-    "elo": 898
-  },
-  {
-    "name": "Thrashing Brontodon",
-    "scryfallId": "592364bf-68b5-4ea0-97d6-c7cadce940fd",
-    "manaCost": "{1}{G}{G}",
-    "type": "Creature — Dinosaur",
-    "rarity": "uncommon",
-    "elo": 1010
-  },
-  {
-    "name": "Bannerhide Krushok",
-    "scryfallId": "1271251b-7d79-4cb4-80bb-98574aa63249",
+    "name": "Goreclaw, Terror of Qal Sisma",
+    "scryfallId": "ee47f23a-3ba9-4615-b170-c89d8ab99d78",
     "manaCost": "{3}{G}",
-    "type": "Creature — Beast",
-    "rarity": "common",
-    "elo": 1166
-  },
-  {
-    "name": "Hazard of the Dunes",
-    "scryfallId": "c3fbee7a-7e73-43cf-bc39-ccb1c63bf837",
-    "manaCost": "{3}{G}",
-    "type": "Creature — Wurm",
-    "rarity": "common",
-    "elo": 1034
-  },
-  {
-    "name": "Pack Guardian",
-    "scryfallId": "6265e9fa-3fc3-41c5-9950-cbeaae2e6187",
-    "manaCost": "{2}{G}{G}",
-    "type": "Creature — Wolf Spirit",
-    "rarity": "uncommon",
-    "elo": 1186
-  },
-  {
-    "name": "Renata, Called to the Hunt",
-    "scryfallId": "2b27e6b2-13ad-42b2-a121-70935913723d",
-    "manaCost": "{2}{G}{G}",
-    "type": "Legendary Enchantment Creature — Demigod",
-    "rarity": "uncommon",
-    "elo": 978
-  },
-  {
-    "name": "Surrak, the Hunt Caller",
-    "scryfallId": "d6a8759d-0dc8-4218-93ac-b1a35088f776",
-    "manaCost": "{2}{G}{G}",
-    "type": "Legendary Creature — Human Warrior",
-    "rarity": "rare",
-    "elo": 1112
-  },
-  {
-    "name": "Temur Sabertooth",
-    "scryfallId": "c3a5a175-e963-42cc-a0ba-d8914bb93c00",
-    "manaCost": "{2}{G}{G}",
-    "type": "Creature — Cat",
-    "rarity": "uncommon",
-    "elo": 1072
+    "type": "Legendary Creature \u2014 Bear",
+    "colors": [
+      "G"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Timeless Witness",
     "scryfallId": "8b63ec86-670b-4acd-b14c-3d90acbde087",
     "manaCost": "{2}{G}{G}",
-    "type": "Creature — Human Shaman",
-    "rarity": "uncommon",
-    "elo": 1238
+    "type": "Creature \u2014 Human Shaman",
+    "colors": [
+      "G"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Blossom Prancer",
-    "scryfallId": "d26abdf2-efd7-40e5-bfc6-d75fcadd26f8",
+    "name": "Vital Splicer",
+    "scryfallId": "d13cf68c-b54c-46e1-a720-af57aac9e570",
+    "manaCost": "{3}{G}",
+    "type": "Creature \u2014 Phyrexian Human Artificer",
+    "colors": [
+      "G"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Acidic Slime",
+    "scryfallId": "932d48fb-42b5-4aaa-a91c-d35cdb5e41a3",
     "manaCost": "{3}{G}{G}",
-    "type": "Creature — Spirit",
-    "rarity": "uncommon",
-    "elo": 1046
+    "type": "Creature \u2014 Ooze",
+    "colors": [
+      "G"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Disruptive Stormbrood",
-    "scryfallId": "bd78e8ae-e927-40e7-9580-966c5e81f53c",
-    "manaCost": "{4}{G} // {1}{B}",
-    "type": "Creature — Dragon // Sorcery — Omen",
-    "rarity": "uncommon",
-    "elo": 1804
-  },
-  {
-    "name": "Inspirited Vanguard",
-    "scryfallId": "c642d6ac-f0f0-4b4c-a7ee-50631531f6d1",
+    "name": "Conclave Naturalists",
+    "scryfallId": "082a5372-b25a-4559-96b8-2d8d54199a38",
     "manaCost": "{4}{G}",
-    "type": "Creature — Human Soldier",
-    "rarity": "uncommon",
-    "elo": 1040
+    "type": "Creature \u2014 Dryad",
+    "colors": [
+      "G"
+    ],
+    "rarity": "common"
   },
   {
     "name": "Ridgescale Tusker",
     "scryfallId": "84b689cc-35ef-4a23-bb1e-4d81b9fb8455",
     "manaCost": "{3}{G}{G}",
-    "type": "Creature — Pangolin Beast",
-    "rarity": "uncommon",
-    "elo": 1178
+    "type": "Creature \u2014 Pangolin Beast",
+    "colors": [
+      "G"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Spinewoods Paladin",
-    "scryfallId": "1b2b432d-9e73-4ab2-a098-546d406df6c0",
-    "manaCost": "{4}{G}",
-    "type": "Creature — Human Knight",
-    "rarity": "common",
-    "elo": 1074
-  },
-  {
-    "name": "Territory Culler",
-    "scryfallId": "9c249aa6-c65c-4572-8e2e-c3899638ecce",
-    "manaCost": "{4}{G}",
-    "type": "Creature — Eldrazi",
-    "rarity": "uncommon",
-    "elo": 1232
-  },
-  {
-    "name": "Autarch Mammoth",
-    "scryfallId": "4d313ea7-2456-48f3-8b12-97d8e8c2a5b3",
-    "manaCost": "{4}{G}{G}",
-    "type": "Creature — Elephant Mount",
-    "rarity": "uncommon",
-    "elo": 1134
-  },
-  {
-    "name": "Great Oak Guardian",
-    "scryfallId": "65d36326-897e-4207-909a-8d1323d6c8e7",
-    "manaCost": "{5}{G}",
-    "type": "Creature — Treefolk",
-    "rarity": "uncommon",
-    "elo": 1090
-  },
-  {
-    "name": "Honored Hydra",
-    "scryfallId": "21c33902-a06a-4321-bdf4-cea5494fda63",
-    "manaCost": "{5}{G}",
-    "type": "Creature — Snake Hydra",
-    "rarity": "rare",
-    "elo": 1164
-  },
-  {
-    "name": "Stormkeld Vanguard",
-    "scryfallId": "bacb1fe5-0adf-461f-b698-9d09a8728c63",
-    "manaCost": "{4}{G}{G} // {1}{G}",
-    "type": "Creature — Giant Warrior // Sorcery — Adventure",
-    "rarity": "uncommon",
-    "elo": 1220
+    "name": "Altanak, the Thrice-Called",
+    "scryfallId": "807b0674-8eba-4204-b6b6-fa2b785a79e9",
+    "manaCost": "{5}{G}{G}",
+    "type": "Legendary Creature \u2014 Insect Beast",
+    "colors": [
+      "G"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Beanstalk Giant",
     "scryfallId": "71096773-69dd-4fb7-a088-e0fe096eaf6b",
     "manaCost": "{6}{G} // {2}{G}",
-    "type": "Creature — Giant // Sorcery — Adventure",
-    "rarity": "uncommon",
-    "elo": 1104
-  },
-  {
-    "name": "Bramble Wurm",
-    "scryfallId": "7ed00113-a0d7-4825-b066-f911a1ffb900",
-    "manaCost": "{6}{G}",
-    "type": "Creature — Wurm",
-    "rarity": "common",
-    "elo": 1034
-  },
-  {
-    "name": "Krosan Tusker",
-    "scryfallId": "0a368f72-cc88-4f32-aad4-22d92c4d032d",
-    "manaCost": "{5}{G}{G}",
-    "type": "Creature — Boar Beast",
-    "rarity": "common",
-    "elo": 1342
+    "type": "Creature \u2014 Giant // Sorcery \u2014 Adventure",
+    "colors": [
+      "G"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Pelakka Wurm",
     "scryfallId": "fa150070-80b6-453d-b00f-4462175cac79",
     "manaCost": "{4}{G}{G}{G}",
-    "type": "Creature — Wurm",
-    "rarity": "uncommon",
-    "elo": 1346
+    "type": "Creature \u2014 Wurm",
+    "colors": [
+      "G"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Nyxborn Hydra",
-    "scryfallId": "902a969e-9f22-4e92-93eb-9d4536ca82e5",
-    "manaCost": "{X}{G}",
-    "type": "Enchantment Creature — Hydra",
-    "rarity": "common",
-    "elo": 1054
+    "name": "Bookwurm",
+    "scryfallId": "57d230fc-d382-40b4-bdbd-5fe880fa16bf",
+    "manaCost": "{7}{G}",
+    "type": "Creature \u2014 Wurm",
+    "colors": [
+      "G"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Cache Grab",
-    "scryfallId": "dfd977dc-a7c3-4d0a-aca7-b25bd154e963",
-    "manaCost": "{1}{G}",
+    "name": "Berserk",
+    "scryfallId": "62bc9bff-89bd-4454-a876-53822cf48546",
+    "manaCost": "{G}",
     "type": "Instant",
-    "rarity": "common",
-    "elo": 1200
+    "colors": [
+      "G"
+    ],
+    "rarity": "mythic"
   },
   {
-    "name": "Collective Resistance",
-    "scryfallId": "f260bd08-68b6-44f4-ace9-e298cb13d82e",
-    "manaCost": "{1}{G}",
+    "name": "Mutagenic Growth",
+    "scryfallId": "2e0861a2-1858-47af-8154-20a977c2b298",
+    "manaCost": "{G/P}",
     "type": "Instant",
-    "rarity": "uncommon",
-    "elo": 982
+    "colors": [
+      "G"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Snakeskin Veil",
+    "scryfallId": "a3d2c692-7566-468e-9c86-47a9f768fde2",
+    "manaCost": "{G}",
+    "type": "Instant",
+    "colors": [
+      "G"
+    ],
+    "rarity": "common"
   },
   {
     "name": "Sprout Swarm",
     "scryfallId": "0b915355-4e98-44df-81bd-961a3d3c86b8",
     "manaCost": "{1}{G}",
     "type": "Instant",
-    "rarity": "common",
-    "elo": 1438
+    "colors": [
+      "G"
+    ],
+    "rarity": "common"
   },
   {
     "name": "Predator's Howl",
     "scryfallId": "cae61a9d-39fc-4c25-adec-d578d57c2903",
     "manaCost": "{3}{G}",
     "type": "Instant",
-    "rarity": "uncommon",
-    "elo": 1046
+    "colors": [
+      "G"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Abundant Harvest",
-    "scryfallId": "516e137a-d9d9-4ba7-89fb-e680ddb2c2d1",
-    "manaCost": "{G}",
-    "type": "Sorcery",
-    "rarity": "common",
-    "elo": 1298
-  },
-  {
-    "name": "Dance of the Tumbleweeds",
-    "scryfallId": "caf0e715-befb-4904-82e6-d3f8c7fbd454",
+    "name": "Explore",
+    "scryfallId": "3976affd-8c2b-499a-a946-b629c2ba59c7",
     "manaCost": "{1}{G}",
     "type": "Sorcery",
-    "rarity": "common",
-    "elo": 1330
+    "colors": [
+      "G"
+    ],
+    "rarity": "common"
   },
   {
-    "name": "Malevolent Rumble",
-    "scryfallId": "a178cfe8-f9fa-4255-88d0-54a0bed079f5",
+    "name": "Rampant Growth",
+    "scryfallId": "b7c47024-5e08-4b17-b41a-7647f8b814b9",
     "manaCost": "{1}{G}",
     "type": "Sorcery",
-    "rarity": "common",
-    "elo": 1686
+    "colors": [
+      "G"
+    ],
+    "rarity": "common"
+  },
+  {
+    "name": "Regrowth",
+    "scryfallId": "d771fc5d-b9a1-4637-8241-3f54616b64af",
+    "manaCost": "{1}{G}",
+    "type": "Sorcery",
+    "colors": [
+      "G"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Bala Ged Recovery",
+    "scryfallId": "c5cb3052-358d-44a7-8cfd-cd31b236494a",
+    "manaCost": "",
+    "type": "Sorcery // Land",
+    "colors": [],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Bridgeworks Battle",
+    "scryfallId": "ebef3db0-2b58-4581-a79c-fbca9a059e63",
+    "manaCost": "",
+    "type": "Sorcery // Land",
+    "colors": [],
+    "rarity": "uncommon"
   },
   {
     "name": "Call of the Herd",
     "scryfallId": "892cd7b7-58d0-4bc4-a904-4b64fadd7f3c",
     "manaCost": "{2}{G}",
     "type": "Sorcery",
-    "rarity": "uncommon",
-    "elo": 1130
+    "colors": [
+      "G"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Under the Skin",
-    "scryfallId": "0aaf1ad3-00ad-48ec-a71f-812649d55e14",
+    "name": "Kodama's Reach",
+    "scryfallId": "84c27ded-a0f6-4965-8a44-e87f0972d1d8",
+    "manaCost": "{2}{G}",
+    "type": "Sorcery \u2014 Arcane",
+    "colors": [
+      "G"
+    ],
+    "rarity": "common"
+  },
+  {
+    "name": "Search for Tomorrow",
+    "scryfallId": "4a0c73a9-38a2-4a3d-938e-b81ba166f0ff",
     "manaCost": "{2}{G}",
     "type": "Sorcery",
-    "rarity": "uncommon",
-    "elo": 1556
+    "colors": [
+      "G"
+    ],
+    "rarity": "common"
   },
   {
     "name": "Harmonize",
     "scryfallId": "839b9c4c-0752-4d4f-abbb-ec2c9f9e55fa",
     "manaCost": "{2}{G}{G}",
     "type": "Sorcery",
-    "rarity": "uncommon",
-    "elo": 1114
+    "colors": [
+      "G"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Trumpeting Herd",
-    "scryfallId": "b0f3b68e-f616-4687-bc2d-075165162cd1",
-    "manaCost": "{2}{G}{G}",
+    "name": "Vastwood Surge",
+    "scryfallId": "1dcd904c-fac6-490d-a9dd-ccdf39cbe597",
+    "manaCost": "{3}{G}",
     "type": "Sorcery",
-    "rarity": "common",
-    "elo": 1282
+    "colors": [
+      "G"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Grizzly Fate",
     "scryfallId": "004e1457-d951-4029-8bb6-17a290793e79",
     "manaCost": "{3}{G}{G}",
     "type": "Sorcery",
-    "rarity": "uncommon",
-    "elo": 1296
+    "colors": [
+      "G"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Overwhelming Encounter",
-    "scryfallId": "616c498c-ac7c-4e58-8789-9bde047c2d47",
-    "manaCost": "{3}{G}{G}",
+    "name": "Overrun",
+    "scryfallId": "1d8e9cbb-8bf4-4a48-a58e-79deb3abdf7f",
+    "manaCost": "{2}{G}{G}{G}",
     "type": "Sorcery",
-    "rarity": "uncommon",
-    "elo": 872
-  },
-  {
-    "name": "Spider Spawning",
-    "scryfallId": "c229cbde-f370-4fef-8765-9773d516324a",
-    "manaCost": "{4}{G}",
-    "type": "Sorcery",
-    "rarity": "uncommon",
-    "elo": 1222
-  },
-  {
-    "name": "Rise of the Ants",
-    "scryfallId": "3143fadd-0162-4e0c-89fc-89dc3501d13c",
-    "manaCost": "{4}{G}{G}",
-    "type": "Sorcery",
-    "rarity": "uncommon",
-    "elo": 1022
-  },
-  {
-    "name": "Earthrumbler",
-    "scryfallId": "ee386cd0-934a-4b33-9db3-0a9033ab577e",
-    "manaCost": "{4}{G}",
-    "type": "Artifact — Vehicle",
-    "rarity": "uncommon",
-    "elo": 968
+    "colors": [
+      "G"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Rancor",
     "scryfallId": "86d6b411-4a31-4bfc-8dd6-e19f553bb29b",
     "manaCost": "{G}",
-    "type": "Enchantment — Aura",
-    "rarity": "uncommon",
-    "elo": 942
+    "type": "Enchantment \u2014 Aura",
+    "colors": [
+      "G"
+    ],
+    "rarity": "uncommon"
   },
   {
     "name": "Utopia Sprawl",
     "scryfallId": "5ea568df-04a1-4012-98ec-ba75e189e0ca",
     "manaCost": "{G}",
-    "type": "Enchantment — Aura",
-    "rarity": "uncommon",
-    "elo": 1118
+    "type": "Enchantment \u2014 Aura",
+    "colors": [
+      "G"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Wild Growth",
-    "scryfallId": "47260e7c-29bf-46f1-a029-9da7bbb418b5",
-    "manaCost": "{G}",
-    "type": "Enchantment — Aura",
-    "rarity": "common",
-    "elo": 1068
-  },
-  {
-    "name": "Fertile Ground",
-    "scryfallId": "0ade2db8-482e-42b0-939c-492dfbbe3b68",
+    "name": "Assault Formation",
+    "scryfallId": "40452217-9d8c-48e7-b5b4-2740b97bea2a",
     "manaCost": "{1}{G}",
-    "type": "Enchantment — Aura",
-    "rarity": "common",
-    "elo": 1036
+    "type": "Enchantment",
+    "colors": [
+      "G"
+    ],
+    "rarity": "rare"
   },
   {
-    "name": "Hunter's Talent",
-    "scryfallId": "e9a31863-9649-4a4f-99e4-c93729938bd7",
+    "name": "Song of Freyalise",
+    "scryfallId": "a45b534b-8442-4074-a8d2-f38e83f24868",
     "manaCost": "{1}{G}",
-    "type": "Enchantment — Class",
-    "rarity": "uncommon",
-    "elo": 1092
+    "type": "Enchantment \u2014 Saga",
+    "colors": [
+      "G"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Wolfwillow Haven",
-    "scryfallId": "72b886c3-234c-49ce-9a11-456c1e8f092f",
+    "name": "Sylvan Library",
+    "scryfallId": "6ada256f-2e55-4c1f-b4d3-d7b10b498956",
     "manaCost": "{1}{G}",
-    "type": "Enchantment — Aura",
-    "rarity": "uncommon",
-    "elo": 1016
+    "type": "Enchantment",
+    "colors": [
+      "G"
+    ],
+    "rarity": "mythic"
   },
   {
     "name": "Curse of Predation",
     "scryfallId": "daf631ad-762f-4bec-9588-aca88507cad5",
     "manaCost": "{2}{G}",
-    "type": "Enchantment — Aura Curse",
-    "rarity": "rare",
-    "elo": 932
+    "type": "Enchantment \u2014 Aura Curse",
+    "colors": [
+      "G"
+    ],
+    "rarity": "rare"
   },
   {
-    "name": "Treetop Village",
-    "scryfallId": "14394198-0993-46ee-a3ea-5c7084a78772",
-    "manaCost": "",
-    "type": "Land",
-    "rarity": "uncommon",
-    "elo": 1108
-  },
-  {
-    "name": "Hallowed Fountain",
-    "scryfallId": "cd70adab-39db-4cc9-ae37-a342f9109bec",
-    "manaCost": "",
-    "type": "Land — Plains Island",
-    "rarity": "rare",
-    "elo": 1448
-  },
-  {
-    "name": "Irrigated Farmland",
-    "scryfallId": "3cbc4f0a-6735-461c-ae7a-3c2ce342c4da",
-    "manaCost": "",
-    "type": "Land — Plains Island",
-    "rarity": "rare",
-    "elo": 1422
-  },
-  {
-    "name": "Meticulous Archive",
-    "scryfallId": "652236c2-84ef-45e4-b5fc-ed6170bc3d6c",
-    "manaCost": "",
-    "type": "Land — Plains Island",
-    "rarity": "rare",
-    "elo": 1278
-  },
-  {
-    "name": "Empyrean Eagle",
-    "scryfallId": "577e99a7-4a55-4314-8f08-2ae0c33b85c7",
-    "manaCost": "{1}{W}{U}",
-    "type": "Creature — Bird Spirit",
-    "rarity": "uncommon",
-    "elo": 998
-  },
-  {
-    "name": "Reflector Mage",
-    "scryfallId": "9473fe01-83f6-4432-ab01-f7953d2ca904",
-    "manaCost": "{1}{W}{U}",
-    "type": "Creature — Human Wizard",
-    "rarity": "uncommon",
-    "elo": 1238
-  },
-  {
-    "name": "Soulherder",
-    "scryfallId": "50bc0f5b-7421-45b9-af85-86dd9821b7d8",
-    "manaCost": "{1}{W}{U}",
-    "type": "Creature — Spirit",
-    "rarity": "uncommon",
-    "elo": 1098
-  },
-  {
-    "name": "Sharae of Numbing Depths",
-    "scryfallId": "600bc36a-3ef0-459c-9a93-94ec45b8c3d9",
-    "manaCost": "{2}{W}{U}",
-    "type": "Legendary Creature — Merfolk Wizard",
-    "rarity": "uncommon",
-    "elo": 1338
-  },
-  {
-    "name": "Cloudblazer",
-    "scryfallId": "a9c966ab-0d92-4fa7-8a91-1f77089d8fc7",
-    "manaCost": "{3}{W}{U}",
-    "type": "Creature — Human Scout",
-    "rarity": "uncommon",
-    "elo": 1244
-  },
-  {
-    "name": "Fetid Pools",
-    "scryfallId": "d036dfb9-7da2-4375-83ee-b01eb95b64e6",
-    "manaCost": "",
-    "type": "Land — Island Swamp",
-    "rarity": "rare",
-    "elo": 1164
-  },
-  {
-    "name": "Undercity Sewers",
-    "scryfallId": "2b5801fb-2026-4f25-98bc-ebb2f99684b9",
-    "manaCost": "",
-    "type": "Land — Island Swamp",
-    "rarity": "rare",
-    "elo": 1504
-  },
-  {
-    "name": "Watery Grave",
-    "scryfallId": "5b8170dc-6a90-46fc-9989-7575f3d402b5",
-    "manaCost": "",
-    "type": "Land — Island Swamp",
-    "rarity": "rare",
-    "elo": 1440
-  },
-  {
-    "name": "Baleful Strix",
-    "scryfallId": "be8439e6-f779-49f0-806a-b04995697a6a",
-    "manaCost": "{U}{B}",
-    "type": "Artifact Creature — Bird",
-    "rarity": "rare",
-    "elo": 1272
-  },
-  {
-    "name": "Halo Forager",
-    "scryfallId": "edb5f0cc-c826-4e7b-882c-63f6e51fa932",
-    "manaCost": "{1}{U}{B}",
-    "type": "Creature — Faerie Rogue",
-    "rarity": "uncommon",
-    "elo": 1228
-  },
-  {
-    "name": "Intimidation Campaign",
-    "scryfallId": "596fb7a2-bb79-44b7-ad84-414c8139ec13",
-    "manaCost": "{1}{U}{B}",
+    "name": "Gaea's Anthem",
+    "scryfallId": "43febc63-597d-4392-b8ea-a00841148c45",
+    "manaCost": "{1}{G}{G}",
     "type": "Enchantment",
-    "rarity": "uncommon",
-    "elo": 1204
+    "colors": [
+      "G"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Obsessive Stitcher",
-    "scryfallId": "d319c8a2-ae7b-4077-8b11-97937979fed2",
-    "manaCost": "{1}{U}{B}",
-    "type": "Creature — Human Wizard",
-    "rarity": "uncommon",
-    "elo": 878
-  },
-  {
-    "name": "Dinrova Horror",
-    "scryfallId": "7da93bf0-2075-4e36-b69b-3db3d4288e7a",
-    "manaCost": "{4}{U}{B}",
-    "type": "Creature — Horror",
-    "rarity": "uncommon",
-    "elo": 1264
-  },
-  {
-    "name": "Blackcleave Cliffs",
-    "scryfallId": "f75715ce-744f-409c-aeb1-e66eb9186a74",
-    "manaCost": "",
-    "type": "Land",
-    "rarity": "rare",
-    "elo": 1252
-  },
-  {
-    "name": "Blood Crypt",
-    "scryfallId": "0994aef4-b341-45f4-8881-523565a5956e",
-    "manaCost": "",
-    "type": "Land — Swamp Mountain",
-    "rarity": "rare",
-    "elo": 1606
-  },
-  {
-    "name": "Sulfurous Springs",
-    "scryfallId": "eedb9df2-20d3-4cfd-8aed-336edc37d5a9",
-    "manaCost": "",
-    "type": "Land",
-    "rarity": "rare",
-    "elo": 1412
-  },
-  {
-    "name": "Judith, the Scourge Diva",
-    "scryfallId": "d6fb929c-1b8d-4d1d-aa69-ac6189cd7ebf",
-    "manaCost": "{1}{B}{R}",
-    "type": "Legendary Creature — Human Shaman",
-    "rarity": "uncommon",
-    "elo": 1092
-  },
-  {
-    "name": "Mayhem Devil",
-    "scryfallId": "674f3a8a-4552-4289-b92a-06ce158f115c",
-    "manaCost": "{1}{B}{R}",
-    "type": "Creature — Devil",
-    "rarity": "uncommon",
-    "elo": 1138
-  },
-  {
-    "name": "Sawblade Skinripper",
-    "scryfallId": "cbe51964-50d2-49b0-9c3c-81751dcbeade",
-    "manaCost": "{1}{B}{R}",
-    "type": "Creature — Human Assassin",
-    "rarity": "uncommon",
-    "elo": 1004
-  },
-  {
-    "name": "Murderous Redcap",
-    "scryfallId": "acadf575-2076-4f0c-b66e-994898adf375",
-    "manaCost": "{2}{B/R}{B/R}",
-    "type": "Creature — Goblin Assassin",
-    "rarity": "uncommon",
-    "elo": 1526
-  },
-  {
-    "name": "Pyretic Rebirth",
-    "scryfallId": "5968f641-48b5-4b97-8072-ddd8073cd4d7",
-    "manaCost": "{2}{B}{R}",
-    "type": "Instant",
-    "rarity": "uncommon",
-    "elo": 1272
-  },
-  {
-    "name": "Rootbound Crag",
-    "scryfallId": "1a88057c-0997-4b86-bcd5-b1127e4f1f28",
-    "manaCost": "",
-    "type": "Land",
-    "rarity": "rare",
-    "elo": 1132
-  },
-  {
-    "name": "Sheltered Thicket",
-    "scryfallId": "af373c1c-aeb8-48d9-9cea-dfd6d6c2ee87",
-    "manaCost": "",
-    "type": "Land — Mountain Forest",
-    "rarity": "rare",
-    "elo": 1394
-  },
-  {
-    "name": "Stomping Ground",
-    "scryfallId": "69be21b4-c613-47c6-ba57-f4785861af3e",
-    "manaCost": "",
-    "type": "Land — Mountain Forest",
-    "rarity": "rare",
-    "elo": 1394
-  },
-  {
-    "name": "Grumgully, the Generous",
-    "scryfallId": "3aa40ce2-76df-43bd-a59e-7cf6e4f46a1d",
-    "manaCost": "{1}{R}{G}",
-    "type": "Legendary Creature — Goblin Shaman",
-    "rarity": "uncommon",
-    "elo": 1316
-  },
-  {
-    "name": "Bloodbraid Elf",
-    "scryfallId": "e2f12f6f-9383-47e6-a44f-2834ad130e51",
-    "manaCost": "{2}{R}{G}",
-    "type": "Creature — Elf Berserker",
-    "rarity": "uncommon",
-    "elo": 1388
-  },
-  {
-    "name": "General Marhault Elsdragon",
-    "scryfallId": "bf2931bd-bedc-45e8-b3f0-e2a220dbac1b",
-    "manaCost": "{2}{R}{G}",
-    "type": "Legendary Creature — Elf Warrior",
-    "rarity": "uncommon",
-    "elo": 880
-  },
-  {
-    "name": "Ghor-Clan Rampager",
-    "scryfallId": "4aae3f29-dde8-4880-b675-75468d53b3f4",
-    "manaCost": "{2}{R}{G}",
-    "type": "Creature — Beast",
-    "rarity": "uncommon",
-    "elo": 976
-  },
-  {
-    "name": "Writhing Chrysalis",
-    "scryfallId": "f54dbeb1-51f8-40e2-912a-ec25457de5a2",
-    "manaCost": "{2}{R}{G}",
-    "type": "Creature — Eldrazi Drone",
-    "rarity": "common",
-    "elo": 1260
-  },
-  {
-    "name": "Horizon Canopy",
-    "scryfallId": "93f7c880-9bae-4d29-b7b6-b6be6b2ffa89",
-    "manaCost": "",
-    "type": "Land",
-    "rarity": "rare",
-    "elo": 1030
-  },
-  {
-    "name": "Lush Portico",
-    "scryfallId": "c17816e8-28b1-4295-a637-efb0e5c18873",
-    "manaCost": "",
-    "type": "Land — Forest Plains",
-    "rarity": "rare",
-    "elo": 1162
-  },
-  {
-    "name": "Scattered Groves",
-    "scryfallId": "0834b6e2-7a92-4767-8aca-9ec8961cd33e",
-    "manaCost": "",
-    "type": "Land — Forest Plains",
-    "rarity": "rare",
-    "elo": 1496
-  },
-  {
-    "name": "Vitu-Ghazi Guildmage",
-    "scryfallId": "275a3199-1297-4281-a95c-374bcdc198ce",
-    "manaCost": "{G}{W}",
-    "type": "Creature — Dryad Shaman",
-    "rarity": "uncommon",
-    "elo": 832
-  },
-  {
-    "name": "Good-Fortune Unicorn",
-    "scryfallId": "eabbe163-2b15-42e3-89ce-7363e6250d3a",
-    "manaCost": "{1}{G}{W}",
-    "type": "Creature — Unicorn",
-    "rarity": "uncommon",
-    "elo": 1144
-  },
-  {
-    "name": "Kitchen Finks",
-    "scryfallId": "a844d537-df73-422d-a154-f1c6b92d0469",
-    "manaCost": "{1}{G/W}{G/W}",
-    "type": "Creature — Ouphe",
-    "rarity": "uncommon",
-    "elo": 1162
-  },
-  {
-    "name": "Veteran Beastrider",
-    "scryfallId": "cab38f35-b60c-464c-a0b5-9d5f2dc6de7f",
-    "manaCost": "{1}{G}{W}",
-    "type": "Creature — Human Knight",
-    "rarity": "uncommon",
-    "elo": 906
-  },
-  {
-    "name": "Trostani's Summoner",
-    "scryfallId": "eda757a0-067b-4eb9-badc-d86da5b40305",
-    "manaCost": "{5}{G}{W}",
-    "type": "Creature — Elf Shaman",
-    "rarity": "uncommon",
-    "elo": 1400
-  },
-  {
-    "name": "Godless Shrine",
-    "scryfallId": "8c542ea4-98c3-4c2d-9066-205ab7aa697a",
-    "manaCost": "",
-    "type": "Land — Plains Swamp",
-    "rarity": "rare",
-    "elo": 1292
-  },
-  {
-    "name": "Isolated Chapel",
-    "scryfallId": "2358a441-4ef7-469c-bb9c-c6ff4d719658",
-    "manaCost": "",
-    "type": "Land",
-    "rarity": "rare",
-    "elo": 1202
-  },
-  {
-    "name": "Silent Clearing",
-    "scryfallId": "ac07e230-0297-4e1d-bdfe-119010e0ad8e",
-    "manaCost": "",
-    "type": "Land",
-    "rarity": "rare",
-    "elo": 896
-  },
-  {
-    "name": "Bartolomé del Presidio",
-    "scryfallId": "690ccdc7-6c43-4902-9d11-2f07b7a36b11",
-    "manaCost": "{W}{B}",
-    "type": "Legendary Creature — Vampire Knight",
-    "rarity": "uncommon",
-    "elo": 1062
-  },
-  {
-    "name": "Elas il-Kor, Sadistic Pilgrim",
-    "scryfallId": "1c3f0ffe-cf51-4c30-8cd5-9e3c7e92c019",
-    "manaCost": "{W}{B}",
-    "type": "Legendary Creature — Phyrexian Kor Cleric",
-    "rarity": "uncommon",
-    "elo": 1142
-  },
-  {
-    "name": "Graceful Restoration",
-    "scryfallId": "f03d7c3c-02f2-4c42-bcfa-0b83de30f607",
-    "manaCost": "{3}{W}{B}",
-    "type": "Sorcery",
-    "rarity": "uncommon",
-    "elo": 1310
-  },
-  {
-    "name": "Hero of the Dunes",
-    "scryfallId": "9c6c72d5-f08e-4e46-a5cb-26d1fc0a71c8",
-    "manaCost": "{3}{W}{B}",
-    "type": "Creature — Human Soldier",
-    "rarity": "uncommon",
-    "elo": 1226
-  },
-  {
-    "name": "Shroudstomper",
-    "scryfallId": "53f746bf-0642-48db-835e-27a7fe369fef",
-    "manaCost": "{3}{W}{W}{B}{B}",
-    "type": "Creature — Elemental",
-    "rarity": "uncommon",
-    "elo": 1290
-  },
-  {
-    "name": "Fiery Islet",
-    "scryfallId": "a3aab13c-9d9d-4507-ae5d-da979990ae1b",
-    "manaCost": "",
-    "type": "Land",
-    "rarity": "rare",
-    "elo": 1138
-  },
-  {
-    "name": "Prismari Campus",
-    "scryfallId": "bf90c219-508f-49af-a7f9-540021d49d8c",
-    "manaCost": "",
-    "type": "Land",
-    "rarity": "common",
-    "elo": 1010
-  },
-  {
-    "name": "Steam Vents",
-    "scryfallId": "66d618f4-443c-4a6c-8cbd-5d4ea96b2cd4",
-    "manaCost": "",
-    "type": "Land — Island Mountain",
-    "rarity": "rare",
-    "elo": 1350
-  },
-  {
-    "name": "Balmor, Battlemage Captain",
-    "scryfallId": "0b45ab13-9bb6-48af-8b37-d97b25801ac8",
-    "manaCost": "{U}{R}",
-    "type": "Legendary Creature — Bird Wizard",
-    "rarity": "uncommon",
-    "elo": 1290
-  },
-  {
-    "name": "Expressive Iteration",
-    "scryfallId": "45e92d69-0684-4a57-8c1c-bbf742bd8a23",
-    "manaCost": "{U}{R}",
-    "type": "Sorcery",
-    "rarity": "uncommon",
-    "elo": 1244
-  },
-  {
-    "name": "Improbable Alliance",
-    "scryfallId": "29ab3610-342d-4a67-9be8-a7efb89a4b46",
-    "manaCost": "{U}{R}",
+    "name": "Wilderness Reclamation",
+    "scryfallId": "5e6c0cb4-f17d-48ae-9bbf-9498505a23b0",
+    "manaCost": "{3}{G}",
     "type": "Enchantment",
-    "rarity": "uncommon",
-    "elo": 988
+    "colors": [
+      "G"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Sprite Dragon",
-    "scryfallId": "361385d8-d9c7-4de8-a5c8-683e682779f4",
-    "manaCost": "{U}{R}",
-    "type": "Creature — Faerie Dragon",
-    "rarity": "uncommon",
-    "elo": 1182
-  },
-  {
-    "name": "Third Path Iconoclast",
-    "scryfallId": "ca29f373-7051-4cbe-bda8-e711fda4f9bb",
-    "manaCost": "{U}{R}",
-    "type": "Creature — Human Monk",
-    "rarity": "uncommon",
-    "elo": 1328
-  },
-  {
-    "name": "Golgari Rot Farm",
-    "scryfallId": "acc5821d-e31f-4f5d-b4d0-e471db7dee7f",
-    "manaCost": "",
-    "type": "Land",
-    "rarity": "uncommon",
-    "elo": 1216
-  },
-  {
-    "name": "Overgrown Tomb",
-    "scryfallId": "4a297ec1-0a7c-4f67-936b-d9227767e989",
-    "manaCost": "",
-    "type": "Land — Swamp Forest",
-    "rarity": "rare",
-    "elo": 1524
-  },
-  {
-    "name": "Underground Mortuary",
-    "scryfallId": "f6ca59cd-8779-4a84-a54b-e863b79c61f0",
-    "manaCost": "",
-    "type": "Land — Swamp Forest",
-    "rarity": "rare",
-    "elo": 1506
-  },
-  {
-    "name": "Grisly Salvage",
-    "scryfallId": "12a90f7a-28df-4017-b221-0e9234ff74a7",
-    "manaCost": "{B}{G}",
-    "type": "Instant",
-    "rarity": "common",
-    "elo": 1130
-  },
-  {
-    "name": "Insidious Roots",
-    "scryfallId": "0bb91a22-2040-4a37-85f8-5f22de8c5907",
-    "manaCost": "{B}{G}",
+    "name": "Centaur Glade",
+    "scryfallId": "1c75f9c8-9640-4f64-b32a-916436e461fc",
+    "manaCost": "{3}{G}{G}",
     "type": "Enchantment",
-    "rarity": "uncommon",
-    "elo": 1530
+    "colors": [
+      "G"
+    ],
+    "rarity": "uncommon"
   },
   {
-    "name": "Honest Rutstein",
-    "scryfallId": "259ddf66-76af-4857-83c3-c812327a6e23",
-    "manaCost": "{1}{B}{G}",
-    "type": "Legendary Creature — Human Warlock",
-    "rarity": "uncommon",
-    "elo": 1482
-  },
-  {
-    "name": "Rise of the Witch-king",
-    "scryfallId": "3f440fa1-5387-41d6-a80f-5b19dbb21514",
-    "manaCost": "{2}{B}{G}",
-    "type": "Sorcery",
-    "rarity": "uncommon",
-    "elo": 1338
-  },
-  {
-    "name": "Young Deathclaws",
-    "scryfallId": "64d5e6bd-de46-4bc2-854b-cc6cae713f98",
-    "manaCost": "{2}{B}{G}",
-    "type": "Creature — Lizard Mutant",
-    "rarity": "uncommon",
-    "elo": 1086
-  },
-  {
-    "name": "Inspiring Vantage",
-    "scryfallId": "85df6b6a-2dcf-4828-a4a8-e07d52e1fddd",
-    "manaCost": "",
-    "type": "Land",
-    "rarity": "rare",
-    "elo": 1090
-  },
-  {
-    "name": "Sacred Foundry",
-    "scryfallId": "8b4e2642-3c87-4708-b9b4-2e7f7359ac7d",
-    "manaCost": "",
-    "type": "Land — Mountain Plains",
-    "rarity": "rare",
-    "elo": 1264
-  },
-  {
-    "name": "Sunbaked Canyon",
-    "scryfallId": "c36820fa-ee86-4206-9a0d-737a67cf5208",
-    "manaCost": "",
-    "type": "Land",
-    "rarity": "rare",
-    "elo": 902
-  },
-  {
-    "name": "Arabella, Abandoned Doll",
-    "scryfallId": "f683d5a1-b8bf-446f-9fe3-88a4398bf3cf",
-    "manaCost": "{R}{W}",
-    "type": "Legendary Artifact Creature — Toy",
-    "rarity": "uncommon",
-    "elo": 1068
-  },
-  {
-    "name": "Craig Boone, Novac Guard",
-    "scryfallId": "63d83dad-21c3-4777-84b0-3c775585b5fd",
-    "manaCost": "{1}{R}{W}",
-    "type": "Legendary Creature — Human Soldier",
-    "rarity": "uncommon",
-    "elo": 950
-  },
-  {
-    "name": "Goblin Trenches",
-    "scryfallId": "06625dee-d2e6-4efa-a385-5113d0fe78ac",
-    "manaCost": "{1}{R}{W}",
-    "type": "Enchantment",
-    "rarity": "rare",
-    "elo": 1034
-  },
-  {
-    "name": "Heroic Reinforcements",
-    "scryfallId": "6a05e8d5-c2ad-489a-888d-22622886b620",
-    "manaCost": "{2}{R}{W}",
-    "type": "Sorcery",
-    "rarity": "uncommon",
-    "elo": 1038
-  },
-  {
-    "name": "Shadowfax, Lord of Horses",
-    "scryfallId": "4c7d861d-7832-4c15-8d6c-8c07a9a57891",
-    "manaCost": "{3}{R}{W}",
-    "type": "Legendary Creature — Horse",
-    "rarity": "uncommon",
-    "elo": 954
-  },
-  {
-    "name": "Breeding Pool",
-    "scryfallId": "3c750d5a-f743-41ff-b5ba-02025ca0bec2",
-    "manaCost": "",
-    "type": "Land — Forest Island",
-    "rarity": "rare",
-    "elo": 1242
-  },
-  {
-    "name": "Hedge Maze",
-    "scryfallId": "5260f8ae-805b-4eae-badf-62de0f768867",
-    "manaCost": "",
-    "type": "Land — Forest Island",
-    "rarity": "rare",
-    "elo": 1416
-  },
-  {
-    "name": "Simic Growth Chamber",
-    "scryfallId": "212d97c5-c144-483b-b42e-00623477e928",
-    "manaCost": "",
-    "type": "Land",
-    "rarity": "uncommon",
-    "elo": 1230
-  },
-  {
-    "name": "Vilespawn Spider",
-    "scryfallId": "58901777-f8bf-450b-acf8-d60a73c3322f",
-    "manaCost": "{G}{U}",
-    "type": "Creature — Spider",
-    "rarity": "uncommon",
-    "elo": 748
-  },
-  {
-    "name": "Kiora, Behemoth Beckoner",
-    "scryfallId": "7a61b1a6-a75f-47b0-b215-de9708b6d773",
-    "manaCost": "{2}{G/U}",
-    "type": "Legendary Planeswalker — Kiora",
-    "rarity": "uncommon",
-    "elo": 1032
-  },
-  {
-    "name": "Scuttling Sentinel",
-    "scryfallId": "f3ef6061-9b3f-49cb-a09c-3567fca857d4",
-    "manaCost": "{1}{G/U}{G/U}",
-    "type": "Creature — Crab Elf",
-    "rarity": "uncommon",
-    "elo": 1270
-  },
-  {
-    "name": "Make Your Own Luck",
-    "scryfallId": "0557b0a3-2b48-408f-a508-9f4da2ab1cd1",
-    "manaCost": "{3}{G}{U}",
-    "type": "Sorcery",
-    "rarity": "uncommon",
-    "elo": 1262
-  },
-  {
-    "name": "Colossal Skyturtle",
-    "scryfallId": "f40bd797-4d12-4098-a1a8-d7e5b7b82ac9",
-    "manaCost": "{4}{G}{G}{U}",
-    "type": "Enchantment Creature — Turtle",
-    "rarity": "uncommon",
-    "elo": 1680
-  },
-  {
-    "name": "Tranquil Landscape",
-    "scryfallId": "113f48b9-a972-4e2c-af95-05ab078e01f2",
-    "manaCost": "",
-    "type": "Land",
-    "rarity": "common",
-    "elo": 1448
-  },
-  {
-    "name": "Contaminated Landscape",
-    "scryfallId": "e2312c49-1627-47ad-8113-78a999a97d8d",
-    "manaCost": "",
-    "type": "Land",
-    "rarity": "common",
-    "elo": 1254
-  },
-  {
-    "name": "Seething Landscape",
-    "scryfallId": "661fc907-7003-45c6-820c-9616e9a71c30",
-    "manaCost": "",
-    "type": "Land",
-    "rarity": "common",
-    "elo": 1098
-  },
-  {
-    "name": "Twisted Landscape",
-    "scryfallId": "d0e3e7b3-7ba9-47a2-b46c-a40bffb445e2",
-    "manaCost": "",
-    "type": "Land",
-    "rarity": "common",
-    "elo": 1354
-  },
-  {
-    "name": "Sheltering Landscape",
-    "scryfallId": "0fe070f4-8877-4280-b8fd-869f3ac34ab6",
-    "manaCost": "",
-    "type": "Land",
-    "rarity": "common",
-    "elo": 1316
-  },
-  {
-    "name": "Shattered Landscape",
-    "scryfallId": "f8373e5a-94bb-4aa0-bd09-13a01e0cb02a",
-    "manaCost": "",
-    "type": "Land",
-    "rarity": "common",
-    "elo": 1324
-  },
-  {
-    "name": "Bountiful Landscape",
-    "scryfallId": "f1c99617-6e38-4af7-a064-6db9a5e2cc6a",
-    "manaCost": "",
-    "type": "Land",
-    "rarity": "common",
-    "elo": 1354
-  },
-  {
-    "name": "Deceptive Landscape",
-    "scryfallId": "ba863744-929b-43f3-a773-342ba3437b18",
-    "manaCost": "",
-    "type": "Land",
-    "rarity": "common",
-    "elo": 1484
-  },
-  {
-    "name": "Perilous Landscape",
-    "scryfallId": "61fc78e0-d0db-4ecb-a29a-f1a437d7987c",
-    "manaCost": "",
-    "type": "Land",
-    "rarity": "common",
-    "elo": 1344
-  },
-  {
-    "name": "Foreboding Landscape",
-    "scryfallId": "cf53f97c-dd4c-44bd-93ba-faa6d64c985a",
-    "manaCost": "",
-    "type": "Land",
-    "rarity": "common",
-    "elo": 1390
-  },
-  {
-    "name": "Dragonbroods' Relic",
-    "scryfallId": "3d634087-77ba-4543-aa7a-8a3774d69cd7",
-    "manaCost": "{1}{G}",
-    "type": "Artifact",
-    "rarity": "uncommon",
-    "elo": 966
-  },
-  {
-    "name": "Path to the World Tree",
-    "scryfallId": "24d6c178-ee0d-4907-bf6b-12b845bceaeb",
-    "manaCost": "{1}{G}",
-    "type": "Enchantment",
-    "rarity": "uncommon",
-    "elo": 982
-  },
-  {
-    "name": "Gingerbrute",
-    "scryfallId": "09a4578a-7dc6-4da3-93ee-913b10be5740",
+    "name": "Walking Bulwark",
+    "scryfallId": "33e94caa-30cb-4f38-b240-7893dd2dc94d",
     "manaCost": "{1}",
-    "type": "Artifact Creature — Food Golem",
-    "rarity": "common",
-    "elo": 916
+    "type": "Artifact Creature \u2014 Golem",
+    "colors": [],
+    "rarity": "uncommon"
   },
   {
-    "name": "Signal Pest",
-    "scryfallId": "be065962-f2ed-4ab9-be6b-bfc66d63ff4e",
-    "manaCost": "{1}",
-    "type": "Artifact Creature — Pest",
-    "rarity": "uncommon",
-    "elo": 952
-  },
-  {
-    "name": "Epochrasite",
-    "scryfallId": "6d4fafc8-3466-42f7-9d8d-8c6250da7bd5",
+    "name": "Clockwork Droid",
+    "scryfallId": "9b4fa6d0-dc2d-4903-bbba-6cf83be2b187",
     "manaCost": "{2}",
-    "type": "Artifact Creature — Construct",
-    "rarity": "rare",
-    "elo": 888
-  },
-  {
-    "name": "Lesser Masticore",
-    "scryfallId": "c4c7cba5-6111-40ce-828a-e811301bb283",
-    "manaCost": "{2}",
-    "type": "Artifact Creature — Masticore",
-    "rarity": "uncommon",
-    "elo": 1082
-  },
-  {
-    "name": "Metallic Mimic",
-    "scryfallId": "9ad98263-9fe6-4766-a9fb-4776e570c250",
-    "manaCost": "{2}",
-    "type": "Artifact Creature — Shapeshifter",
-    "rarity": "rare",
-    "elo": 1054
+    "type": "Artifact Creature \u2014 Robot",
+    "colors": [],
+    "rarity": "uncommon"
   },
   {
     "name": "Ornithopter of Paradise",
     "scryfallId": "18bbdc6c-b6c9-4f89-8f0a-6266e53c1fb9",
     "manaCost": "{2}",
-    "type": "Artifact Creature — Thopter",
-    "rarity": "common",
-    "elo": 1200
-  },
-  {
-    "name": "Perilous Myr",
-    "scryfallId": "5a15c8ef-04ad-4aab-a7f1-c7a90c10eb50",
-    "manaCost": "{2}",
-    "type": "Artifact Creature — Phyrexian Myr",
-    "rarity": "common",
-    "elo": 1186
-  },
-  {
-    "name": "Atraxa's Skitterfang",
-    "scryfallId": "cdedebad-f71e-4434-871e-5bbbd3c07a12",
-    "manaCost": "{3}",
-    "type": "Artifact Creature — Phyrexian Insect",
-    "rarity": "uncommon",
-    "elo": 904
+    "type": "Artifact Creature \u2014 Thopter",
+    "colors": [],
+    "rarity": "common"
   },
   {
     "name": "Circuit Mender",
     "scryfallId": "defaeb68-3f8a-4740-b13f-8c71c7e9c8b4",
     "manaCost": "{3}",
-    "type": "Artifact Creature — Insect",
-    "rarity": "uncommon",
-    "elo": 1126
-  },
-  {
-    "name": "Pilgrim's Eye",
-    "scryfallId": "48bfc25b-f73c-431c-b173-adcd65c5d491",
-    "manaCost": "{3}",
-    "type": "Artifact Creature — Thopter",
-    "rarity": "common",
-    "elo": 1026
+    "type": "Artifact Creature \u2014 Insect",
+    "colors": [],
+    "rarity": "uncommon"
   },
   {
     "name": "Cogwork Librarian",
     "scryfallId": "453de664-0f09-4772-a626-51d58d1173f3",
     "manaCost": "{4}",
-    "type": "Artifact Creature — Construct",
-    "rarity": "common",
-    "elo": 1078
-  },
-  {
-    "name": "Peace Strider",
-    "scryfallId": "4bc9bd97-f256-4dcd-b2a7-3239d443a0af",
-    "manaCost": "{4}",
-    "type": "Artifact Creature — Construct",
-    "rarity": "common",
-    "elo": 802
-  },
-  {
-    "name": "Pierce Strider",
-    "scryfallId": "1dd4c278-4215-4582-8725-bc4b0b664d13",
-    "manaCost": "{4}",
-    "type": "Artifact Creature — Phyrexian Construct",
-    "rarity": "common",
-    "elo": 946
-  },
-  {
-    "name": "Snare Thopter",
-    "scryfallId": "52b0ba0d-078e-4f54-81da-88f86227df4f",
-    "manaCost": "{4}",
-    "type": "Artifact Creature — Thopter",
-    "rarity": "uncommon",
-    "elo": 784
-  },
-  {
-    "name": "Treasure Keeper",
-    "scryfallId": "b68ab416-3394-4cb6-bfc6-33e62964dd1c",
-    "manaCost": "{4}",
-    "type": "Artifact Creature — Construct",
-    "rarity": "uncommon",
-    "elo": 1064
-  },
-  {
-    "name": "Thopter Squadron",
-    "scryfallId": "5fd13ac2-9642-4d59-a5c6-cc13c86991f0",
-    "manaCost": "{5}",
-    "type": "Artifact Creature — Thopter",
-    "rarity": "rare",
-    "elo": 880
-  },
-  {
-    "name": "Eldrazi Ravager",
-    "scryfallId": "0ce97bb8-b0ee-4473-8c26-a3ec91abec97",
-    "manaCost": "{5}{C}",
-    "type": "Creature — Eldrazi",
-    "rarity": "uncommon",
-    "elo": 926
+    "type": "Artifact Creature \u2014 Construct",
+    "colors": [],
+    "rarity": "common"
   },
   {
     "name": "Bane of Bala Ged",
     "scryfallId": "c3cb0fff-da50-40b9-9839-68cdf25a0193",
     "manaCost": "{7}",
-    "type": "Creature — Eldrazi",
-    "rarity": "uncommon",
-    "elo": 1168
+    "type": "Creature \u2014 Eldrazi",
+    "colors": [],
+    "rarity": "uncommon"
   },
   {
     "name": "Meteor Golem",
     "scryfallId": "d291ea1e-36bc-46b3-b3ae-084fa0ba69eb",
     "manaCost": "{7}",
-    "type": "Artifact Creature — Golem",
-    "rarity": "uncommon",
-    "elo": 954
-  },
-  {
-    "name": "Sandstone Oracle",
-    "scryfallId": "c7333ea3-2c98-405a-a5cc-eecba9b14a00",
-    "manaCost": "{7}",
-    "type": "Artifact Creature — Sphinx",
-    "rarity": "uncommon",
-    "elo": 862
+    "type": "Artifact Creature \u2014 Golem",
+    "colors": [],
+    "rarity": "uncommon"
   },
   {
     "name": "Artisan of Kozilek",
     "scryfallId": "9312fada-fc31-46ac-b6a1-cfffd776856f",
     "manaCost": "{9}",
-    "type": "Creature — Eldrazi",
-    "rarity": "uncommon",
-    "elo": 1062
+    "type": "Creature \u2014 Eldrazi",
+    "colors": [],
+    "rarity": "uncommon"
   },
   {
-    "name": "Breaker of Creation",
-    "scryfallId": "72449552-aa2c-4ae3-846f-df523c5e6078",
-    "manaCost": "{6}{C}{C}",
-    "type": "Creature — Eldrazi",
-    "rarity": "uncommon",
-    "elo": 1000
-  },
-  {
-    "name": "Everflowing Chalice",
-    "scryfallId": "e4ed0052-d6dd-4f69-8313-10863baefac9",
-    "manaCost": "{0}",
-    "type": "Artifact",
-    "rarity": "uncommon",
-    "elo": 904
+    "name": "Ulamog's Crusher",
+    "scryfallId": "699c0f6f-b26b-4741-8140-8a6030cad127",
+    "manaCost": "{8}",
+    "type": "Creature \u2014 Eldrazi",
+    "colors": [],
+    "rarity": "common"
   },
   {
     "name": "Bonesplitter",
     "scryfallId": "690972a8-72df-4050-a353-16e45589167c",
     "manaCost": "{1}",
-    "type": "Artifact — Equipment",
-    "rarity": "common",
-    "elo": 1078
+    "type": "Artifact \u2014 Equipment",
+    "colors": [],
+    "rarity": "common"
   },
   {
-    "name": "Cliffhaven Kitesail",
-    "scryfallId": "eebf8f67-49d0-42de-a5cc-ad13d19d2c55",
-    "manaCost": "{1}",
-    "type": "Artifact — Equipment",
-    "rarity": "common",
-    "elo": 822
-  },
-  {
-    "name": "Flayer Husk",
-    "scryfallId": "20b394f9-644d-426e-801b-110774092018",
-    "manaCost": "{1}",
-    "type": "Artifact — Equipment",
-    "rarity": "common",
-    "elo": 866
-  },
-  {
-    "name": "The Underworld Cookbook",
-    "scryfallId": "039d62b0-3309-4424-a2ea-5a0d88d4bd72",
-    "manaCost": "{1}",
-    "type": "Artifact",
-    "rarity": "uncommon",
-    "elo": 1068
-  },
-  {
-    "name": "Wayfarer's Bauble",
-    "scryfallId": "ac1960a1-9141-468c-b96c-6c8e6905084d",
-    "manaCost": "{1}",
-    "type": "Artifact",
-    "rarity": "common",
-    "elo": 1112
-  },
-  {
-    "name": "Collector's Vault",
-    "scryfallId": "967a4f27-8cd6-437d-8c05-8aedbc7ddc4b",
+    "name": "Millstone",
+    "scryfallId": "c2051fd0-99cf-4e11-a625-8294e6767e5b",
     "manaCost": "{2}",
     "type": "Artifact",
-    "rarity": "uncommon",
-    "elo": 1256
-  },
-  {
-    "name": "High-Speed Hoverbike",
-    "scryfallId": "7c619116-1eae-439d-9b1f-639643458a23",
-    "manaCost": "{2}",
-    "type": "Artifact — Vehicle",
-    "rarity": "uncommon",
-    "elo": 764
-  },
-  {
-    "name": "Mask of Memory",
-    "scryfallId": "ba275c02-8581-46a0-9c7c-8baa0fdb4982",
-    "manaCost": "{2}",
-    "type": "Artifact — Equipment",
-    "rarity": "uncommon",
-    "elo": 950
+    "colors": [],
+    "rarity": "uncommon"
   },
   {
     "name": "Mind Stone",
     "scryfallId": "f1f616f2-d69d-4763-8ff0-3eb05a543926",
     "manaCost": "{2}",
     "type": "Artifact",
-    "rarity": "uncommon",
-    "elo": 814
+    "colors": [],
+    "rarity": "uncommon"
   },
   {
-    "name": "Noble's Purse",
-    "scryfallId": "be533558-3b16-4df0-a0ca-faa1ebf2e641",
+    "name": "Mortarpod",
+    "scryfallId": "f1e6b292-41e7-40f9-b9fe-34f27d4526af",
+    "manaCost": "{2}",
+    "type": "Artifact \u2014 Equipment",
+    "colors": [],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Shrine of Burning Rage",
+    "scryfallId": "d1a8afef-fa50-4aeb-94de-a4d90b1e5631",
     "manaCost": "{2}",
     "type": "Artifact",
-    "rarity": "uncommon",
-    "elo": 1166
+    "colors": [],
+    "rarity": "uncommon"
   },
   {
-    "name": "Prophetic Prism",
-    "scryfallId": "1fae351c-b918-4648-a361-d5239ae63156",
+    "name": "Shrine of Loyal Legions",
+    "scryfallId": "d13563c7-abe0-4760-9b4c-841de47dbc46",
     "manaCost": "{2}",
     "type": "Artifact",
-    "rarity": "common",
-    "elo": 1050
+    "colors": [],
+    "rarity": "uncommon"
   },
   {
-    "name": "Spawning Pit",
-    "scryfallId": "e9a8ca49-fc8f-49c1-a7c6-c8326b2deb52",
+    "name": "Silver Shroud Costume",
+    "scryfallId": "f21fba59-330b-4daf-bf77-6dd817327a64",
     "manaCost": "{2}",
-    "type": "Artifact",
-    "rarity": "uncommon",
-    "elo": 1178
-  },
-  {
-    "name": "Talisman of Creativity",
-    "scryfallId": "bfe00640-e775-4b2e-91a8-081c7ec0125c",
-    "manaCost": "{2}",
-    "type": "Artifact",
-    "rarity": "uncommon",
-    "elo": 1200
-  },
-  {
-    "name": "Talisman of Curiosity",
-    "scryfallId": "8388c4e8-bda1-47e5-8df2-ddec5babcaf9",
-    "manaCost": "{2}",
-    "type": "Artifact",
-    "rarity": "uncommon",
-    "elo": 1112
-  },
-  {
-    "name": "Talisman of Dominance",
-    "scryfallId": "f6c8e0b5-218e-41dd-8b09-2d4aaec2c979",
-    "manaCost": "{2}",
-    "type": "Artifact",
-    "rarity": "uncommon",
-    "elo": 1228
-  },
-  {
-    "name": "Talisman of Progress",
-    "scryfallId": "9d6a5ed4-54b3-4660-8d41-953336f2fe74",
-    "manaCost": "{2}",
-    "type": "Artifact",
-    "rarity": "uncommon",
-    "elo": 1308
-  },
-  {
-    "name": "Ashnod's Altar",
-    "scryfallId": "3c0f7157-a375-499c-92c7-d47d2e95dbad",
-    "manaCost": "{3}",
-    "type": "Artifact",
-    "rarity": "uncommon",
-    "elo": 936
-  },
-  {
-    "name": "Basalt Monolith",
-    "scryfallId": "f79de5e7-1545-420c-bfe1-ee2444fca85b",
-    "manaCost": "{3}",
-    "type": "Artifact",
-    "rarity": "uncommon",
-    "elo": 970
-  },
-  {
-    "name": "Bonder's Ornament",
-    "scryfallId": "89486719-4aba-4465-986b-fecbe4d409a1",
-    "manaCost": "{3}",
-    "type": "Artifact",
-    "rarity": "common",
-    "elo": 1044
+    "type": "Artifact \u2014 Equipment",
+    "colors": [],
+    "rarity": "uncommon"
   },
   {
     "name": "Grafted Wargear",
     "scryfallId": "1d023d44-482e-4f60-b9b1-eede9bfb732f",
     "manaCost": "{3}",
-    "type": "Artifact — Equipment",
-    "rarity": "uncommon",
-    "elo": 1024
+    "type": "Artifact \u2014 Equipment",
+    "colors": [],
+    "rarity": "uncommon"
   },
   {
     "name": "Heirloom Blade",
     "scryfallId": "49fe8b13-3f83-4a35-aa2d-2292b96f3d3e",
     "manaCost": "{3}",
-    "type": "Artifact — Equipment",
-    "rarity": "uncommon",
-    "elo": 872
+    "type": "Artifact \u2014 Equipment",
+    "colors": [],
+    "rarity": "uncommon"
   },
   {
     "name": "Loxodon Warhammer",
     "scryfallId": "13eeff85-9e4a-46c9-841f-f3b1c556ef18",
     "manaCost": "{3}",
-    "type": "Artifact — Equipment",
-    "rarity": "rare",
-    "elo": 1134
+    "type": "Artifact \u2014 Equipment",
+    "colors": [],
+    "rarity": "rare"
   },
   {
-    "name": "Night Scythe",
-    "scryfallId": "9a71531f-d4b6-4cc7-8193-b2f5bce33b21",
+    "name": "Oketra's Monument",
+    "scryfallId": "a7f1d5a6-bdf2-4b12-b11e-70f58b59dd80",
     "manaCost": "{3}",
-    "type": "Artifact — Vehicle",
-    "rarity": "uncommon",
-    "elo": 992
+    "type": "Legendary Artifact",
+    "colors": [],
+    "rarity": "uncommon"
   },
   {
-    "name": "Sonic Screwdriver",
-    "scryfallId": "f131027a-9776-41fa-8a5f-d9ef80e0dc2e",
+    "name": "Pristine Talisman",
+    "scryfallId": "6b6307f3-bc63-463c-8ffc-a8b8b829e5d7",
     "manaCost": "{3}",
     "type": "Artifact",
-    "rarity": "uncommon",
-    "elo": 982
+    "colors": [],
+    "rarity": "common"
+  },
+  {
+    "name": "Renegade Freighter",
+    "scryfallId": "7a10e2c3-0132-4eb2-94f0-5915caca2a17",
+    "manaCost": "{3}",
+    "type": "Artifact \u2014 Vehicle",
+    "colors": [],
+    "rarity": "common"
+  },
+  {
+    "name": "Worn Powerstone",
+    "scryfallId": "ace686ad-9e3f-41b3-b8eb-d1b6d45eb4e1",
+    "manaCost": "{3}",
+    "type": "Artifact",
+    "colors": [],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Hedron Archive",
+    "scryfallId": "535b9ac6-dba2-4162-86ed-df3e9fad0306",
+    "manaCost": "{4}",
+    "type": "Artifact",
+    "colors": [],
+    "rarity": "uncommon"
   },
   {
     "name": "Icy Manipulator",
     "scryfallId": "ac5a54ca-f175-4005-895f-d76effd6178e",
     "manaCost": "{4}",
     "type": "Artifact",
-    "rarity": "uncommon",
-    "elo": 1070
-  },
-  {
-    "name": "Thran Dynamo",
-    "scryfallId": "7ce5f12e-fc02-42f8-a5ca-b523050d4650",
-    "manaCost": "{4}",
-    "type": "Artifact",
-    "rarity": "uncommon",
-    "elo": 994
+    "colors": [],
+    "rarity": "uncommon"
   },
   {
     "name": "Untethered Express",
     "scryfallId": "dba729d8-fd5e-4183-806a-0997f443a58f",
     "manaCost": "{4}",
-    "type": "Artifact — Vehicle",
-    "rarity": "uncommon",
-    "elo": 946
+    "type": "Artifact \u2014 Vehicle",
+    "colors": [],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Mistmeadow Witch",
+    "scryfallId": "c0119777-70da-4cba-8104-a7e78604d515",
+    "manaCost": "{1}{W/U}",
+    "type": "Creature \u2014 Kithkin Wizard",
+    "colors": [
+      "U",
+      "W"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Momentary Blink",
+    "scryfallId": "619c620d-1920-40d1-98d4-df5607f84d26",
+    "manaCost": "{1}{W}",
+    "type": "Instant",
+    "colors": [
+      "W"
+    ],
+    "rarity": "common"
+  },
+  {
+    "name": "High Alert",
+    "scryfallId": "ce124f6e-ef0c-4d01-a876-e34d3e445108",
+    "manaCost": "{1}{W}{U}",
+    "type": "Enchantment",
+    "colors": [
+      "U",
+      "W"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Reflector Mage",
+    "scryfallId": "9473fe01-83f6-4432-ab01-f7953d2ca904",
+    "manaCost": "{1}{W}{U}",
+    "type": "Creature \u2014 Human Wizard",
+    "colors": [
+      "U",
+      "W"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Soulherder",
+    "scryfallId": "50bc0f5b-7421-45b9-af85-86dd9821b7d8",
+    "manaCost": "{1}{W}{U}",
+    "type": "Creature \u2014 Spirit",
+    "colors": [
+      "U",
+      "W"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Wall of Denial",
+    "scryfallId": "049ce45b-ab07-4bce-bb4a-83f5720b6ee7",
+    "manaCost": "{1}{W}{U}",
+    "type": "Creature \u2014 Wall",
+    "colors": [
+      "U",
+      "W"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Elite Guardmage",
+    "scryfallId": "d2e40b14-48a2-4b9e-b767-e914cab04b30",
+    "manaCost": "{2}{W}{U}",
+    "type": "Creature \u2014 Human Wizard",
+    "colors": [
+      "U",
+      "W"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Cloudblazer",
+    "scryfallId": "a9c966ab-0d92-4fa7-8a91-1f77089d8fc7",
+    "manaCost": "{3}{W}{U}",
+    "type": "Creature \u2014 Human Scout",
+    "colors": [
+      "U",
+      "W"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Agony Warp",
+    "scryfallId": "5890a23e-1da0-432b-8dc8-85b92dee9ba1",
+    "manaCost": "{U}{B}",
+    "type": "Instant",
+    "colors": [
+      "B",
+      "U"
+    ],
+    "rarity": "common"
+  },
+  {
+    "name": "Baleful Strix",
+    "scryfallId": "be8439e6-f779-49f0-806a-b04995697a6a",
+    "manaCost": "{U}{B}",
+    "type": "Artifact Creature \u2014 Bird",
+    "colors": [
+      "B",
+      "U"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "name": "Drown in the Loch",
+    "scryfallId": "eb7b9762-740b-4c1c-a411-20dbf023aea5",
+    "manaCost": "{U}{B}",
+    "type": "Instant",
+    "colors": [
+      "B",
+      "U"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Invasion of Amonkhet",
+    "scryfallId": "981f091a-17f8-412e-9752-69070ebed4ea",
+    "manaCost": "",
+    "type": "Battle \u2014 Siege // Creature \u2014 Zombie",
+    "colors": [],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Shadowmage Infiltrator",
+    "scryfallId": "2ac920d7-013f-40ad-b79f-0bb59062d42a",
+    "manaCost": "{1}{U}{B}",
+    "type": "Creature \u2014 Human Wizard",
+    "colors": [
+      "B",
+      "U"
+    ],
+    "rarity": "rare"
+  },
+  {
+    "name": "Far // Away",
+    "scryfallId": "d13cdb71-a499-41db-84e6-95f84650c524",
+    "manaCost": "{1}{U} // {2}{B}",
+    "type": "Instant // Instant",
+    "colors": [
+      "B",
+      "U"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Dinrova Horror",
+    "scryfallId": "7da93bf0-2075-4e36-b69b-3db3d4288e7a",
+    "manaCost": "{4}{U}{B}",
+    "type": "Creature \u2014 Horror",
+    "colors": [
+      "B",
+      "U"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Rakdos Cackler",
+    "scryfallId": "5f873c0b-e779-4f09-8e9c-94a1765eb5da",
+    "manaCost": "{B/R}",
+    "type": "Creature \u2014 Devil",
+    "colors": [
+      "B",
+      "R"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Azra Oddsmaker",
+    "scryfallId": "7f5e6a5a-18ee-438f-ab16-694e19a2410e",
+    "manaCost": "{1}{B}{R}",
+    "type": "Creature \u2014 Azra Warrior",
+    "colors": [
+      "B",
+      "R"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Blightning",
+    "scryfallId": "ccf0f075-4401-41da-a17f-a209d6a03782",
+    "manaCost": "{1}{B}{R}",
+    "type": "Sorcery",
+    "colors": [
+      "B",
+      "R"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Judith, the Scourge Diva",
+    "scryfallId": "d6fb929c-1b8d-4d1d-aa69-ac6189cd7ebf",
+    "manaCost": "{1}{B}{R}",
+    "type": "Legendary Creature \u2014 Human Shaman",
+    "colors": [
+      "B",
+      "R"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Mayhem Devil",
+    "scryfallId": "674f3a8a-4552-4289-b92a-06ce158f115c",
+    "manaCost": "{1}{B}{R}",
+    "type": "Creature \u2014 Devil",
+    "colors": [
+      "B",
+      "R"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Murderous Redcap",
+    "scryfallId": "acadf575-2076-4f0c-b66e-994898adf375",
+    "manaCost": "{2}{B/R}{B/R}",
+    "type": "Creature \u2014 Goblin Assassin",
+    "colors": [
+      "B",
+      "R"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Bituminous Blast",
+    "scryfallId": "af8613ee-4b67-49b8-920b-3b5a25897f64",
+    "manaCost": "{3}{B}{R}",
+    "type": "Instant",
+    "colors": [
+      "B",
+      "R"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Burning-Tree Emissary",
+    "scryfallId": "ba327a5e-bd57-4e24-b4b4-062202df30e1",
+    "manaCost": "{R/G}{R/G}",
+    "type": "Creature \u2014 Human Shaman",
+    "colors": [
+      "G",
+      "R"
+    ],
+    "rarity": "common"
+  },
+  {
+    "name": "Domri's Ambush",
+    "scryfallId": "b0dcae59-e9be-45a8-8ed8-5b47309bb716",
+    "manaCost": "{R}{G}",
+    "type": "Sorcery",
+    "colors": [
+      "G",
+      "R"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Goblin Anarchomancer",
+    "scryfallId": "633a3423-501d-4b22-95a6-743233be521e",
+    "manaCost": "{R}{G}",
+    "type": "Creature \u2014 Goblin Shaman",
+    "colors": [
+      "G",
+      "R"
+    ],
+    "rarity": "common"
+  },
+  {
+    "name": "Grumgully, the Generous",
+    "scryfallId": "3aa40ce2-76df-43bd-a59e-7cf6e4f46a1d",
+    "manaCost": "{1}{R}{G}",
+    "type": "Legendary Creature \u2014 Goblin Shaman",
+    "colors": [
+      "G",
+      "R"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Bloodbraid Elf",
+    "scryfallId": "e2f12f6f-9383-47e6-a44f-2834ad130e51",
+    "manaCost": "{2}{R}{G}",
+    "type": "Creature \u2014 Elf Berserker",
+    "colors": [
+      "G",
+      "R"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Ghor-Clan Rampager",
+    "scryfallId": "4aae3f29-dde8-4880-b675-75468d53b3f4",
+    "manaCost": "{2}{R}{G}",
+    "type": "Creature \u2014 Beast",
+    "colors": [
+      "G",
+      "R"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Gruul War Chant",
+    "scryfallId": "2003fb65-26ee-481f-a38d-7d3fe55878f3",
+    "manaCost": "{2}{R}{G}",
+    "type": "Enchantment",
+    "colors": [
+      "G",
+      "R"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Avacyn's Pilgrim",
+    "scryfallId": "a390a7df-b8da-41aa-93e5-2c0db938a27e",
+    "manaCost": "{G}",
+    "type": "Creature \u2014 Human Monk",
+    "colors": [
+      "G"
+    ],
+    "rarity": "common"
+  },
+  {
+    "name": "Dryad Militant",
+    "scryfallId": "8fb36712-26e9-4ec7-8946-626bb7094c15",
+    "manaCost": "{G/W}",
+    "type": "Creature \u2014 Dryad Soldier",
+    "colors": [
+      "G",
+      "W"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Conclave Mentor",
+    "scryfallId": "c6d36786-6e36-4a9b-97ad-ad7d9d2b8d92",
+    "manaCost": "{G}{W}",
+    "type": "Creature \u2014 Centaur Cleric",
+    "colors": [
+      "G",
+      "W"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Qasali Pridemage",
+    "scryfallId": "a103646d-b363-4896-a48f-0527d746587e",
+    "manaCost": "{G}{W}",
+    "type": "Creature \u2014 Cat Wizard",
+    "colors": [
+      "G",
+      "W"
+    ],
+    "rarity": "common"
+  },
+  {
+    "name": "Kitchen Finks",
+    "scryfallId": "a844d537-df73-422d-a154-f1c6b92d0469",
+    "manaCost": "{1}{G/W}{G/W}",
+    "type": "Creature \u2014 Ouphe",
+    "colors": [
+      "G",
+      "W"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Pledge of Unity",
+    "scryfallId": "ca9b3518-7fcd-49e2-a4c4-e5daa8be6c21",
+    "manaCost": "{1}{G}{W}",
+    "type": "Instant",
+    "colors": [
+      "G",
+      "W"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Woodland Acolyte",
+    "scryfallId": "b9f10623-4783-4773-b9c8-a5a2bcfdb5d9",
+    "manaCost": "{2}{W} // {G}",
+    "type": "Creature \u2014 Human Cleric // Instant \u2014 Adventure",
+    "colors": [
+      "W"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Buried in the Garden",
+    "scryfallId": "7e144609-e1f6-4bdc-8d14-b735ef4140d3",
+    "manaCost": "{2}{G}{W}",
+    "type": "Enchantment \u2014 Aura",
+    "colors": [
+      "G",
+      "W"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Trostani's Summoner",
+    "scryfallId": "eda757a0-067b-4eb9-badc-d86da5b40305",
+    "manaCost": "{5}{G}{W}",
+    "type": "Creature \u2014 Elf Shaman",
+    "colors": [
+      "G",
+      "W"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Afterlife Insurance",
+    "scryfallId": "2fa47810-ba83-4a6e-9940-7315ee7e44a5",
+    "manaCost": "{1}{W/B}",
+    "type": "Instant",
+    "colors": [
+      "B",
+      "W"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Cartel Aristocrat",
+    "scryfallId": "e2dec477-5764-4c0c-bb10-42d64ad2103e",
+    "manaCost": "{W}{B}",
+    "type": "Creature \u2014 Human Advisor",
+    "colors": [
+      "B",
+      "W"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Elas il-Kor, Sadistic Pilgrim",
+    "scryfallId": "1c3f0ffe-cf51-4c30-8cd5-9e3c7e92c019",
+    "manaCost": "{W}{B}",
+    "type": "Legendary Creature \u2014 Phyrexian Kor Cleric",
+    "colors": [
+      "B",
+      "W"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Lingering Souls",
+    "scryfallId": "2a00c585-5bbc-4622-bf5b-4ec63b669f4c",
+    "manaCost": "{2}{W}",
+    "type": "Sorcery",
+    "colors": [
+      "W"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Mortify",
+    "scryfallId": "88e85619-3a7d-48c2-b9b0-20718c913696",
+    "manaCost": "{1}{W}{B}",
+    "type": "Instant",
+    "colors": [
+      "B",
+      "W"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Orzhov Pontiff",
+    "scryfallId": "3e36323c-75d0-475e-a5a7-9a1567ff2b62",
+    "manaCost": "{1}{W}{B}",
+    "type": "Creature \u2014 Human Cleric",
+    "colors": [
+      "B",
+      "W"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Sin Collector",
+    "scryfallId": "8cad9de8-91fc-435f-9b56-66210813aebd",
+    "manaCost": "{1}{W}{B}",
+    "type": "Creature \u2014 Human Cleric",
+    "colors": [
+      "B",
+      "W"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Angel of Despair",
+    "scryfallId": "a07809b2-dabe-4242-84c3-fd640d7d5998",
+    "manaCost": "{3}{W}{W}{B}{B}",
+    "type": "Creature \u2014 Angel",
+    "colors": [
+      "B",
+      "W"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Balmor, Battlemage Captain",
+    "scryfallId": "0b45ab13-9bb6-48af-8b37-d97b25801ac8",
+    "manaCost": "{U}{R}",
+    "type": "Legendary Creature \u2014 Bird Wizard",
+    "colors": [
+      "R",
+      "U"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Expressive Iteration",
+    "scryfallId": "45e92d69-0684-4a57-8c1c-bbf742bd8a23",
+    "manaCost": "{U}{R}",
+    "type": "Sorcery",
+    "colors": [
+      "R",
+      "U"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Jilt",
+    "scryfallId": "a010d2b1-960d-4032-a47a-61fe0998bee3",
+    "manaCost": "{1}{U}",
+    "type": "Instant",
+    "colors": [
+      "U"
+    ],
+    "rarity": "common"
+  },
+  {
+    "name": "Khenra Spellspear",
+    "scryfallId": "dc1454ce-bb49-4b4f-bbca-d77387fa4966",
+    "manaCost": "",
+    "type": "Creature \u2014 Jackal Warrior // Creature \u2014 Phyrexian Jackal",
+    "colors": [],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Third Path Iconoclast",
+    "scryfallId": "ca29f373-7051-4cbe-bda8-e711fda4f9bb",
+    "manaCost": "{U}{R}",
+    "type": "Creature \u2014 Human Monk",
+    "colors": [
+      "R",
+      "U"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Electrolyze",
+    "scryfallId": "5112af09-1305-4e00-8273-403eac40786f",
+    "manaCost": "{1}{U}{R}",
+    "type": "Instant",
+    "colors": [
+      "R",
+      "U"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Fire // Ice",
+    "scryfallId": "18303862-4726-4136-814f-157aa7006579",
+    "manaCost": "{1}{R} // {1}{U}",
+    "type": "Instant // Instant",
+    "colors": [
+      "R",
+      "U"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Prophetic Bolt",
+    "scryfallId": "94b79c31-597f-484b-a684-f1520cae314a",
+    "manaCost": "{3}{U}{R}",
+    "type": "Instant",
+    "colors": [
+      "R",
+      "U"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Prophetic Titan",
+    "scryfallId": "468b92ae-eb84-4548-a5e5-a07c79b77f7f",
+    "manaCost": "{4}{U}{R}",
+    "type": "Creature \u2014 Giant Wizard",
+    "colors": [
+      "R",
+      "U"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Elves of Deep Shadow",
+    "scryfallId": "6040ba5e-7042-4095-9000-89bcb8ce1ea6",
+    "manaCost": "{G}",
+    "type": "Creature \u2014 Elf Druid",
+    "colors": [
+      "G"
+    ],
+    "rarity": "common"
+  },
+  {
+    "name": "Ravenous Squirrel",
+    "scryfallId": "9f44a15c-1bb4-4fb8-88a0-e4d3f2dee1b4",
+    "manaCost": "{B/G}",
+    "type": "Creature \u2014 Squirrel",
+    "colors": [
+      "B",
+      "G"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Tear Asunder",
+    "scryfallId": "e408c673-4a1f-45db-827a-75c501e1b3d6",
+    "manaCost": "{1}{G}",
+    "type": "Instant",
+    "colors": [
+      "G"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Winding Constrictor",
+    "scryfallId": "107c8aa8-c8f8-4cbf-821b-bd2cb33354f0",
+    "manaCost": "{B}{G}",
+    "type": "Creature \u2014 Snake",
+    "colors": [
+      "B",
+      "G"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Gloomshrieker",
+    "scryfallId": "a2b50751-7f65-4321-86da-eef735bf8b67",
+    "manaCost": "{1}{B}{G}",
+    "type": "Enchantment Creature \u2014 Cat Beast",
+    "colors": [
+      "B",
+      "G"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Binding the Old Gods",
+    "scryfallId": "65b3df37-8dea-4486-8904-55372b93c66f",
+    "manaCost": "{2}{B}{G}",
+    "type": "Enchantment \u2014 Saga",
+    "colors": [
+      "B",
+      "G"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Drag to the Roots",
+    "scryfallId": "46f46095-6479-46b0-9e59-194d83f86a46",
+    "manaCost": "{2}{B}{G}",
+    "type": "Instant",
+    "colors": [
+      "B",
+      "G"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Vraska, Swarm's Eminence",
+    "scryfallId": "59ee2974-07e9-4506-903c-457cb7327dd8",
+    "manaCost": "{2}{B/G}{B/G}",
+    "type": "Legendary Planeswalker \u2014 Vraska",
+    "colors": [
+      "B",
+      "G"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Spiritmonger",
+    "scryfallId": "5da7739e-8413-45b6-8539-fde2021b06a7",
+    "manaCost": "{3}{B}{G}",
+    "type": "Creature \u2014 Beast",
+    "colors": [
+      "B",
+      "G"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Arabella, Abandoned Doll",
+    "scryfallId": "f683d5a1-b8bf-446f-9fe3-88a4398bf3cf",
+    "manaCost": "{R}{W}",
+    "type": "Legendary Artifact Creature \u2014 Toy",
+    "colors": [
+      "R",
+      "W"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Boros Charm",
+    "scryfallId": "e0d8c9f6-cbbd-4694-b100-01cfb81036cc",
+    "manaCost": "{R}{W}",
+    "type": "Instant",
+    "colors": [
+      "R",
+      "W"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Lightning Helix",
+    "scryfallId": "4101e3fe-b0e7-4f0f-b9ac-9b61a4d628b3",
+    "manaCost": "{R}{W}",
+    "type": "Instant",
+    "colors": [
+      "R",
+      "W"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Rip Apart",
+    "scryfallId": "b3b5b510-fd5c-415d-98b0-386e7508f7af",
+    "manaCost": "{R}{W}",
+    "type": "Sorcery",
+    "colors": [
+      "R",
+      "W"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Duergar Hedge-Mage",
+    "scryfallId": "a55e7048-4532-443b-9480-a139069ecf0a",
+    "manaCost": "{2}{R/W}",
+    "type": "Creature \u2014 Dwarf Shaman",
+    "colors": [
+      "R",
+      "W"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Imodane's Recruiter",
+    "scryfallId": "4dbaa855-3f8e-42e6-8ec8-5ffbc5c8acf0",
+    "manaCost": "{2}{R} // {4}{W}",
+    "type": "Creature \u2014 Human Knight // Sorcery \u2014 Adventure",
+    "colors": [
+      "R"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Heroic Reinforcements",
+    "scryfallId": "6a05e8d5-c2ad-489a-888d-22622886b620",
+    "manaCost": "{2}{R}{W}",
+    "type": "Sorcery",
+    "colors": [
+      "R",
+      "W"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Shadowfax, Lord of Horses",
+    "scryfallId": "4c7d861d-7832-4c15-8d6c-8c07a9a57891",
+    "manaCost": "{3}{R}{W}",
+    "type": "Legendary Creature \u2014 Horse",
+    "colors": [
+      "R",
+      "W"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Coiling Oracle",
+    "scryfallId": "559ff1b1-018c-4e08-9531-8af20af47d05",
+    "manaCost": "{G}{U}",
+    "type": "Creature \u2014 Snake Elf Druid",
+    "colors": [
+      "G",
+      "U"
+    ],
+    "rarity": "common"
+  },
+  {
+    "name": "Growth Spiral",
+    "scryfallId": "1e10e2b4-9639-41ae-8b8e-253224d3d513",
+    "manaCost": "{G}{U}",
+    "type": "Instant",
+    "colors": [
+      "G",
+      "U"
+    ],
+    "rarity": "common"
+  },
+  {
+    "name": "Trygon Predator",
+    "scryfallId": "cdb88a22-8086-4bf7-89e8-cce929440dd8",
+    "manaCost": "{1}{G}{U}",
+    "type": "Creature \u2014 Beast",
+    "colors": [
+      "G",
+      "U"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Jungle Barrier",
+    "scryfallId": "a8097e6e-c04e-4266-a8f4-07e5fb0638d4",
+    "manaCost": "{2}{G}{U}",
+    "type": "Creature \u2014 Plant Wall",
+    "colors": [
+      "G",
+      "U"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Tatyova, Benthic Druid",
+    "scryfallId": "eabc978a-0666-472d-bdc6-d4b29d29eca4",
+    "manaCost": "{3}{G}{U}",
+    "type": "Legendary Creature \u2014 Merfolk Druid",
+    "colors": [
+      "G",
+      "U"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Wavesifter",
+    "scryfallId": "7ca787d2-eee4-4474-9db7-e8efa161ceec",
+    "manaCost": "{3}{G}{U}",
+    "type": "Creature \u2014 Elemental",
+    "colors": [
+      "G",
+      "U"
+    ],
+    "rarity": "common"
+  },
+  {
+    "name": "Colossal Skyturtle",
+    "scryfallId": "f40bd797-4d12-4098-a1a8-d7e5b7b82ac9",
+    "manaCost": "{4}{G}{G}{U}",
+    "type": "Enchantment Creature \u2014 Turtle",
+    "colors": [
+      "G",
+      "U"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Path to the World Tree",
+    "scryfallId": "24d6c178-ee0d-4907-bf6b-12b845bceaeb",
+    "manaCost": "{1}{G}",
+    "type": "Enchantment",
+    "colors": [
+      "G"
+    ],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Azorius Chancery",
+    "scryfallId": "50ef0ac3-e911-4d67-a751-8d86160ae843",
+    "manaCost": "",
+    "type": "Land",
+    "colors": [],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Dimir Aqueduct",
+    "scryfallId": "84bf9d60-64b8-4209-acfe-e07eefc6bf1f",
+    "manaCost": "",
+    "type": "Land",
+    "colors": [],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Rakdos Carnarium",
+    "scryfallId": "b2eaa0f2-9f8e-4b41-8916-9c9a985c39de",
+    "manaCost": "",
+    "type": "Land",
+    "colors": [],
+    "rarity": "common"
+  },
+  {
+    "name": "Gruul Turf",
+    "scryfallId": "46677091-b314-4fa7-9c5c-f9ef8632dc4c",
+    "manaCost": "",
+    "type": "Land",
+    "colors": [],
+    "rarity": "common"
+  },
+  {
+    "name": "Selesnya Sanctuary",
+    "scryfallId": "fdc53c6a-8e28-4314-9bcf-b31b6c6f56d7",
+    "manaCost": "",
+    "type": "Land",
+    "colors": [],
+    "rarity": "common"
+  },
+  {
+    "name": "Orzhov Basilica",
+    "scryfallId": "9c7c08fc-b6ee-498c-8ab6-fd6be27c9d97",
+    "manaCost": "",
+    "type": "Land",
+    "colors": [],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Izzet Boilerworks",
+    "scryfallId": "bfac9395-7ca5-48dd-ab83-7c26ada12f61",
+    "manaCost": "",
+    "type": "Land",
+    "colors": [],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Golgari Rot Farm",
+    "scryfallId": "acc5821d-e31f-4f5d-b4d0-e471db7dee7f",
+    "manaCost": "",
+    "type": "Land",
+    "colors": [],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Boros Garrison",
+    "scryfallId": "76ec3366-98f3-4903-8f7b-cfcdd60e3be1",
+    "manaCost": "",
+    "type": "Land",
+    "colors": [],
+    "rarity": "common"
+  },
+  {
+    "name": "Simic Growth Chamber",
+    "scryfallId": "212d97c5-c144-483b-b42e-00623477e928",
+    "manaCost": "",
+    "type": "Land",
+    "colors": [],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Seaside Citadel",
+    "scryfallId": "a030b477-3093-4e66-b33d-530b302d795c",
+    "manaCost": "",
+    "type": "Land",
+    "colors": [],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Arcane Sanctum",
+    "scryfallId": "c75eeb97-3249-4762-84b0-387f27fb255f",
+    "manaCost": "",
+    "type": "Land",
+    "colors": [],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Crumbling Necropolis",
+    "scryfallId": "d3600e12-5633-42fd-b1cc-e90790a16b20",
+    "manaCost": "",
+    "type": "Land",
+    "colors": [],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Savage Lands",
+    "scryfallId": "8502d1e6-86f1-40d8-8d3b-20d47e57bccb",
+    "manaCost": "",
+    "type": "Land",
+    "colors": [],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Jungle Shrine",
+    "scryfallId": "194c6ee7-c220-41a5-bf44-5e1d8d92879b",
+    "manaCost": "",
+    "type": "Land",
+    "colors": [],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Nomad Outpost",
+    "scryfallId": "a68fbeaa-941f-4d53-becd-f93ed22b9a54",
+    "manaCost": "",
+    "type": "Land",
+    "colors": [],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Frontier Bivouac",
+    "scryfallId": "679fff07-4796-4d91-8dd6-4e294383ce88",
+    "manaCost": "",
+    "type": "Land",
+    "colors": [],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Sandsteppe Citadel",
+    "scryfallId": "47f47e7f-39ba-4807-8e32-7262a61dfbba",
+    "manaCost": "",
+    "type": "Land",
+    "colors": [],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Mystic Monastery",
+    "scryfallId": "9fd41ad5-6b36-482e-8305-bbc709668470",
+    "manaCost": "",
+    "type": "Land",
+    "colors": [],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Opulent Palace",
+    "scryfallId": "21cb3b3b-0738-4c2e-a3fc-927fd6b9d3fb",
+    "manaCost": "",
+    "type": "Land",
+    "colors": [],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Aether Hub",
+    "scryfallId": "25ea04d8-5d85-49d3-8d8d-7fe123d0ed6c",
+    "manaCost": "",
+    "type": "Land",
+    "colors": [],
+    "rarity": "uncommon"
   },
   {
     "name": "Ash Barrens",
     "scryfallId": "f5314520-b8af-4416-b57c-74388542ecb6",
     "manaCost": "",
     "type": "Land",
-    "rarity": "common",
-    "elo": 1268
+    "colors": [],
+    "rarity": "common"
   },
   {
     "name": "City of Brass",
     "scryfallId": "bed4a63d-632a-4a3a-b35f-f8e155237d27",
     "manaCost": "",
     "type": "Land",
-    "rarity": "rare",
-    "elo": 1322
+    "colors": [],
+    "rarity": "rare"
   },
   {
-    "name": "Eden, Seat of the Sanctum",
-    "scryfallId": "e28eac1e-adc7-4f8d-b206-bef09ba07d38",
+    "name": "Cryptic Caves",
+    "scryfallId": "a7976098-b560-458a-ad3c-18f7873add21",
     "manaCost": "",
-    "type": "Land — Town",
-    "rarity": "uncommon",
-    "elo": 908
+    "type": "Land",
+    "colors": [],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Demolition Field",
+    "scryfallId": "0c7e51b6-4898-4632-b39c-3ce438caa882",
+    "manaCost": "",
+    "type": "Land",
+    "colors": [],
+    "rarity": "uncommon"
   },
   {
     "name": "Escape Tunnel",
     "scryfallId": "a0335da5-d754-480d-89d9-be6b8ca33fda",
     "manaCost": "",
     "type": "Land",
-    "rarity": "common",
-    "elo": 1356
+    "colors": [],
+    "rarity": "common"
   },
   {
-    "name": "Fabled Passage",
-    "scryfallId": "6a21ecc8-f6fd-4670-91d8-94b9ce94c2fe",
+    "name": "Evolving Wilds",
+    "scryfallId": "31181bd2-3a1f-4cb9-ba30-637ac479133a",
     "manaCost": "",
     "type": "Land",
-    "rarity": "rare",
-    "elo": 1478
+    "colors": [],
+    "rarity": "common"
+  },
+  {
+    "name": "Field of Ruin",
+    "scryfallId": "143147d2-2eec-41e7-b78a-592288b38630",
+    "manaCost": "",
+    "type": "Land",
+    "colors": [],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Foundry of the Consuls",
+    "scryfallId": "09d83c1d-6916-48e7-8a0d-b5abadc34b2a",
+    "manaCost": "",
+    "type": "Land",
+    "colors": [],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Gemstone Mine",
+    "scryfallId": "ee152618-761f-43b4-942a-f63b16c182cc",
+    "manaCost": "",
+    "type": "Land",
+    "colors": [],
+    "rarity": "rare"
+  },
+  {
+    "name": "Ghitu Encampment",
+    "scryfallId": "b6af3085-a24c-4a76-b4c0-a27a50993f1c",
+    "manaCost": "",
+    "type": "Land",
+    "colors": [],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Maze of Ith",
+    "scryfallId": "5889fde1-730d-43d0-aaa4-499784a80530",
+    "manaCost": "",
+    "type": "Land",
+    "colors": [],
+    "rarity": "rare"
+  },
+  {
+    "name": "Memorial to Folly",
+    "scryfallId": "2c5c070e-91d3-4613-8a46-0323ee425027",
+    "manaCost": "",
+    "type": "Land",
+    "colors": [],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Memorial to Genius",
+    "scryfallId": "1d96dd97-ce88-4576-8261-c7866a06275d",
+    "manaCost": "",
+    "type": "Land",
+    "colors": [],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Memorial to Glory",
+    "scryfallId": "564d6ff1-2be1-42f1-a919-fe8c2e148c3f",
+    "manaCost": "",
+    "type": "Land",
+    "colors": [],
+    "rarity": "uncommon"
   },
   {
     "name": "Mishra's Factory",
     "scryfallId": "6e9fec20-a52c-42c0-9928-c572d9e1b21f",
     "manaCost": "",
     "type": "Land",
-    "rarity": "uncommon",
-    "elo": 950
+    "colors": [],
+    "rarity": "uncommon"
   },
   {
-    "name": "Ominous Cemetery",
-    "scryfallId": "2e843c57-fae3-4127-94e7-cad8c8bb9486",
+    "name": "Survivors' Encampment",
+    "scryfallId": "c7b0404e-0f42-456b-91ce-f960195c4951",
     "manaCost": "",
-    "type": "Land",
-    "rarity": "uncommon",
-    "elo": 1110
+    "type": "Land \u2014 Desert",
+    "colors": [],
+    "rarity": "common"
   },
   {
-    "name": "Prismatic Vista",
-    "scryfallId": "e37da81e-be12-45a2-9128-376f1ad7b3e8",
+    "name": "Tectonic Edge",
+    "scryfallId": "94b9d7af-3e6f-4227-bb7d-a17d6f250535",
     "manaCost": "",
     "type": "Land",
-    "rarity": "rare",
-    "elo": 1628
+    "colors": [],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Thriving Bluff",
+    "scryfallId": "c1932fa3-12bb-46aa-854f-87e0977e09be",
+    "manaCost": "",
+    "type": "Land",
+    "colors": [],
+    "rarity": "common"
+  },
+  {
+    "name": "Thriving Grove",
+    "scryfallId": "9b56c554-b731-4b16-a0a3-5eeb7f60e823",
+    "manaCost": "",
+    "type": "Land",
+    "colors": [],
+    "rarity": "common"
+  },
+  {
+    "name": "Thriving Heath",
+    "scryfallId": "06329ca8-75b0-409d-bb80-6b9164f4e22a",
+    "manaCost": "",
+    "type": "Land",
+    "colors": [],
+    "rarity": "common"
+  },
+  {
+    "name": "Thriving Isle",
+    "scryfallId": "4a67f455-f193-4999-9286-bbccee546fa3",
+    "manaCost": "",
+    "type": "Land",
+    "colors": [],
+    "rarity": "common"
+  },
+  {
+    "name": "Thriving Moor",
+    "scryfallId": "7057e66a-8b5d-40d1-a685-124a8e0623c3",
+    "manaCost": "",
+    "type": "Land",
+    "colors": [],
+    "rarity": "common"
+  },
+  {
+    "name": "Treetop Village",
+    "scryfallId": "14394198-0993-46ee-a3ea-5c7084a78772",
+    "manaCost": "",
+    "type": "Land",
+    "colors": [],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Urza's Factory",
+    "scryfallId": "d03f17f1-b0fd-4b84-82ea-085c2f87eeda",
+    "manaCost": "",
+    "type": "Land \u2014 Urza's",
+    "colors": [],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Vivid Crag",
+    "scryfallId": "da397243-2193-4e5d-8dee-df37b70677e7",
+    "manaCost": "",
+    "type": "Land",
+    "colors": [],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Vivid Creek",
+    "scryfallId": "c9082527-aa88-42f7-b2f2-de21878cb179",
+    "manaCost": "",
+    "type": "Land",
+    "colors": [],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Vivid Grove",
+    "scryfallId": "12ccc686-bbaa-4c34-a7b8-a1e763fe0ad0",
+    "manaCost": "",
+    "type": "Land",
+    "colors": [],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Vivid Marsh",
+    "scryfallId": "b71b3df3-e188-45bb-8dc8-53fd4d527735",
+    "manaCost": "",
+    "type": "Land",
+    "colors": [],
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Vivid Meadow",
+    "scryfallId": "625a42b4-d88c-48e0-96b1-77388ca48810",
+    "manaCost": "",
+    "type": "Land",
+    "colors": [],
+    "rarity": "uncommon"
   }
 ]

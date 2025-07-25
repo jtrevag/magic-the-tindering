@@ -58,6 +58,7 @@ describe('Card Types', () => {
         currentCardIndex: 5,
         pickedCards: [mockCard],
         picksRemaining: 44,
+        skipsRemaining: 10,
         isComplete: false
       };
 
@@ -65,6 +66,7 @@ describe('Card Types', () => {
       expect(draftState.pickedCards).toHaveLength(1);
       expect(draftState.pickedCards[0]).toEqual(mockCard);
       expect(draftState.picksRemaining).toBe(44);
+      expect(draftState.skipsRemaining).toBe(10);
       expect(draftState.isComplete).toBe(false);
     });
 
@@ -73,10 +75,12 @@ describe('Card Types', () => {
         currentCardIndex: 45,
         pickedCards: [],
         picksRemaining: 0,
+        skipsRemaining: 5,
         isComplete: true
       };
 
       expect(draftState.isComplete).toBe(true);
+      expect(draftState.skipsRemaining).toBe(5);
       expect(draftState.picksRemaining).toBe(0);
     });
   });

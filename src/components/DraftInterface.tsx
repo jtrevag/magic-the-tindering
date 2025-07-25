@@ -13,11 +13,19 @@ const defaultSettings: DraftSettings = {
   deckSize: 40
 };
 
+const getSkipReward = (elo: number): number => {
+  if (elo >= 1650) return 6; // Premium bombs (3.7% of cards)
+  if (elo >= 1500) return 4; // Very strong cards (6.1% of cards)
+  if (elo >= 1350) return 2; // Strong cards (12% of cards)
+  return 0; // Standard cards (75% of cards)
+};
+
 const DraftInterface: React.FC = () => {
   const [draftState, setDraftState] = useState<DraftState>({
     currentCardIndex: 0,
     pickedCards: [],
     picksRemaining: defaultSettings.totalPicks,
+    skipsRemaining: 10,
     isComplete: false
   });
 
@@ -44,45 +52,6 @@ const DraftInterface: React.FC = () => {
     console.log('DraftInterface: Initial setup complete');
   }, []);
 
-  const handleSkip = useCallback(() => {
-    if (draftState.isComplete || draftState.currentCardIndex >= shuffledCards.length || isSkipping) return;
-
-    setIsSkipping(true);
-    
-    setTimeout(() => {
-      const nextIndex = draftState.currentCardIndex + 1;
-      const isComplete = nextIndex >= shuffledCards.length || draftState.picksRemaining === 0;
-      
-      setDraftState(prev => ({
-        ...prev,
-        currentCardIndex: nextIndex,
-        isComplete
-      }));
-
-      setTimeRemaining(defaultSettings.timerSeconds);
-      setIsSkipping(false);
-    }, 450);
-  }, [draftState.isComplete, draftState.currentCardIndex, draftState.picksRemaining, shuffledCards.length, isSkipping]);
-
-  // Timer logic
-  useEffect(() => {
-    let interval: NodeJS.Timeout;
-    
-    if (isTimerRunning && timeRemaining > 0 && !draftState.isComplete) {
-      interval = setInterval(() => {
-        setTimeRemaining(prev => {
-          if (prev <= 1) {
-            handleSkip();
-            return defaultSettings.timerSeconds;
-          }
-          return prev - 1;
-        });
-      }, 1000);
-    }
-
-    return () => clearInterval(interval);
-  }, [isTimerRunning, timeRemaining, draftState.isComplete, handleSkip]);
-
   const handlePick = () => {
     if (draftState.isComplete || draftState.currentCardIndex >= shuffledCards.length || isPicking) return;
 
@@ -100,6 +69,7 @@ const DraftInterface: React.FC = () => {
         currentCardIndex: nextIndex,
         pickedCards: newPickedCards,
         picksRemaining: newPicksRemaining,
+        skipsRemaining: draftState.skipsRemaining + 1,
         isComplete
       });
 
@@ -111,6 +81,50 @@ const DraftInterface: React.FC = () => {
       setIsPicking(false);
     }, 450);
   };
+
+  const handleSkip = useCallback(() => {
+    if (draftState.isComplete || draftState.currentCardIndex >= shuffledCards.length || isSkipping || draftState.skipsRemaining === 0) return;
+
+    setIsSkipping(true);
+    
+    setTimeout(() => {
+      const currentCard = shuffledCards[draftState.currentCardIndex];
+      const skipReward = getSkipReward(currentCard?.elo || 0);
+      const nextIndex = draftState.currentCardIndex + 1;
+      const isComplete = nextIndex >= shuffledCards.length || draftState.picksRemaining === 0;
+      
+      setDraftState(prev => ({
+        ...prev,
+        currentCardIndex: nextIndex,
+        skipsRemaining: prev.skipsRemaining - 1 + skipReward,
+        isComplete
+      }));
+
+      setTimeRemaining(defaultSettings.timerSeconds);
+      setIsSkipping(false);
+    }, 450);
+  }, [draftState.isComplete, draftState.currentCardIndex, draftState.picksRemaining, draftState.skipsRemaining, shuffledCards.length, shuffledCards, isSkipping]);
+
+  // Timer logic
+  useEffect(() => {
+    let interval: NodeJS.Timeout;
+    
+    if (isTimerRunning && timeRemaining > 0 && !draftState.isComplete) {
+      interval = setInterval(() => {
+        setTimeRemaining(prev => {
+          if (prev <= 1) {
+            handlePick();
+            return defaultSettings.timerSeconds;
+          }
+          return prev - 1;
+        });
+      }, 1000);
+    }
+
+    return () => clearInterval(interval);
+  }, [isTimerRunning, timeRemaining, draftState.isComplete, handlePick]);
+
+  
 
   const getCurrentCard = (): Card | null => {
     console.log('getCurrentCard: currentCardIndex:', draftState.currentCardIndex);
@@ -169,6 +183,9 @@ const DraftInterface: React.FC = () => {
           <div className="picks-counter">
             Picks remaining: {draftState.picksRemaining}
           </div>
+          <div className="skips-counter">
+            Skips remaining: {draftState.skipsRemaining}
+          </div>
           <Timer seconds={timeRemaining} />
         </div>
         
@@ -178,9 +195,9 @@ const DraftInterface: React.FC = () => {
           <button 
             className="skip-button" 
             onClick={handleSkip}
-            disabled={draftState.isComplete}
+            disabled={draftState.isComplete || draftState.skipsRemaining === 0}
           >
-            Skip
+            Skip ({draftState.skipsRemaining})
           </button>
           <button 
             className="pick-button" 

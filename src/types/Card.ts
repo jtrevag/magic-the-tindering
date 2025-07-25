@@ -12,6 +12,7 @@ export interface DraftState {
   currentCardIndex: number;
   pickedCards: Card[];
   picksRemaining: number;
+  skipsRemaining: number;
   isComplete: boolean;
 }
 

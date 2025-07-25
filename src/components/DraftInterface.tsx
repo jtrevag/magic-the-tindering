@@ -45,7 +45,7 @@ const DraftInterface: React.FC = () => {
     const shuffled = arrayShuffle([...(peasantCube as Card[])]);
     console.log('DraftInterface: shuffled cards length:', shuffled.length);
     setShuffledCards(shuffled);
-  }, []);
+  }, [setShuffledCards]);
 
   // Debug: Log state changes
   useEffect(() => {
@@ -60,7 +60,7 @@ const DraftInterface: React.FC = () => {
     }
     setIsTimerRunning(true);
     console.log('DraftInterface: Initial setup complete');
-  }, []);
+  }, [shuffleCards, shuffledCards]);
 
   const handlePick = useCallback(() => {
     if (draftState.isComplete || draftState.currentCardIndex >= shuffledCards.length || isPicking) return;
@@ -95,7 +95,17 @@ const DraftInterface: React.FC = () => {
       }
       setIsPicking(false);
     }, 250);
-  }, [draftState.isComplete, draftState.currentCardIndex, draftState.picksRemaining, draftState.skipsRemaining, draftState.pickedCards, shuffledCards, isPicking]);
+  }, [
+    draftState.pickedCards,
+    draftState.isComplete, 
+    draftState.currentCardIndex, 
+    draftState.picksRemaining, 
+    draftState.skipsRemaining, 
+    shuffledCards, 
+    isPicking,
+    setDraftState, 
+    setTimeRemaining
+  ]);
 
   const handleSkip = useCallback(() => {
     if (draftState.isComplete || draftState.currentCardIndex >= shuffledCards.length || isSkipping || draftState.skipsRemaining === 0) return;
@@ -122,14 +132,23 @@ const DraftInterface: React.FC = () => {
       setTimeRemaining(defaultSettings.timerSeconds);
       setIsSkipping(false);
     }, 250);
-  }, [draftState.isComplete, draftState.currentCardIndex, draftState.picksRemaining, draftState.skipsRemaining, shuffledCards, isSkipping]);
+  }, [
+    draftState.isComplete, 
+    draftState.currentCardIndex, 
+    draftState.picksRemaining, 
+    draftState.skipsRemaining, 
+    shuffledCards, 
+    isSkipping, 
+    setDraftState, 
+    setTimeRemaining
+  ]);
 
   const resetDraft = useCallback(() => {
     removeDraftState();
     removeShuffledCards();
     removeTimeRemaining();
     shuffleCards();
-  }, [removeDraftState, removeShuffledCards, removeTimeRemaining]);
+  }, [removeDraftState, removeShuffledCards, removeTimeRemaining, shuffleCards]);
 
   // Timer logic
   useEffect(() => {
@@ -148,7 +167,7 @@ const DraftInterface: React.FC = () => {
     }
 
     return () => clearInterval(interval);
-  }, [isTimerRunning, timeRemaining, draftState.isComplete, handlePick]);
+  }, [isTimerRunning, timeRemaining, draftState.isComplete, handlePick, setTimeRemaining]);
 
   
 

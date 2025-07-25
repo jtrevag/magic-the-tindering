@@ -7,6 +7,7 @@ import './DraftInterface.css';
 import arrayShuffle from 'array-shuffle';
 import { calculateStats } from '../helpers/statsHelper';
 import StatsDisplay from './StatsDisplay';
+import { useLocalStorage } from 'usehooks-ts';
 
 // Removed RecentCard interface - now using direct picked cards display
 
@@ -24,7 +25,7 @@ const getSkipReward = (elo: number): number => {
 };
 
 const DraftInterface: React.FC = () => {
-  const [draftState, setDraftState] = useState<DraftState>({
+  const [draftState, setDraftState, removeDraftState] = useLocalStorage<DraftState>('draft-state', {
     currentCardIndex: 0,
     pickedCards: [],
     picksRemaining: defaultSettings.totalPicks,
@@ -33,12 +34,18 @@ const DraftInterface: React.FC = () => {
     stats: null,
   });
 
-  const [shuffledCards, setShuffledCards] = useState<Card[]>([]);
-  const [timeRemaining, setTimeRemaining] = useState(defaultSettings.timerSeconds);
+  const [shuffledCards, setShuffledCards, removeShuffledCards] = useLocalStorage<Card[]>('shuffled-cards', []);
+  const [timeRemaining, setTimeRemaining, removeTimeRemaining] = useLocalStorage('time-remaining', defaultSettings.timerSeconds);
   const [isTimerRunning, setIsTimerRunning] = useState(false);
   const [isSkipping, setIsSkipping] = useState(false);
   const [isPicking, setIsPicking] = useState(false);
-  // Removed recentCards state - using direct picked cards display
+  
+  const shuffleCards = useCallback(() => {
+    console.log('DraftInterface: peasantCube length:', (peasantCube as Card[]).length);
+    const shuffled = arrayShuffle([...(peasantCube as Card[])]);
+    console.log('DraftInterface: shuffled cards length:', shuffled.length);
+    setShuffledCards(shuffled);
+  }, []);
 
   // Debug: Log state changes
   useEffect(() => {
@@ -48,10 +55,9 @@ const DraftInterface: React.FC = () => {
   // Shuffle cards on component mount
   useEffect(() => {
     console.log('DraftInterface: Component mounting');
-    console.log('DraftInterface: peasantCube length:', (peasantCube as Card[]).length);
-    const shuffled = arrayShuffle([...(peasantCube as Card[])]);
-    console.log('DraftInterface: shuffled cards length:', shuffled.length);
-    setShuffledCards(shuffled);
+    if(shuffledCards.length === 0) {
+      shuffleCards();
+    }
     setIsTimerRunning(true);
     console.log('DraftInterface: Initial setup complete');
   }, []);
@@ -118,6 +124,13 @@ const DraftInterface: React.FC = () => {
     }, 250);
   }, [draftState.isComplete, draftState.currentCardIndex, draftState.picksRemaining, draftState.skipsRemaining, shuffledCards, isSkipping]);
 
+  const resetDraft = useCallback(() => {
+    removeDraftState();
+    removeShuffledCards();
+    removeTimeRemaining();
+    shuffleCards();
+  }, [removeDraftState, removeShuffledCards, removeTimeRemaining]);
+
   // Timer logic
   useEffect(() => {
     let interval: NodeJS.Timeout;
@@ -174,6 +187,12 @@ const DraftInterface: React.FC = () => {
       <div className="draft-complete">
         <h2>Draft Complete!</h2>
         <p>You picked {draftState.pickedCards.length} cards</p>
+        <button 
+          className="pick-button" 
+          onClick={resetDraft}
+        >
+          Start a new Draft?
+        </button>
         <div className="picked-cards-summary">
           {draftState.pickedCards.map((card, index) => (
             <div key={index} className="picked-card-summary">
@@ -221,6 +240,12 @@ const DraftInterface: React.FC = () => {
             disabled={draftState.isComplete}
           >
             Pick
+          </button>
+          <button 
+            className="reset-button" 
+            onClick={resetDraft}
+          >
+            Reset Draft
           </button>
         </div>
       </div>

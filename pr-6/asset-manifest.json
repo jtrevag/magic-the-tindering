@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/magic-the-tindering/pr-6/static/css/main.eda2e29a.css",
+    "main.js": "/magic-the-tindering/pr-6/static/js/main.59f04a11.js",
+    "static/js/453.9ff70df0.chunk.js": "/magic-the-tindering/pr-6/static/js/453.9ff70df0.chunk.js",
+    "index.html": "/magic-the-tindering/pr-6/index.html",
+    "main.eda2e29a.css.map": "/magic-the-tindering/pr-6/static/css/main.eda2e29a.css.map",
+    "main.59f04a11.js.map": "/magic-the-tindering/pr-6/static/js/main.59f04a11.js.map",
+    "453.9ff70df0.chunk.js.map": "/magic-the-tindering/pr-6/static/js/453.9ff70df0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eda2e29a.css",
+    "static/js/main.59f04a11.js"
+  ]
+}

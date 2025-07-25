@@ -88,7 +88,7 @@ const DraftInterface: React.FC = () => {
         setTimeRemaining(defaultSettings.timerSeconds);
       }
       setIsPicking(false);
-    }, 450);
+    }, 250);
   }, [draftState.isComplete, draftState.currentCardIndex, draftState.picksRemaining, draftState.skipsRemaining, draftState.pickedCards, shuffledCards, isPicking]);
 
   const handleSkip = useCallback(() => {
@@ -115,7 +115,7 @@ const DraftInterface: React.FC = () => {
 
       setTimeRemaining(defaultSettings.timerSeconds);
       setIsSkipping(false);
-    }, 450);
+    }, 250);
   }, [draftState.isComplete, draftState.currentCardIndex, draftState.picksRemaining, draftState.skipsRemaining, shuffledCards, isSkipping]);
 
   // Timer logic

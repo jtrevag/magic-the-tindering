@@ -74,6 +74,25 @@ jobs:
           if [ "${{ steps.branch.outputs.branch_name }}" = "main" ]; then
             cp -r build/* gh-pages-content/
           fi
+          
+          # Always ensure there's a root index.html for GitHub Pages to work properly
+          if [ ! -f "gh-pages-content/index.html" ]; then
+            echo "Creating root index.html redirecting to main branch"
+            cat > gh-pages-content/index.html << 'EOF'
+          <!DOCTYPE html>
+          <html>
+          <head>
+            <meta charset="utf-8">
+            <meta http-equiv="refresh" content="0; url=./main/">
+            <link rel="canonical" href="./main/">
+            <title>Redirecting to main branch...</title>
+          </head>
+          <body>
+            <p>Redirecting to <a href="./main/">main branch</a>...</p>
+          </body>
+          </html>
+          EOF
+          fi
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4

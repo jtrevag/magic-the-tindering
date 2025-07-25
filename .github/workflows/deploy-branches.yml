@@ -48,27 +48,46 @@ jobs:
       - name: Build application
         run: npm run build
         env:
-          PUBLIC_URL: /magic-the-tindering
+          PUBLIC_URL: /magic-the-tindering/${{ steps.branch.outputs.branch_name }}
           REACT_APP_BRANCH: ${{ steps.branch.outputs.branch_name }}
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-        
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: Checkout gh-pages branch
+        uses: actions/checkout@v4
         with:
-          path: './build'
+          ref: gh-pages
+          path: gh-pages-content
+          fetch-depth: 0
+        continue-on-error: true
+
+      - name: Create directory structure
+        run: |
+          # Create gh-pages directory if it doesn't exist
+          mkdir -p gh-pages-content
           
+          # Create branch-specific directory
+          mkdir -p "gh-pages-content/${{ steps.branch.outputs.branch_name }}"
+          
+          # Copy build files to branch directory
+          cp -r build/* "gh-pages-content/${{ steps.branch.outputs.branch_name }}/"
+          
+          # If this is main branch, also copy to root
+          if [ "${{ steps.branch.outputs.branch_name }}" = "main" ]; then
+            cp -r build/* gh-pages-content/
+          fi
+
       - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./gh-pages-content
+          keep_files: true
 
       - name: Comment PR with deployment URL
         if: github.event_name == 'pull_request'
         uses: actions/github-script@v7
         with:
           script: |
-            const deployUrl = `https://jtrevag.github.io/magic-the-tindering/`;
+            const deployUrl = `https://jtrevag.github.io/magic-the-tindering/pr-${{ github.event.number }}/`;
             github.rest.issues.createComment({
               issue_number: context.issue.number,
               owner: context.repo.owner,

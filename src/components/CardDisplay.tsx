@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { motion, useAnimation, useMotionValue } from 'framer-motion';
 import { Card } from '../types/Card';
 import './CardDisplay.css';
-import FlipCard from './FlipCard';
 
 interface CardDisplayProps {
   card: Card;
@@ -19,7 +18,6 @@ const CardDisplay: React.FC<CardDisplayProps> = ({ card, handlePick, handleSkip,
   const [showPick, setShowPick] = useState(false);
   const [showSkip, setShowSkip] = useState(false);
   const [imageLoaded, setImageLoaded] = useState(false);
-  const [isFlipped, setIsFlipped] = useState(false);
   const [swipeThreshold, setSwipeThreshold] = useState(window.innerWidth * 0.075);
 
   useEffect(() => {
@@ -33,12 +31,10 @@ const CardDisplay: React.FC<CardDisplayProps> = ({ card, handlePick, handleSkip,
   // Reset animation and imageLoaded when card changes
   useEffect(() => {
     setImageLoaded(false);
-    setIsFlipped(false); 
   }, [card]);
 
   const handleImageLoad = () => {
     setImageLoaded(true);
-    setTimeout(() => setIsFlipped(true), 50);
   };
 
   // Only reset card position after next image is loaded
@@ -130,27 +126,17 @@ const handleDragEnd = () => {
             <div className="swipe-indicator skip-indicator">Skip!</div>
           )}
           <div className="card-image-container">
-            <FlipCard 
-              backContent={
-                <img
-                  src={getImageUrl(card.scryfallId)}
-                  alt={card.name}
-                  className={`card-image ${imageLoaded ? '' : 'loading'}`}
-                  draggable={false}
-                  onLoad={handleImageLoad}
-                  onError={(e) => {
-                    // Fallback to a different Scryfall image format if the first fails
-                    const target = e.target as HTMLImageElement;
-                    target.src = `https://cards.scryfall.io/large/front/${card.scryfallId.charAt(0)}/${card.scryfallId.charAt(1)}/${card.scryfallId}.jpg`;
-                  }}
-                />
-              }
-              frontContent={
-                <div className="card-back-content">
-                  <img src="http://i.imgur.com/P7qYTcI.png" />
-                </div>
-              }
-              isFlipped={isFlipped}
+            <img
+              src={getImageUrl(card.scryfallId)}
+              alt={card.name}
+              className={`card-image ${imageLoaded ? '' : 'loading'}`}
+              draggable={false}
+              onLoad={handleImageLoad}
+              onError={(e) => {
+                // Fallback to a different Scryfall image format if the first fails
+                const target = e.target as HTMLImageElement;
+                target.src = `https://cards.scryfall.io/large/front/${card.scryfallId.charAt(0)}/${card.scryfallId.charAt(1)}/${card.scryfallId}.jpg`;
+              }}
             />
           </div>
         </motion.div>

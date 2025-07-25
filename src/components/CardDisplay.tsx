@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { motion, useAnimation, useMotionValue } from 'framer-motion';
 import { Card } from '../types/Card';
 import './CardDisplay.css';
@@ -14,12 +14,20 @@ interface CardDisplayProps {
 const CardDisplay: React.FC<CardDisplayProps> = ({ card, handlePick, handleSkip, isSkipping = false, isPicking = false }) => {
   const controls = useAnimation();
   const x = useMotionValue(0);
-  const PICK_THRESHOLD = 100;
-  const SKIP_THRESHOLD = -100;
+  const cardRef = useRef<HTMLDivElement>(null);
 
   const [showPick, setShowPick] = useState(false);
   const [showSkip, setShowSkip] = useState(false);
   const [imageLoaded, setImageLoaded] = useState(false);
+  const [swipeThreshold, setSwipeThreshold] = useState(window.innerWidth * 0.075);
+
+  useEffect(() => {
+    // Swipe threshold should be 7.5% of the screen width
+    const updateThreshold = () => setSwipeThreshold(window.innerWidth * 0.075);
+    updateThreshold();
+    window.addEventListener('resize', updateThreshold);
+    return () => window.removeEventListener('resize', updateThreshold);
+  }, []);
 
   // Reset animation and imageLoaded when card changes
   useEffect(() => {
@@ -36,11 +44,11 @@ const CardDisplay: React.FC<CardDisplayProps> = ({ card, handlePick, handleSkip,
   // Show pick/skip indicators based on motion value
   useEffect(() => {
     const unsubscribe = x.on("change", (latest) => {
-      setShowPick(latest > PICK_THRESHOLD);
-      setShowSkip(latest < SKIP_THRESHOLD);
+      setShowPick(latest > swipeThreshold);
+      setShowSkip(latest < -swipeThreshold);
     });
     return unsubscribe;
-  }, [x, SKIP_THRESHOLD, PICK_THRESHOLD]);
+  }, [x, swipeThreshold]);
 
   const getImageUrl = (scryfallId: string) => {
     return `https://cards.scryfall.io/normal/front/${scryfallId.charAt(0)}/${scryfallId.charAt(1)}/${scryfallId}.jpg`;
@@ -65,11 +73,11 @@ const CardDisplay: React.FC<CardDisplayProps> = ({ card, handlePick, handleSkip,
 // Handle drag end to determine pick, skip, or reset
 const handleDragEnd = () => {
   const currentX = x.get();
-  if (currentX > PICK_THRESHOLD) {
+  if (currentX > swipeThreshold) {
     controls.start({ x: 1000, opacity: 0, transition: { duration: 0.2 } }).then(() => {
       handlePick && handlePick();
     });
-  } else if (currentX < SKIP_THRESHOLD) {
+  } else if (currentX < -swipeThreshold) {
     controls.start({ x: -1000, opacity: 0, transition: { duration: 0.2 } }).then(() => {
       handleSkip && handleSkip();
     });
@@ -79,7 +87,7 @@ const handleDragEnd = () => {
 };
 
   return (
-    <div className={`card-display ${isSkipping ? 'skipping' : ''} ${isPicking ? 'picking' : ''}`}>
+    <div ref={cardRef} className={`card-display ${isSkipping ? 'skipping' : ''} ${isPicking ? 'picking' : ''}`}>
       <motion.div
         drag="x"
         dragConstraints={{ left: 0, right: 0 }}

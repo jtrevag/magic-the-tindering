@@ -40,7 +40,7 @@ const CardDisplay: React.FC<CardDisplayProps> = ({ card, handlePick, handleSkip,
       setShowSkip(latest < SKIP_THRESHOLD);
     });
     return unsubscribe;
-  }, [x]);
+  }, [x, SKIP_THRESHOLD, PICK_THRESHOLD]);
 
   const getImageUrl = (scryfallId: string) => {
     return `https://cards.scryfall.io/normal/front/${scryfallId.charAt(0)}/${scryfallId.charAt(1)}/${scryfallId}.jpg`;

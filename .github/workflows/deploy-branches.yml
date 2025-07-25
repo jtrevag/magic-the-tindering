@@ -50,14 +50,17 @@ jobs:
           PUBLIC_URL: /magic-the-tindering/${{ steps.branch.outputs.branch_name }}
           REACT_APP_BRANCH: ${{ steps.branch.outputs.branch_name }}
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        if: github.event_name == 'push' || github.event_name == 'pull_request'
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+        
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
-          destination_dir: ${{ steps.branch.outputs.branch_name }}
-          keep_files: true
+          path: './build'
+          
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
 
       - name: Comment PR with deployment URL
         if: github.event_name == 'pull_request'

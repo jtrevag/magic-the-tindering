@@ -56,7 +56,7 @@ const DraftInterface: React.FC = () => {
     console.log('DraftInterface: Initial setup complete');
   }, []);
 
-  const handlePick = () => {
+  const handlePick = useCallback(() => {
     if (draftState.isComplete || draftState.currentCardIndex >= shuffledCards.length || isPicking) return;
 
     setIsPicking(true);
@@ -89,7 +89,7 @@ const DraftInterface: React.FC = () => {
       }
       setIsPicking(false);
     }, 450);
-  };
+  }, [draftState.isComplete, draftState.currentCardIndex, draftState.picksRemaining, draftState.skipsRemaining, draftState.pickedCards, shuffledCards, isPicking]);
 
   const handleSkip = useCallback(() => {
     if (draftState.isComplete || draftState.currentCardIndex >= shuffledCards.length || isSkipping || draftState.skipsRemaining === 0) return;
@@ -116,7 +116,7 @@ const DraftInterface: React.FC = () => {
       setTimeRemaining(defaultSettings.timerSeconds);
       setIsSkipping(false);
     }, 450);
-  }, [draftState.isComplete, draftState.currentCardIndex, draftState.picksRemaining, draftState.skipsRemaining, shuffledCards.length, shuffledCards, isSkipping]);
+  }, [draftState.isComplete, draftState.currentCardIndex, draftState.picksRemaining, draftState.skipsRemaining, shuffledCards, isSkipping]);
 
   // Timer logic
   useEffect(() => {

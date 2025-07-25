@@ -50,7 +50,7 @@ def main():
         print("No existing data found, starting fresh")
     
     # Read all mainboard cards
-    cube_file = "./PeasantCube2025.txt"
+    cube_file = "./documentation/ThePeasantCube2025.txt"
     with open(cube_file, 'r', encoding='utf-8') as f:
         lines = f.readlines()
     

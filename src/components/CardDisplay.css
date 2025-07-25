@@ -9,6 +9,7 @@
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   max-width: 400px;
+  /* overflow: hidden; */
   width: 100%;
   position: relative;
   z-index: 20;
@@ -24,37 +25,6 @@
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-  transition: transform 0.45s ease, opacity 0.45s ease;
-}
-
-.card-display.skipping .card-image-container {
-  transform: translateX(-150%) rotate(-180deg);
-  opacity: 0;
-}
-
-.card-display.skipping .card-info {
-  opacity: 0.3;
-}
-
-.card-display.picking .card-image-container {
-  animation: pickCard 0.45s ease-out forwards;
-}
-
-@keyframes pickCard {
-  0% {
-    transform: translateZ(0) scale(1) rotate(0deg);
-  }
-  40% {
-    transform: translateZ(50px) scale(1.1) rotate(0deg);
-  }
-  100% {
-    transform: translateX(150%) scale(0.3) rotate(720deg);
-    opacity: 0;
-  }
-}
-
-.card-display.picking .card-info {
-  opacity: 0.3;
 }
 
 .card-image {
@@ -210,6 +180,31 @@
   border-radius: 12px;
   display: inline-block;
   border: 1px solid rgba(76, 175, 80, 0.3);
+}
+
+.swipe-indicator {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 30;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 12px 32px;
+  border-radius: 20px;
+  opacity: 0.85;
+  pointer-events: none;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+}
+.pick-indicator {
+  background: #4caf50;
+  color: #fff;
+  border: 2px solid #388e3c;
+}
+.skip-indicator {
+  background: #e74c3c;
+  color: #fff;
+  border: 2px solid #b71c1c;
 }
 
 @media (max-width: 768px) {

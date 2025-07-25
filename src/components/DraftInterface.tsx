@@ -1,7 +1,7 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { Card, DraftState, DraftSettings } from '../types/Card';
 import peasantCube from '../data/peasantCube.json';
-import CardDisplay from './CardDisplay';
+import CardDisplay, { CardDisplayRef } from './CardDisplay';
 import Timer from './Timer';
 import './DraftInterface.css';
 import arrayShuffle from 'array-shuffle';
@@ -24,6 +24,8 @@ const getSkipReward = (elo: number): number => {
 };
 
 const DraftInterface: React.FC = () => {
+  const cardDisplayRef = useRef<CardDisplayRef>(null);
+  
   const [draftState, setDraftState] = useState<DraftState>({
     currentCardIndex: 0,
     pickedCards: [],
@@ -137,6 +139,19 @@ const DraftInterface: React.FC = () => {
     return () => clearInterval(interval);
   }, [isTimerRunning, timeRemaining, draftState.isComplete, handlePick]);
 
+  // Handlers for button clicks that trigger animations
+  const handleButtonPick = useCallback(() => {
+    if (cardDisplayRef.current) {
+      cardDisplayRef.current.animatedPick();
+    }
+  }, []);
+
+  const handleButtonSkip = useCallback(() => {
+    if (cardDisplayRef.current) {
+      cardDisplayRef.current.animatedSkip();
+    }
+  }, []);
+
   
 
   const getCurrentCard = (): Card | null => {
@@ -205,19 +220,19 @@ const DraftInterface: React.FC = () => {
           <Timer seconds={timeRemaining} />
         </div>
         
-        <CardDisplay card={currentCard} handleSkip={handleSkip} handlePick={handlePick} isSkipping={isSkipping} isPicking={isPicking} />
+        <CardDisplay ref={cardDisplayRef} card={currentCard} handleSkip={handleSkip} handlePick={handlePick} isSkipping={isSkipping} isPicking={isPicking} />
         
         <div className="draft-actions">
           <button 
             className="skip-button" 
-            onClick={handleSkip}
+            onClick={handleButtonSkip}
             disabled={draftState.isComplete || draftState.skipsRemaining === 0}
           >
             Skip ({draftState.skipsRemaining})
           </button>
           <button 
             className="pick-button" 
-            onClick={handlePick}
+            onClick={handleButtonPick}
             disabled={draftState.isComplete}
           >
             Pick

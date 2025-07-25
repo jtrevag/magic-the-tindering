@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useImperativeHandle, forwardRef } from 'react';
 import { motion, useAnimation, useMotionValue } from 'framer-motion';
 import { Card } from '../types/Card';
 import './CardDisplay.css';
@@ -11,7 +11,12 @@ interface CardDisplayProps {
   isPicking?: boolean;
 }
 
-const CardDisplay: React.FC<CardDisplayProps> = ({ card, handlePick, handleSkip, isSkipping = false, isPicking = false }) => {
+export interface CardDisplayRef {
+  animatedPick: () => void;
+  animatedSkip: () => void;
+}
+
+const CardDisplay = forwardRef<CardDisplayRef, CardDisplayProps>(({ card, handlePick, handleSkip, isSkipping = false, isPicking = false }, ref) => {
   const controls = useAnimation();
   const x = useMotionValue(0);
   const PICK_THRESHOLD = 100;
@@ -20,6 +25,44 @@ const CardDisplay: React.FC<CardDisplayProps> = ({ card, handlePick, handleSkip,
   const [showPick, setShowPick] = useState(false);
   const [showSkip, setShowSkip] = useState(false);
   const [imageLoaded, setImageLoaded] = useState(false);
+
+  // Prevent horizontal scrolling on mobile
+  useEffect(() => {
+    const preventHorizontalScroll = (e: TouchEvent) => {
+      const touch = e.touches[0];
+      const startX = touch.clientX;
+      const startY = touch.clientY;
+      
+      // Store start position for comparison
+      (e.currentTarget as any).startX = startX;
+      (e.currentTarget as any).startY = startY;
+    };
+
+    const handleTouchMove = (e: TouchEvent) => {
+      const touch = e.touches[0];
+      const currentX = touch.clientX;
+      const currentY = touch.clientY;
+      const startX = (e.currentTarget as any).startX || currentX;
+      const startY = (e.currentTarget as any).startY || currentY;
+      
+      const deltaX = Math.abs(currentX - startX);
+      const deltaY = Math.abs(currentY - startY);
+      
+      // If horizontal movement is greater than vertical, prevent default
+      if (deltaX > deltaY && deltaX > 10) {
+        e.preventDefault();
+      }
+    };
+
+    // Add listeners to document to catch all touch events
+    document.addEventListener('touchstart', preventHorizontalScroll, { passive: false });
+    document.addEventListener('touchmove', handleTouchMove, { passive: false });
+
+    return () => {
+      document.removeEventListener('touchstart', preventHorizontalScroll);
+      document.removeEventListener('touchmove', handleTouchMove);
+    };
+  }, []);
 
   // Reset animation and imageLoaded when card changes
   useEffect(() => {
@@ -77,6 +120,26 @@ const handleDragEnd = () => {
     controls.start({ x: 0, opacity: 1 });
   }
 };
+
+// Handle button pick with animation
+const handleButtonPick = () => {
+  controls.start({ x: 1000, opacity: 0, transition: { duration: 0.2 } }).then(() => {
+    handlePick && handlePick();
+  });
+};
+
+// Handle button skip with animation
+const handleButtonSkip = () => {
+  controls.start({ x: -1000, opacity: 0, transition: { duration: 0.2 } }).then(() => {
+    handleSkip && handleSkip();
+  });
+};
+
+// Expose animated handlers via ref
+useImperativeHandle(ref, () => ({
+  animatedPick: handleButtonPick,
+  animatedSkip: handleButtonSkip,
+}));
 
   return (
     <div className={`card-display ${isSkipping ? 'skipping' : ''} ${isPicking ? 'picking' : ''}`}>
@@ -136,6 +199,6 @@ const handleDragEnd = () => {
       </div>
     </div>
   );
-};
+});
 
 export default CardDisplay;

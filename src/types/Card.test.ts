@@ -7,6 +7,7 @@ describe('Card Types', () => {
         name: 'Lightning Bolt',
         scryfallId: '6ce3aa6a-0b2c-49aa-a320-de7a0f085d52',
         manaCost: '{R}',
+        colors: ["R"],
         type: 'Instant',
         rarity: 'common'
       };
@@ -23,6 +24,7 @@ describe('Card Types', () => {
         name: 'Counterspell',
         scryfallId: '5062eeae-8480-4173-a977-d5cd46ee47c3',
         manaCost: '{UU}',
+        colors: ["U"],
         type: 'Instant',
         rarity: 'uncommon'
       };
@@ -35,6 +37,7 @@ describe('Card Types', () => {
         name: 'Giant Growth',
         scryfallId: '06ec9e8b-4bd8-4caf-a559-6514b7ab4ca4',
         manaCost: '{G}',
+        colors: ["G"],
         type: 'Instant',
         rarity: 'common',
         imageUrl: 'https://example.com/image.jpg'
@@ -50,6 +53,7 @@ describe('Card Types', () => {
         name: 'Lightning Bolt',
         scryfallId: '6ce3aa6a-0b2c-49aa-a320-de7a0f085d52',
         manaCost: '{R}',
+        colors: ["R"],
         type: 'Instant',
         rarity: 'common'
       };
@@ -59,7 +63,8 @@ describe('Card Types', () => {
         pickedCards: [mockCard],
         picksRemaining: 44,
         skipsRemaining: 10,
-        isComplete: false
+        isComplete: false,
+        stats: null,
       };
 
       expect(draftState.currentCardIndex).toBe(5);
@@ -76,7 +81,8 @@ describe('Card Types', () => {
         pickedCards: [],
         picksRemaining: 0,
         skipsRemaining: 5,
-        isComplete: true
+        isComplete: true,
+        stats: null,
       };
 
       expect(draftState.isComplete).toBe(true);

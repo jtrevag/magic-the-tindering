@@ -4,6 +4,9 @@ import peasantCube from '../data/peasantCube.json';
 import CardDisplay from './CardDisplay';
 import Timer from './Timer';
 import './DraftInterface.css';
+import arrayShuffle from 'array-shuffle';
+import { calculateStats } from '../helpers/statsHelper';
+import StatsDisplay from './StatsDisplay';
 
 // Removed RecentCard interface - now using direct picked cards display
 
@@ -26,7 +29,8 @@ const DraftInterface: React.FC = () => {
     pickedCards: [],
     picksRemaining: defaultSettings.totalPicks,
     skipsRemaining: 10,
-    isComplete: false
+    isComplete: false,
+    stats: null,
   });
 
   const [shuffledCards, setShuffledCards] = useState<Card[]>([]);
@@ -45,7 +49,7 @@ const DraftInterface: React.FC = () => {
   useEffect(() => {
     console.log('DraftInterface: Component mounting');
     console.log('DraftInterface: peasantCube length:', (peasantCube as Card[]).length);
-    const shuffled = [...(peasantCube as Card[])].sort(() => Math.random() - 0.5);
+    const shuffled = arrayShuffle([...(peasantCube as Card[])]);
     console.log('DraftInterface: shuffled cards length:', shuffled.length);
     setShuffledCards(shuffled);
     setIsTimerRunning(true);
@@ -65,6 +69,8 @@ const DraftInterface: React.FC = () => {
 
       const nextIndex = draftState.currentCardIndex + 1;
       const isComplete = newPicksRemaining === 0 || nextIndex >= shuffledCards.length;
+
+      const stats = calculateStats(newPickedCards)
       
       setDraftState({
         currentCardIndex: nextIndex,
@@ -72,7 +78,8 @@ const DraftInterface: React.FC = () => {
         picksRemaining: newPicksRemaining,
         // Only grant +1 skip if card gives no skip reward (low-ELO cards)
         skipsRemaining: skipReward === 0 ? draftState.skipsRemaining + 1 : draftState.skipsRemaining,
-        isComplete
+        isComplete,
+        stats,
       });
 
       if (newPicksRemaining === 0) {
@@ -184,6 +191,9 @@ const DraftInterface: React.FC = () => {
 
   return (
     <div className="draft-interface">
+
+      <StatsDisplay stats={draftState.stats} />
+
       <div className="draft-main-content">
         <div className="draft-header">
           <div className="picks-counter">

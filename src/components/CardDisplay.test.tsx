@@ -7,6 +7,7 @@ const mockCard: Card = {
   name: 'Lightning Bolt',
   scryfallId: '6ce3aa6a-0b2c-49aa-a320-de7a0f085d52',
   manaCost: '{R}',
+  colors: ["R"],
   type: 'Instant',
   rarity: 'common'
 };

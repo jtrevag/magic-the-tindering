@@ -7,9 +7,11 @@ interface CardDisplayProps {
   card: Card;
   handlePick?: () => void
   handleSkip?: () => void
+  isSkipping?: boolean;
+  isPicking?: boolean;
 }
 
-const CardDisplay: React.FC<CardDisplayProps> = ({ card, handlePick, handleSkip }) => {
+const CardDisplay: React.FC<CardDisplayProps> = ({ card, handlePick, handleSkip, isSkipping = false, isPicking = false }) => {
   const getImageUrl = (scryfallId: string) => {
     return `https://cards.scryfall.io/normal/front/${scryfallId.charAt(0)}/${scryfallId.charAt(1)}/${scryfallId}.jpg`;
   };
@@ -21,7 +23,7 @@ const CardDisplay: React.FC<CardDisplayProps> = ({ card, handlePick, handleSkip 
   });
 
   return (
-    <div className="card-display" {...swipeHandlers}>
+    <div className={`card-display ${isSkipping ? 'skipping' : ''} ${isPicking ? 'picking' : ''}`} {...swipeHandlers}>
       <div className="card-image-container">
         <img 
           src={getImageUrl(card.scryfallId)} 

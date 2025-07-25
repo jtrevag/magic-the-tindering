@@ -24,6 +24,8 @@ const DraftInterface: React.FC = () => {
   const [shuffledCards, setShuffledCards] = useState<Card[]>([]);
   const [timeRemaining, setTimeRemaining] = useState(defaultSettings.timerSeconds);
   const [isTimerRunning, setIsTimerRunning] = useState(false);
+  const [isSkipping, setIsSkipping] = useState(false);
+  const [isPicking, setIsPicking] = useState(false);
   // Removed recentCards state - using direct picked cards display
 
   // Debug: Log state changes
@@ -43,19 +45,24 @@ const DraftInterface: React.FC = () => {
   }, []);
 
   const handleSkip = useCallback(() => {
-    if (draftState.isComplete || draftState.currentCardIndex >= shuffledCards.length) return;
+    if (draftState.isComplete || draftState.currentCardIndex >= shuffledCards.length || isSkipping) return;
 
-    const nextIndex = draftState.currentCardIndex + 1;
-    const isComplete = nextIndex >= shuffledCards.length || draftState.picksRemaining === 0;
+    setIsSkipping(true);
     
-    setDraftState(prev => ({
-      ...prev,
-      currentCardIndex: nextIndex,
-      isComplete
-    }));
+    setTimeout(() => {
+      const nextIndex = draftState.currentCardIndex + 1;
+      const isComplete = nextIndex >= shuffledCards.length || draftState.picksRemaining === 0;
+      
+      setDraftState(prev => ({
+        ...prev,
+        currentCardIndex: nextIndex,
+        isComplete
+      }));
 
-    setTimeRemaining(defaultSettings.timerSeconds);
-  }, [draftState.isComplete, draftState.currentCardIndex, draftState.picksRemaining, shuffledCards.length]);
+      setTimeRemaining(defaultSettings.timerSeconds);
+      setIsSkipping(false);
+    }, 450);
+  }, [draftState.isComplete, draftState.currentCardIndex, draftState.picksRemaining, shuffledCards.length, isSkipping]);
 
   // Timer logic
   useEffect(() => {
@@ -77,27 +84,32 @@ const DraftInterface: React.FC = () => {
   }, [isTimerRunning, timeRemaining, draftState.isComplete, handleSkip]);
 
   const handlePick = () => {
-    if (draftState.isComplete || draftState.currentCardIndex >= shuffledCards.length) return;
+    if (draftState.isComplete || draftState.currentCardIndex >= shuffledCards.length || isPicking) return;
 
-    const currentCard = shuffledCards[draftState.currentCardIndex];
-    const newPickedCards = [...draftState.pickedCards, currentCard];
-    const newPicksRemaining = draftState.picksRemaining - 1;
-
-    const nextIndex = draftState.currentCardIndex + 1;
-    const isComplete = newPicksRemaining === 0 || nextIndex >= shuffledCards.length;
+    setIsPicking(true);
     
-    setDraftState({
-      currentCardIndex: nextIndex,
-      pickedCards: newPickedCards,
-      picksRemaining: newPicksRemaining,
-      isComplete
-    });
+    setTimeout(() => {
+      const currentCard = shuffledCards[draftState.currentCardIndex];
+      const newPickedCards = [...draftState.pickedCards, currentCard];
+      const newPicksRemaining = draftState.picksRemaining - 1;
 
-    if (newPicksRemaining === 0) {
-      setIsTimerRunning(false);
-    } else {
-      setTimeRemaining(defaultSettings.timerSeconds);
-    }
+      const nextIndex = draftState.currentCardIndex + 1;
+      const isComplete = newPicksRemaining === 0 || nextIndex >= shuffledCards.length;
+      
+      setDraftState({
+        currentCardIndex: nextIndex,
+        pickedCards: newPickedCards,
+        picksRemaining: newPicksRemaining,
+        isComplete
+      });
+
+      if (newPicksRemaining === 0) {
+        setIsTimerRunning(false);
+      } else {
+        setTimeRemaining(defaultSettings.timerSeconds);
+      }
+      setIsPicking(false);
+    }, 450);
   };
 
   const getCurrentCard = (): Card | null => {
@@ -160,7 +172,7 @@ const DraftInterface: React.FC = () => {
           <Timer seconds={timeRemaining} />
         </div>
         
-        <CardDisplay card={currentCard} handleSkip={handleSkip} handlePick={handlePick} />
+        <CardDisplay card={currentCard} handleSkip={handleSkip} handlePick={handlePick} isSkipping={isSkipping} isPicking={isPicking} />
         
         <div className="draft-actions">
           <button 

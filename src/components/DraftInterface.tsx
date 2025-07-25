@@ -4,6 +4,7 @@ import peasantCube from '../data/peasantCube.json';
 import CardDisplay from './CardDisplay';
 import Timer from './Timer';
 import './DraftInterface.css';
+import arrayShuffle from 'array-shuffle';
 import { calculateStats } from '../helpers/statsHelper';
 import StatsDisplay from './StatsDisplay';
 
@@ -48,7 +49,7 @@ const DraftInterface: React.FC = () => {
   useEffect(() => {
     console.log('DraftInterface: Component mounting');
     console.log('DraftInterface: peasantCube length:', (peasantCube as Card[]).length);
-    const shuffled = [...(peasantCube as Card[])].sort(() => Math.random() - 0.5);
+    const shuffled = arrayShuffle([...(peasantCube as Card[])]);
     console.log('DraftInterface: shuffled cards length:', shuffled.length);
     setShuffledCards(shuffled);
     setIsTimerRunning(true);

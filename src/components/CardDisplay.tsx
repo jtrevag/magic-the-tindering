@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion, useAnimation, useMotionValue } from 'framer-motion';
 import { Card } from '../types/Card';
 import './CardDisplay.css';
@@ -14,7 +14,6 @@ interface CardDisplayProps {
 const CardDisplay: React.FC<CardDisplayProps> = ({ card, handlePick, handleSkip, isSkipping = false, isPicking = false }) => {
   const controls = useAnimation();
   const x = useMotionValue(0);
-  const cardRef = useRef<HTMLDivElement>(null);
 
   const [showPick, setShowPick] = useState(false);
   const [showSkip, setShowSkip] = useState(false);
@@ -87,7 +86,7 @@ const handleDragEnd = () => {
 };
 
   return (
-    <div ref={cardRef} className={`card-display ${isSkipping ? 'skipping' : ''} ${isPicking ? 'picking' : ''}`}>
+    <div className={`card-display ${isSkipping ? 'skipping' : ''} ${isPicking ? 'picking' : ''}`}>
       <motion.div
         drag="x"
         dragConstraints={{ left: 0, right: 0 }}

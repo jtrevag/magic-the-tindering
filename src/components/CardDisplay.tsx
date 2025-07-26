@@ -9,9 +9,11 @@ interface CardDisplayProps {
   handleSkip?: () => void
   isSkipping?: boolean;
   isPicking?: boolean;
+  triggerPickAnimation?: boolean;
+  triggerSkipAnimation?: boolean;
 }
 
-const CardDisplay: React.FC<CardDisplayProps> = ({ card, handlePick, handleSkip, isSkipping = false, isPicking = false }) => {
+const CardDisplay: React.FC<CardDisplayProps> = ({ card, handlePick, handleSkip, isSkipping = false, isPicking = false, triggerPickAnimation = false, triggerSkipAnimation = false }) => {
   const controls = useAnimation();
   const x = useMotionValue(0);
 
@@ -43,6 +45,24 @@ const CardDisplay: React.FC<CardDisplayProps> = ({ card, handlePick, handleSkip,
       controls.set({ x: 0, opacity: 1 });
     }
   }, [imageLoaded, controls]);
+
+  // Trigger pick animation when button is clicked
+  useEffect(() => {
+    if (triggerPickAnimation) {
+      controls.start({ x: 1000, opacity: 0, transition: { duration: 0.2 } }).then(() => {
+        handlePick && handlePick();
+      });
+    }
+  }, [triggerPickAnimation, controls, handlePick]);
+
+  // Trigger skip animation when button is clicked
+  useEffect(() => {
+    if (triggerSkipAnimation) {
+      controls.start({ x: -1000, opacity: 0, transition: { duration: 0.2 } }).then(() => {
+        handleSkip && handleSkip();
+      });
+    }
+  }, [triggerSkipAnimation, controls, handleSkip]);
 
   // Show pick/skip indicators based on motion value
   useEffect(() => {

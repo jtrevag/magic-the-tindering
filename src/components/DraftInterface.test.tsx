@@ -31,9 +31,8 @@ describe('DraftInterface', () => {
     expect(screen.getByText('15')).toBeInTheDocument(); // Timer
     expect(screen.getByText('seconds')).toBeInTheDocument();
     expect(screen.getByText('Pick')).toBeInTheDocument();
-    expect(screen.getByText('Skip')).toBeInTheDocument();
-    expect(screen.getByText('Recent Picks')).toBeInTheDocument();
-    expect(screen.getByText('Total picked: 0')).toBeInTheDocument();
+    expect(screen.getByText('Skip (10)')).toBeInTheDocument();
+    expect(screen.getByText('Your Deck (0/45)')).toBeInTheDocument();
   });
 
   test('displays a card from the shuffled deck', async () => {
@@ -59,22 +58,22 @@ describe('DraftInterface', () => {
     await waitFor(() => {
       expect(screen.getByText('Picks remaining: 44')).toBeInTheDocument();
     });
-    expect(screen.getByText('Total picked: 1')).toBeInTheDocument();
+    expect(screen.getByText('Your Deck (1/45)')).toBeInTheDocument();
   });
 
   test('skip button moves to next card without picking', async () => {
     render(<DraftInterface />);
     
     await waitFor(() => {
-      expect(screen.getByText('Skip')).toBeInTheDocument();
+      expect(screen.getByText('Skip (10)')).toBeInTheDocument();
     });
 
-    const skipButton = screen.getByText('Skip');
+    const skipButton = screen.getByText('Skip (10)');
     fireEvent.click(skipButton);
 
     // Picks remaining should stay the same, but we should move to next card
     expect(screen.getByText('Picks remaining: 45')).toBeInTheDocument();
-    expect(screen.getByText('Total picked: 0')).toBeInTheDocument();
+    expect(screen.getByText('Your Deck (0/45)')).toBeInTheDocument();
   });
 
   test('displays draft complete when all picks are made', async () => {
@@ -128,7 +127,7 @@ describe('DraftInterface', () => {
 
     // Should show the picked cards in recent picks section
     await waitFor(() => {
-      expect(screen.getByText('Total picked: 3')).toBeInTheDocument();
+      expect(screen.getByText('Your Deck (3/45)')).toBeInTheDocument();
     });
   });
 

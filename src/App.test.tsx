@@ -17,5 +17,5 @@ test('renders draft interface', () => {
   render(<App />);
   expect(screen.getByText('Picks remaining: 45')).toBeInTheDocument();
   expect(screen.getByText('Pick')).toBeInTheDocument();
-  expect(screen.getByText('Skip')).toBeInTheDocument();
+  expect(screen.getByText('Skip (10)')).toBeInTheDocument();
 });

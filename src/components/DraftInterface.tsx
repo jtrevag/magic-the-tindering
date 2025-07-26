@@ -39,6 +39,8 @@ const DraftInterface: React.FC = () => {
   const [isTimerRunning, setIsTimerRunning] = useState(false);
   const [isSkipping, setIsSkipping] = useState(false);
   const [isPicking, setIsPicking] = useState(false);
+  const [triggerPickAnimation, setTriggerPickAnimation] = useState(false);
+  const [triggerSkipAnimation, setTriggerSkipAnimation] = useState(false);
   
   const shuffleCards = useCallback(() => {
     console.log('DraftInterface: peasantCube length:', (peasantCube as Card[]).length);
@@ -94,8 +96,14 @@ const DraftInterface: React.FC = () => {
         setTimeRemaining(defaultSettings.timerSeconds);
       }
       setIsPicking(false);
+      setTriggerPickAnimation(false);
     }, 250);
   }, [draftState.isComplete, draftState.currentCardIndex, draftState.picksRemaining, draftState.skipsRemaining, draftState.pickedCards, shuffledCards, isPicking, setDraftState, setTimeRemaining]);
+
+  const handlePickButton = useCallback(() => {
+    if (draftState.isComplete || draftState.currentCardIndex >= shuffledCards.length || isPicking) return;
+    setTriggerPickAnimation(true);
+  }, [draftState.isComplete, draftState.currentCardIndex, shuffledCards.length, isPicking]);
 
   const handleSkip = useCallback(() => {
     if (draftState.isComplete || draftState.currentCardIndex >= shuffledCards.length || isSkipping || draftState.skipsRemaining === 0) return;
@@ -121,8 +129,14 @@ const DraftInterface: React.FC = () => {
 
       setTimeRemaining(defaultSettings.timerSeconds);
       setIsSkipping(false);
+      setTriggerSkipAnimation(false);
     }, 250);
   }, [draftState.isComplete, draftState.currentCardIndex, draftState.picksRemaining, draftState.skipsRemaining, shuffledCards, isSkipping, setDraftState, setTimeRemaining]);
+
+  const handleSkipButton = useCallback(() => {
+    if (draftState.isComplete || draftState.currentCardIndex >= shuffledCards.length || isSkipping || draftState.skipsRemaining === 0) return;
+    setTriggerSkipAnimation(true);
+  }, [draftState.isComplete, draftState.currentCardIndex, shuffledCards.length, isSkipping, draftState.skipsRemaining]);
 
   const resetDraft = useCallback(() => {
     removeDraftState();
@@ -224,19 +238,19 @@ const DraftInterface: React.FC = () => {
           <Timer seconds={timeRemaining} />
         </div>
         
-        <CardDisplay card={currentCard} handleSkip={handleSkip} handlePick={handlePick} isSkipping={isSkipping} isPicking={isPicking} />
+        <CardDisplay card={currentCard} handleSkip={handleSkip} handlePick={handlePick} isSkipping={isSkipping} isPicking={isPicking} triggerPickAnimation={triggerPickAnimation} triggerSkipAnimation={triggerSkipAnimation} />
         
         <div className="draft-actions">
           <button 
             className="skip-button" 
-            onClick={handleSkip}
+            onClick={handleSkipButton}
             disabled={draftState.isComplete || draftState.skipsRemaining === 0}
           >
             Skip ({draftState.skipsRemaining})
           </button>
           <button 
             className="pick-button" 
-            onClick={handlePick}
+            onClick={handlePickButton}
             disabled={draftState.isComplete}
           >
             Pick

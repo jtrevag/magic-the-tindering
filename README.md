@@ -1,6 +1,6 @@
 # MTG Draft Simulator
 
-A React-based Magic: The Gathering draft simulator that recreates the drafting experience with a "Tinder-style" pick-or-skip interface. Draft from a curated peasant cube of 5,700+ cards with timed decisions, skip rewards, and detailed statistics tracking.
+A React-based Magic: The Gathering draft simulator that recreates the drafting experience with a "Tinder-style" pick-or-skip interface. Draft from a curated peasant cube of 540 cards with timed decisions, skip rewards, and detailed statistics tracking.
 
 ## Features
 

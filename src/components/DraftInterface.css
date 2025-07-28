@@ -218,11 +218,10 @@ button:disabled {
 @media (max-width: 1024px) {
   .draft-interface {
     grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr;
+    grid-template-rows: 1fr auto;
   }
   
   .deck-sidebar {
-    order: -1;
     max-height: 200px;
     padding: 15px;
   }

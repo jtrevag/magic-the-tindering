@@ -8,6 +8,7 @@ import arrayShuffle from 'array-shuffle';
 import { calculateStats } from '../helpers/statsHelper';
 import StatsDisplay from './StatsDisplay';
 import { useLocalStorage } from 'usehooks-ts';
+import { ProxyPDFGenerator } from '../utils/pdfGenerator';
 
 // Removed RecentCard interface - now using direct picked cards display
 
@@ -145,6 +146,17 @@ const DraftInterface: React.FC = () => {
     shuffleCards();
   }, [removeDraftState, removeShuffledCards, removeTimeRemaining, shuffleCards]);
 
+  const handleGenerateProxyPDF = useCallback(async () => {
+    if (draftState.isComplete && draftState.pickedCards.length > 0) {
+      try {
+        await ProxyPDFGenerator.generateProxyPDF(draftState.pickedCards);
+      } catch (error) {
+        console.error('Error generating proxy PDF:', error);
+        alert('Failed to generate proxy PDF. Please try again.');
+      }
+    }
+  }, [draftState.isComplete, draftState.pickedCards]);
+
   // Timer logic
   useEffect(() => {
     let interval: NodeJS.Timeout;
@@ -201,12 +213,20 @@ const DraftInterface: React.FC = () => {
       <div className="draft-complete">
         <h2>Draft Complete!</h2>
         <p>You picked {draftState.pickedCards.length} cards</p>
-        <button 
-          className="pick-button" 
-          onClick={resetDraft}
-        >
-          Start a new Draft?
-        </button>
+        <div className="draft-complete-actions">
+          <button 
+            className="proxy-button" 
+            onClick={handleGenerateProxyPDF}
+          >
+            Generate Proxy PDF
+          </button>
+          <button 
+            className="pick-button" 
+            onClick={resetDraft}
+          >
+            Start a new Draft?
+          </button>
+        </div>
         <div className="picked-cards-summary">
           {draftState.pickedCards.map((card, index) => (
             <div key={index} className="picked-card-summary">

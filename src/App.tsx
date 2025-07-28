@@ -5,6 +5,7 @@ import DraftInterface from './components/DraftInterface';
 function App() {
   return (
     <div className="App">
+      <h1>App Loading...</h1>
       <DraftInterface />
     </div>
   );

@@ -229,13 +229,16 @@ const DraftInterface: React.FC = () => {
 
       <div className="draft-main-content">
         <div className="draft-header">
-          <div className="picks-counter">
-            Picks remaining: {draftState.picksRemaining}
+          <StatsDisplay stats={draftState.stats} />
+          <div className="draft-counters">
+            <div className="picks-counter">
+              Picks remaining: {draftState.picksRemaining}
+            </div>
+            <div className="skips-counter">
+              Skips remaining: {draftState.skipsRemaining}
+            </div>
+            <Timer seconds={timeRemaining} />
           </div>
-          <div className="skips-counter">
-            Skips remaining: {draftState.skipsRemaining}
-          </div>
-          <Timer seconds={timeRemaining} />
         </div>
         
         <CardDisplay card={currentCard} handleSkip={handleSkip} handlePick={handlePick} isSkipping={isSkipping} isPicking={isPicking} triggerPickAnimation={triggerPickAnimation} triggerSkipAnimation={triggerSkipAnimation} />

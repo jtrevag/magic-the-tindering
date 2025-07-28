@@ -7,3 +7,35 @@
   max-height: calc(100vh - 82px);
   overflow-y: auto;
 }
+
+@media (max-width: 1024px) {
+  .draft-header .stats-display {
+    padding: 10px;
+  }
+  
+  .draft-header .stats-display .stats-header h3 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  
+  .draft-header .stats-display .stats-pie-chart {
+    width: 150px !important;
+    height: 150px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .draft-header .stats-display {
+    padding: 5px;
+  }
+  
+  .draft-header .stats-display .stats-header h3 {
+    font-size: 0.9rem;
+    margin-bottom: 3px;
+  }
+  
+  .draft-header .stats-display .stats-pie-chart {
+    width: 120px !important;
+    height: 120px !important;
+  }
+}

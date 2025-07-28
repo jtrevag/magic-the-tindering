@@ -1,46 +1,46 @@
-# Getting Started with Create React App
+# MTG Draft Simulator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React-based Magic: The Gathering draft simulator that recreates the drafting experience with a "Tinder-style" pick-or-skip interface. Draft from a curated peasant cube of 5,700+ cards with timed decisions, skip rewards, and detailed statistics tracking.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Timed Draft Experience**: 15-second timer per pick creates authentic draft pressure
+- **Smart Skip System**: ELO-based skip rewards encourage strategic decision making
+- **Persistent State**: Draft progress automatically saved to continue later
+- **Visual Statistics**: Color preference analysis with interactive pie charts
+- **Responsive Design**: Optimized for both desktop and mobile play
+- **Peasant Cube Format**: Curated collection of commons and uncommons with balanced power level
 
-### `npm start`
+## How to Play
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. Start the app and begin your draft
+2. Each card appears with a 15-second timer
+3. **Pick** cards you want in your deck
+4. **Skip** cards you don't want (limited skips available)
+5. Earn bonus skips by skipping high-value cards
+6. Complete your 40-card deck and view statistics
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Development
 
-### `npm test`
+### Available Scripts
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- `npm start` - Start development server (http://localhost:3000)
+- `npm test` - Run tests in interactive watch mode  
+- `npm run build` - Build for production
+- `npm run deploy` - Deploy to GitHub Pages
+- `npm run prepare` - Set up pre-commit hooks
 
-### `npm run build`
+### Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **React 19** with TypeScript for type safety
+- **Framer Motion** for smooth animations
+- **Recharts** for statistics visualization
+- **usehooks-ts** for localStorage state management
+- **Create React App** as the build foundation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Project Structure
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- `src/components/` - React components (DraftInterface, CardDisplay, Timer, StatsDisplay)
+- `src/data/peasantCube.json` - Card database with Scryfall IDs and ELO ratings
+- `src/types/Card.ts` - TypeScript type definitions
+- `src/helpers/statsHelper.tsx` - Statistics calculation utilities

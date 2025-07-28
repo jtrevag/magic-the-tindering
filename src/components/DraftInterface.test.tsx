@@ -1,6 +1,7 @@
 import React from 'react';
 import { render, screen, fireEvent, waitFor } from '@testing-library/react';
 import DraftInterface from './DraftInterface';
+import { ProxyPDFGenerator } from '../utils/pdfGenerator';
 
 // Mock the peasant cube data - provide enough cards for all tests
 jest.mock('../data/peasantCube.json', () => 
@@ -9,9 +10,18 @@ jest.mock('../data/peasantCube.json', () =>
     scryfallId: `${i.toString().padStart(8, '0')}-0000-0000-0000-000000000000`,
     manaCost: '{1}',
     type: 'Creature',
-    rarity: i % 2 === 0 ? 'common' : 'uncommon'
+    rarity: i % 2 === 0 ? 'common' : 'uncommon',
+    colors: ['R'], // Add colors array for statsHelper
+    elo: 1200
   }))
 );
+
+// Mock the PDF generator
+jest.mock('../utils/pdfGenerator', () => ({
+  ProxyPDFGenerator: {
+    generateProxyPDF: jest.fn(),
+  },
+}));
 
 describe('DraftInterface', () => {
   beforeEach(() => {
@@ -147,6 +157,156 @@ describe('DraftInterface', () => {
 
     await waitFor(() => {
       expect(screen.getByText('Draft Complete!')).toBeInTheDocument();
+    });
+  });
+
+  describe('PDF Generation', () => {
+    test('shows proxy PDF button when draft is complete', async () => {
+      render(<DraftInterface />);
+      
+      await waitFor(() => {
+        expect(screen.getByText('Pick')).toBeInTheDocument();
+      });
+
+      const pickButton = screen.getByText('Pick');
+      
+      // Complete the draft by clicking 45 times
+      for (let i = 0; i < 45; i++) {
+        fireEvent.click(pickButton);
+      }
+
+      await waitFor(() => {
+        expect(screen.getByText('Draft Complete!')).toBeInTheDocument();
+        expect(screen.getByText('Generate Proxy PDF')).toBeInTheDocument();
+      });
+    });
+
+    test('calls PDF generator when proxy button is clicked', async () => {
+      const mockGenerateProxyPDF = ProxyPDFGenerator.generateProxyPDF as jest.MockedFunction<typeof ProxyPDFGenerator.generateProxyPDF>;
+      mockGenerateProxyPDF.mockResolvedValue();
+
+      render(<DraftInterface />);
+      
+      await waitFor(() => {
+        expect(screen.getByText('Pick')).toBeInTheDocument();
+      });
+
+      const pickButton = screen.getByText('Pick');
+      
+      // Complete the draft by clicking 45 times
+      for (let i = 0; i < 45; i++) {
+        fireEvent.click(pickButton);
+      }
+
+      await waitFor(() => {
+        expect(screen.getByText('Generate Proxy PDF')).toBeInTheDocument();
+      });
+
+      // Click the PDF button
+      const pdfButton = screen.getByText('Generate Proxy PDF');
+      fireEvent.click(pdfButton);
+
+      expect(mockGenerateProxyPDF).toHaveBeenCalledTimes(1);
+      expect(mockGenerateProxyPDF).toHaveBeenCalledWith(
+        expect.arrayContaining([
+          expect.objectContaining({
+            name: expect.any(String),
+            scryfallId: expect.any(String),
+            manaCost: expect.any(String),
+            type: expect.any(String),
+            rarity: expect.any(String),
+          }),
+        ])
+      );
+    });
+
+    test('shows alert when PDF generation fails', async () => {
+      const mockGenerateProxyPDF = ProxyPDFGenerator.generateProxyPDF as jest.MockedFunction<typeof ProxyPDFGenerator.generateProxyPDF>;
+      mockGenerateProxyPDF.mockRejectedValue(new Error('PDF generation failed'));
+
+      // Mock window.alert
+      const alertSpy = jest.spyOn(window, 'alert').mockImplementation(() => {});
+
+      render(<DraftInterface />);
+      
+      await waitFor(() => {
+        expect(screen.getByText('Pick')).toBeInTheDocument();
+      });
+
+      const pickButton = screen.getByText('Pick');
+      
+      // Complete the draft by clicking 45 times
+      for (let i = 0; i < 45; i++) {
+        fireEvent.click(pickButton);
+      }
+
+      await waitFor(() => {
+        expect(screen.getByText('Generate Proxy PDF')).toBeInTheDocument();
+      });
+
+      // Click the PDF button
+      const pdfButton = screen.getByText('Generate Proxy PDF');
+      fireEvent.click(pdfButton);
+
+      await waitFor(() => {
+        expect(alertSpy).toHaveBeenCalledWith('Failed to generate proxy PDF. Please try again.');
+      });
+
+      alertSpy.mockRestore();
+    });
+
+    test('does not show PDF button during active draft', async () => {
+      render(<DraftInterface />);
+      
+      await waitFor(() => {
+        expect(screen.getByText('Pick')).toBeInTheDocument();
+      });
+
+      // Should not show PDF button during active draft
+      expect(screen.queryByText('Generate Proxy PDF')).not.toBeInTheDocument();
+    });
+
+    test('passes correct picked cards to PDF generator', async () => {
+      const mockGenerateProxyPDF = ProxyPDFGenerator.generateProxyPDF as jest.MockedFunction<typeof ProxyPDFGenerator.generateProxyPDF>;
+      mockGenerateProxyPDF.mockResolvedValue();
+
+      render(<DraftInterface />);
+      
+      await waitFor(() => {
+        expect(screen.getByText('Pick')).toBeInTheDocument();
+      });
+
+      const pickButton = screen.getByText('Pick');
+      
+      // Pick only 5 cards for easier testing
+      for (let i = 0; i < 5; i++) {
+        fireEvent.click(pickButton);
+      }
+
+      // Complete the draft by running out of picks
+      for (let i = 5; i < 45; i++) {
+        fireEvent.click(pickButton);
+      }
+
+      await waitFor(() => {
+        expect(screen.getByText('Generate Proxy PDF')).toBeInTheDocument();
+      });
+
+      // Click the PDF button
+      const pdfButton = screen.getByText('Generate Proxy PDF');
+      fireEvent.click(pdfButton);
+
+      expect(mockGenerateProxyPDF).toHaveBeenCalledWith(
+        expect.arrayContaining([
+          expect.objectContaining({
+            name: expect.stringMatching(/Test Card \d+/),
+          }),
+        ])
+      );
+
+      // Should be called with exactly 45 cards (all picked cards)
+      const callArgs = mockGenerateProxyPDF.mock.calls[0][0];
+      expect(callArgs).toHaveLength(45);
     });
   });
 });

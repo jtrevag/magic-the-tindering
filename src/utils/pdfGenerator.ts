@@ -47,10 +47,15 @@ export class ProxyPDFGenerator {
   }
 
   private static async loadCardImages(cards: Card[]): Promise<CardImageData[]> {
-    const imagePromises = cards.map(async (card) => {
+    console.log(`Loading images for ${cards.length} cards...`);
+    
+    const imagePromises = cards.map(async (card, index) => {
       try {
         const imageUrl = `https://cards.scryfall.io/normal/front/${card.scryfallId.charAt(0)}/${card.scryfallId.charAt(1)}/${card.scryfallId}.jpg`;
+        console.log(`Loading image ${index + 1}/${cards.length}: ${card.name} from ${imageUrl}`);
+        
         const imageData = await this.loadImageAsBase64(imageUrl);
+        console.log(`Successfully loaded image for ${card.name}`);
         return { card, imageData };
       } catch (error) {
         console.warn(`Failed to load image for card ${card.name}:`, error);
@@ -58,40 +63,66 @@ export class ProxyPDFGenerator {
       }
     });
 
-    return Promise.all(imagePromises);
+    const results = await Promise.all(imagePromises);
+    const successCount = results.filter(r => r.imageData).length;
+    console.log(`Loaded ${successCount}/${cards.length} images successfully`);
+    
+    return results;
   }
 
   private static loadImageAsBase64(url: string): Promise<string> {
     return new Promise((resolve, reject) => {
-      const img = new Image();
-      img.crossOrigin = 'anonymous';
-      
-      img.onload = () => {
-        const canvas = document.createElement('canvas');
-        const ctx = canvas.getContext('2d');
-        
-        if (!ctx) {
-          reject(new Error('Failed to get canvas context'));
-          return;
-        }
+      fetch(url, { mode: 'cors' })
+        .then(response => {
+          if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+          }
+          return response.blob();
+        })
+        .then(blob => {
+          const reader = new FileReader();
+          reader.onload = () => {
+            resolve(reader.result as string);
+          };
+          reader.onerror = () => {
+            reject(new Error('Failed to read blob as base64'));
+          };
+          reader.readAsDataURL(blob);
+        })
+        .catch(error => {
+          console.warn(`Fetch failed for ${url}, trying Image approach:`, error);
+          
+          // Fallback to Image approach
+          const img = new Image();
+          img.crossOrigin = 'anonymous';
+          
+          img.onload = () => {
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+            
+            if (!ctx) {
+              reject(new Error('Failed to get canvas context'));
+              return;
+            }
 
-        canvas.width = img.width;
-        canvas.height = img.height;
-        ctx.drawImage(img, 0, 0);
-        
-        try {
-          const dataURL = canvas.toDataURL('image/jpeg', 0.9);
-          resolve(dataURL);
-        } catch (error) {
-          reject(error);
-        }
-      };
+            canvas.width = img.width;
+            canvas.height = img.height;
+            ctx.drawImage(img, 0, 0);
+            
+            try {
+              const dataURL = canvas.toDataURL('image/jpeg', 0.9);
+              resolve(dataURL);
+            } catch (error) {
+              reject(error);
+            }
+          };
 
-      img.onerror = () => {
-        reject(new Error(`Failed to load image: ${url}`));
-      };
+          img.onerror = () => {
+            reject(new Error(`Failed to load image: ${url}`));
+          };
 
-      img.src = url;
+          img.src = url;
+        });
     });
   }
 

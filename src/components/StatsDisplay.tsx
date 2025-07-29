@@ -39,7 +39,7 @@ const StatsDisplay: React.FC<StatsDisplayProps> = ({ stats }) => {
       <div className="stats-header">
         <h3>Color Analysis</h3>
       </div>
-      <PieChart width={225} height={225}>
+      <PieChart className="stats-pie-chart" width={225} height={225}>
         <Pie isAnimationActive={false} data={massagedData}  cx="50%" cy="50%" outerRadius={50} />
         <Tooltip />
       </PieChart>

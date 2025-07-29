@@ -25,6 +25,14 @@
   padding: 0 20px;
 }
 
+.draft-counters {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1;
+  gap: 20px;
+}
+
 .picks-counter {
   font-size: 1.2rem;
   font-weight: bold;
@@ -234,11 +242,30 @@ button:disabled {
 @media (max-width: 1024px) {
   .draft-interface {
     grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr;
+    grid-template-rows: 1fr auto;
+  }
+  
+  .draft-interface > .stats-display {
+    display: none;
+  }
+  
+  .draft-header .stats-display {
+    display: block;
+    background: none;
+    border: none;
+    padding: 0;
+    backdrop-filter: none;
+    max-height: none;
+    overflow: visible;
+  }
+  
+  .draft-header {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
   }
   
   .deck-sidebar {
-    order: -1;
     max-height: 200px;
     padding: 15px;
   }
@@ -267,9 +294,15 @@ button:disabled {
   }
   
   .draft-header {
-    flex-direction: column;
-    gap: 15px;
+    flex-direction: row;
+    gap: 10px;
     text-align: center;
+    align-items: center;
+  }
+  
+  .draft-counters {
+    flex-direction: column;
+    gap: 10px;
   }
   
   .draft-actions {

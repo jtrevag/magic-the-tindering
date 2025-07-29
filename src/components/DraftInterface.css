@@ -190,6 +190,22 @@ button:disabled {
   margin-bottom: 20px;
 }
 
+.draft-complete-actions {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.proxy-button {
+  background: #007bff;
+  color: white;
+}
+
+.proxy-button:hover:not(:disabled) {
+  background: #0056b3;
+  transform: translateY(-2px);
+}
+
 .picked-cards-summary {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));

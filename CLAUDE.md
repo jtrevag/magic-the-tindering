@@ -8,7 +8,6 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - `npm test` - Run tests in interactive watch mode
 - `npm run build` - Build the app for production
 - `npm run eject` - Eject from Create React App (one-way operation)
-- `npm run deploy` - Deploy to GitHub Pages
 - `npm run prepare` - Set up Husky pre-commit hooks
 
 ## Project Architecture
@@ -88,7 +87,7 @@ Core types defined in `src/types/Card.ts`:
 - Integrated `usehooks-ts` for localStorage state management
 - Added `framer-motion` and `motion` libraries for advanced animations
 - Implemented comprehensive testing with Jest and React Testing Library
-- Set up GitHub Pages deployment workflow
+- Set up Vercel deployment workflow
 - Added Husky pre-commit hooks for code quality
 
 ### 🚀 Future Enhancement Ideas
@@ -113,7 +112,7 @@ Core types defined in `src/types/Card.ts`:
 - **Charts**: recharts for statistics visualization
 - **State**: usehooks-ts for localStorage hooks
 - **Testing**: @testing-library suite with Jest
-- **Deployment**: gh-pages for GitHub Pages deployment
+- **Deployment**: Vercel with automatic deployments
 - **Development**: Husky, lint-staged for pre-commit hooks
 - **Images**: Scryfall API for card images via Scryfall IDs
 

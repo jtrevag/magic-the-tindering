@@ -4,6 +4,13 @@
 
 This document outlines the incremental plan to upgrade the Magic: The Gathering Tinder Draft Simulator to support importing cube lists from CubeCobra. The goal is to allow users to copy/paste a CubeCobra cube URL and draft with that specific cube instead of the hardcoded peasant cube.
 
+## Updated Requirements
+
+- **ELO Ratings**: CubeCobra cubes will have ELO ratings available (walkthrough needed for extraction process)
+- **Cube Size Limit**: Support cubes up to 600 cards maximum
+- **Proxy Service**: Can add simple proxy service similar to existing PDF generation
+- **Mobile-First**: Prioritize mobile experience with desktop support
+
 ## Current State Analysis
 
 ### Existing Architecture
@@ -117,13 +124,25 @@ interface ScryfallAPI {
 ```typescript
 // src/services/CardResolutionService.ts
 class CardResolutionService {
-  async resolveCubeCards(cubeCobraCards: string[]): Promise<CardDatabase[]> {
-    // 1. Check local cache first
-    // 2. Query Scryfall for missing cards
-    // 3. Transform to internal format
-    // 4. Cache results
-    // 5. Return resolved cards
+  async resolveCubeCards(cubeCobraCards: CubeCobraCard[]): Promise<CardDatabase[]> {
+    // 1. Validate cube size (max 600 cards)
+    if (cubeCobraCards.length > 600) {
+      throw new Error(`Cube too large: ${cubeCobraCards.length} cards (max 600)`);
+    }
+    
+    // 2. Check local cache first
+    // 3. Extract ELO ratings from CubeCobra data (walkthrough needed)
+    // 4. Query Scryfall for missing card details
+    // 5. Transform to internal format with ELO preserved
+    // 6. Cache results
+    // 7. Return resolved cards with ELO ratings
   }
+}
+
+interface CubeCobraCard {
+  name: string;
+  elo?: number;  // CubeCobra provides ELO - extraction walkthrough needed
+  // Other CubeCobra-specific fields (structure TBD)
 }
 ```
 
@@ -224,18 +243,19 @@ interface UseCubeDataReturn {
    - Implement bulk lookup optimization
    - Add caching strategy
 
-### Phase 3: UI Development (Week 3-4)
+### Phase 3: UI Development (Week 3-4) - Mobile-First
 1. **Cube Management UI**
-   - Create CubeSelector component
-   - Add cube import workflow
-   - Implement cube list management
-   - Add validation and error states
+   - Create mobile-first CubeSelector component
+   - Add cube import workflow optimized for touch
+   - Implement cube list management with mobile UX
+   - Add validation and error states for mobile
+   - Ensure 600 card limit validation in UI
 
-2. **Main Menu Redesign**
-   - Create MainMenu component
-   - Update app routing/navigation
-   - Add settings management
-   - Implement responsive design
+2. **Main Menu Redesign - Mobile-First**
+   - Create mobile-first MainMenu component
+   - Update app routing/navigation for mobile
+   - Add settings management with touch-friendly controls
+   - Implement responsive design (mobile → desktop)
 
 ### Phase 4: Integration & Testing (Week 4-5)
 1. **Draft Engine Updates**
@@ -252,12 +272,29 @@ interface UseCubeDataReturn {
 
 ## Technical Considerations
 
-### CORS Issues
-CubeCobra API may have CORS restrictions. Solutions:
-1. **Proxy Service**: Create simple proxy (Netlify Functions, Vercel API routes)
-2. **JSONP**: If CubeCobra supports it
-3. **Browser Extension**: Alternative delivery method
-4. **Direct API**: Contact CubeCobra for CORS headers
+### CORS Issues & Proxy Service
+CubeCobra API may have CORS restrictions. **Solution**: Create simple proxy service similar to existing PDF generation pattern:
+
+```typescript
+// Similar to existing pdfGenerator.ts pattern
+// src/services/CubeCobraProxy.ts
+class CubeCobraProxy {
+  private static readonly PROXY_ENDPOINT = '/api/cubecobra-proxy';
+  
+  static async fetchCubeData(cubeId: string): Promise<CubeCobraResponse> {
+    // Proxy CubeCobra API calls through our service
+    // Handle CORS and rate limiting
+    // Validate 600 card limit
+  }
+}
+```
+
+**Deployment Options**:
+1. **Netlify Functions** (matches current PDF service pattern)
+2. **Vercel API routes**
+3. **Cloudflare Workers**
+
+**Existing Pattern**: The codebase already has `ProxyPDFGenerator` in `src/utils/pdfGenerator.ts` which demonstrates the pattern for handling external service integration.
 
 ### Performance Optimizations
 1. **Lazy Loading**: Load cards progressively during draft
@@ -343,15 +380,17 @@ CubeCobra API may have CORS restrictions. Solutions:
 
 1. **CubeCobra API Format**: Need to verify actual JSON response structure from `cubecobra.com/cube/api/cubelist/:id`
 
-2. **ELO Handling**: How should we handle cubes without ELO ratings? Default values or disable skip rewards?
+~~2. **ELO Handling**: How should we handle cubes without ELO ratings? Default values or disable skip rewards?~~ ✅ **ANSWERED: CubeCobra has ELO ratings - need walkthrough for extraction**
 
-3. **Cube Size Limits**: What's the maximum cube size we should support? (Some cubes have 1000+ cards)
+~~3. **Cube Size Limits**: What's the maximum cube size we should support? (Some cubes have 1000+ cards)~~ ✅ **ANSWERED: 600 cards maximum**
 
 4. **Authentication**: Do we need to support private CubeCobra cubes? (Would require OAuth)
 
 5. **Offline Support**: How important is offline functionality after initial cube load?
 
-6. **Mobile Priority**: Should mobile experience be prioritized equally with desktop?
+~~6. **Mobile Priority**: Should mobile experience be prioritized equally with desktop?~~ ✅ **ANSWERED: Mobile-first development**
+
+7. **ELO Extraction**: Need walkthrough on how to extract ELO ratings from CubeCobra API response
 
 ## Conclusion
 

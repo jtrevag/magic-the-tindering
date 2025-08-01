@@ -10,6 +10,7 @@ This document outlines the incremental plan to upgrade the Magic: The Gathering 
 - **Cube Size Limit**: Support cubes up to 600 cards maximum
 - **Proxy Service**: Can add simple proxy service similar to existing PDF generation
 - **Mobile-First**: Prioritize mobile experience with desktop support
+- **Deployment**: Vercel deployment (migrated from GitHub Pages)
 
 ## Current State Analysis
 
@@ -18,7 +19,7 @@ This document outlines the incremental plan to upgrade the Magic: The Gathering 
 - **State Management**: localStorage with usehooks-ts
 - **Data Source**: Static JSON file (`src/data/peasantCube.json`) with ~5,700 cards
 - **Card Data**: Each card has: name, scryfallId, manaCost, type, rarity, colors, elo
-- **No Backend**: Pure client-side application deployed to GitHub Pages
+- **Deployment**: Vercel with automatic deployments
 - **No Database**: All data stored in static JSON and localStorage
 
 ### Current Data Flow
@@ -34,9 +35,10 @@ This document outlines the incremental plan to upgrade the Magic: The Gathering 
 
 #### 1.1 Database Technology Selection
 **Recommended**: **IndexedDB with Dexie.js**
-- **Pros**: Client-side, no backend required, maintains GitHub Pages deployment
+- **Pros**: Client-side, no backend required, maintains serverless deployment model
 - **Cons**: Limited to browser storage, no server-side persistence
-- **Alternative**: Firebase Firestore (requires backend setup)
+- **Alternative**: Vercel Edge Config + PostgreSQL (leverages Vercel ecosystem)
+- **Future Enhancement**: Could migrate to Vercel KV or Vercel Postgres for server-side persistence
 
 #### 1.2 Database Schema Design
 ```typescript
@@ -218,6 +220,14 @@ interface UseCubeDataReturn {
 
 ## Implementation Phases
 
+### Phase 0: Deployment Migration ✅ COMPLETED
+1. **Migrate from GitHub Pages to Vercel**
+   - ✅ Remove `gh-pages` dependency from package.json
+   - ✅ Remove `predeploy` and `deploy` scripts
+   - ✅ Update CLAUDE.md documentation
+   - ✅ Verify Vercel deployment configuration (`vercel.json`)
+   - ✅ Confirm Vercel API routes support for proxy service
+
 ### Phase 1: Foundation (Week 1-2)
 1. **Database Setup**
    - Install Dexie.js
@@ -289,10 +299,11 @@ class CubeCobraProxy {
 }
 ```
 
-**Deployment Options**:
-1. **Netlify Functions** (matches current PDF service pattern)
-2. **Vercel API routes**
-3. **Cloudflare Workers**
+**Deployment Option**:
+1. **Vercel API Routes** (matches current deployment platform)
+   - Create `/api/cubecobra-proxy.ts` endpoint
+   - Leverage Vercel's serverless functions
+   - Seamless integration with existing Vercel deployment
 
 **Existing Pattern**: The codebase already has `ProxyPDFGenerator` in `src/utils/pdfGenerator.ts` which demonstrates the pattern for handling external service integration.
 
